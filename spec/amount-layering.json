@@ -1,0 +1,104 @@
+{
+ "_note": "分层编排：小额宽、大额与出金严。不改 `CORE-001` 正文。",
+ "_rule": "分层只改**适用哪一档与走哪一条通道**，不改**禁止事项**。",
+ "bands": [
+  {
+   "id": "micro",
+   "desc": "机器速度小额任务",
+   "max_unit_cost_times": null,
+   "asset_profile": "broad",
+   "settlement": "白名单稳定币（预充）",
+   "per_tx_kyc": "no",
+   "max_param": "T1_micro_max_unit_cost_times",
+   "max_per_day": "F1_micro_max_per_day",
+   "max_per_day_amount": "A1_micro_max_per_day_unit_cost",
+   "_orig_placeholder": 1
+  },
+  {
+   "id": "normal",
+   "desc": "常规交付",
+   "max_unit_cost_times": null,
+   "asset_profile": "standard",
+   "settlement": "白名单稳定币或持牌通道",
+   "per_tx_kyc": "no",
+   "max_param": "T2_normal_max_unit_cost_times",
+   "_orig_placeholder": 20
+  },
+  {
+   "id": "large",
+   "desc": "大额",
+   "max_unit_cost_times": null,
+   "asset_profile": "strict",
+   "settlement": "持牌通道（必选）",
+   "per_tx_kyc": "yes",
+   "_orig_placeholder": "无"
+  },
+  {
+   "id": "offramp",
+   "desc": "出金到法币",
+   "max_unit_cost_times": null,
+   "asset_profile": "strict",
+   "settlement": "持牌通道（必选）",
+   "per_tx_kyc": "yes",
+   "_orig_placeholder": "无"
+  }
+ ],
+ "unchanged_prohibitions": [
+  "FIN-100-010 世界内部不得出现任何可兑货币的流通",
+  "FIN-100-013 不得动用、混同、垫付用户资金",
+  "FIN-100-014 不得对外宣传可兑换／可升值／有收益",
+  "FIN-100-021 不得形成资金池",
+  "FIN-100 §3.3 四个动作禁令",
+  "⭐ **额度不得由实现方单方制定**（承 `FIN-100-011`）；必须有**外部依据**",
+  "⭐ **单笔上限不足以构成约束**；必须同时有**频次与累计**上限"
+ ],
+ "_status": "⭐ **本件所有阈值均为**待裁****（`T1`／`T2`）。原写的 `1 倍`／`20 倍`**无外部依据，已撤**。**裁定前，本件不得用于对外声明已有分层能力。**",
+ "_basis": [
+  "⭐ **持牌方的合规规则**：`KYC-KYT` 免检额度由**持牌方**定，非我方定",
+  "**支付网络惯例**：免密／免签小额门槛为**行业既成事实**，我方**只公布**（承 `FIN-100-011`）",
+  "**监管的单笔申报线／现金门槛**：采用我方市场所在法域的现成线",
+  "⭐ **频次与累计**：单笔上限**不足以**构成约束；必须同时设**频次上限**与**累计上限**"
+ ],
+ "open_thresholds": {
+  "T1_micro_max_unit_cost_times": {
+   "value": null,
+   "status": "待裁",
+   "candidates": [
+    "持牌方免检额度折算为单位成本倍数",
+    "支付网络免密小额门槛",
+    "监管单笔申报线"
+   ]
+  },
+  "T2_normal_max_unit_cost_times": {
+   "value": null,
+   "status": "待裁",
+   "candidates": [
+    "持牌方标准客户层门槛"
+   ]
+  },
+  "F1_micro_max_per_day": {
+   "value": null,
+   "status": "待裁",
+   "candidates": [
+    "频次上限：每日最大笔数"
+   ]
+  },
+  "A1_micro_max_per_day_unit_cost": {
+   "value": null,
+   "status": "待裁",
+   "candidates": [
+    "累计上限：每日最大额度（单位成本倍数）"
+   ]
+  }
+ },
+ "_header": {
+  "编号": "PHAROS-FIN-102-V1.0",
+  "名称": "额度分层与通道（四档）",
+  "上位": "PHAROS-FIN-100-V1.0",
+  "状态": "草案",
+  "批准人": "协议维护者",
+  "日期": "2026-10-11",
+  "持有方": "协议维护者"
+ },
+ "_est_note": "⭐ **`T1`／`T2`／`F1`／`A1` 是**待裁参数**，**不是未取数**：参数已定义，**数值待裁**；**裁定前不得对外声明分层已运行**。"
+}

@@ -1,3 +1,46 @@
+## 2026.11 - admission table, amount bands, operational policies
+
+Specification text unchanged. One layer file changed. No judgement criteria changed.
+
+Added (protocol side):
+- `spec/stablecoin-admission.json` - the first admission gate is now decided by an
+  externally recorded table with four dimensions (licence type, jurisdiction,
+  reserve attestation, redemption party), three profiles, and two hard floors
+  (licence type may not be `none`; redemption may not be `third_party`). The table
+  is explicitly **not** a statement that any asset is compliant.
+- `spec/amount-layering.json` - four bands (`micro`, `normal`, `large`, `offramp`)
+  mapping each band to an admission profile and a settlement route, with the
+  existing prohibitions copied in verbatim.
+
+Added (operational policy, repository root):
+- `POLICY-STABLECOIN-LIST.md` - the concrete token list lives here, not in the
+  protocol. All four candidate entries are marked `accepted: no` and `unverified`;
+  a blank field stays blank. Reasons: token additions are operational policy and
+  must not force a protocol refreeze.
+- `POLICY-AMOUNT-BANDS.md` - plain-language companion explaining the bands, why a
+  single-transaction ceiling is not a control, and where a threshold may come from.
+
+Changed (layer file):
+- `spec/layers/PHAROS-FIN-100-...md` - `FIN-100-023` added: the first gate is
+  decided by the external admission table, and the table carries no compliance
+  claim. `FIN-100-024` added: per-task amount bands, sharpening the existing
+  `FIN-100-052` from cash-out to ordinary deliveries. It changes only which
+  profile applies and which route is used. The second gate is untouched, word for
+  word.
+
+Withdrawn:
+- Two threshold values (a factor of 1 and a factor of 20) were previously written
+  into the machine-readable file with no external basis. They have been withdrawn
+  and replaced by named pending parameters `T1`, `T2`, `F1`, `A1`. Until they are
+  decided, the banding must not be described as in operation.
+
+Rationale: `FIN-100-011` forbids the implementing party from setting a rate
+unilaterally, and a per-transaction ceiling without a frequency and a cumulative
+limit controls nothing. Both points are now recorded in the file itself.
+
+Verification impact: `CORE-001-V1.2.md` is unchanged, so its hash and all published
+vectors and proofs remain valid. The layer set hash is recomputed at build time.
+
 ## Unreleased — external-interface and legal minimum
 
 No specification version bump. No judgement criteria changed.

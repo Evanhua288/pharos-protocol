@@ -1,0 +1,133 @@
+{
+ "_note": "第一闸（发行方资质）的**可配置维度与当前档**。不改 `CORE-001` 正文。",
+ "_rule": "本件只说“我方**接受哪一档**”，不说“该资产**合规**”。合规与否由监管定义，非我方所能声明。",
+ "gate": "FIN-100 §3.1 第一闸",
+ "dimensions": [
+  {
+   "id": "license_type",
+   "name": "牌照类型",
+   "levels": [
+    {
+     "id": "bank",
+     "desc": "银行或等同牌照",
+     "strict": true
+    },
+    {
+     "id": "payment",
+     "desc": "支付机构牌照（如 ADGM 支付类、欧盟 EMI）",
+     "strict": true
+    },
+    {
+     "id": "msb_mtl",
+     "desc": "注册类货币服务牌照（MSB／MTL 等）",
+     "strict": false
+    },
+    {
+     "id": "none",
+     "desc": "无牌照",
+     "strict": false
+    }
+   ]
+  },
+  {
+   "id": "jurisdiction",
+   "name": "法域",
+   "levels": [
+    {
+     "id": "admitted",
+     "desc": "属于我方市场准入法域",
+     "strict": true
+    },
+    {
+     "id": "major_other",
+     "desc": "非市场准入但为主要金融法域",
+     "strict": false
+    },
+    {
+     "id": "unknown",
+     "desc": "不可查",
+     "strict": false
+    }
+   ]
+  },
+  {
+   "id": "reserve_attestation",
+   "name": "储备鉴证",
+   "levels": [
+    {
+     "id": "audited_1to1",
+     "desc": "1:1 且有**独立审计**",
+     "strict": true
+    },
+    {
+     "id": "attested_monthly",
+     "desc": "服务商出具**月度鉴证**",
+     "strict": false
+    },
+    {
+     "id": "attested_less",
+     "desc": "鉴证频率低于月度或无鉴证",
+     "strict": false
+    }
+   ]
+  },
+  {
+   "id": "redemption",
+   "name": "兑付主体",
+   "levels": [
+    {
+     "id": "issuer_licensed",
+     "desc": "发行方本体持牌兑付",
+     "strict": true
+    },
+    {
+     "id": "issuer_unlicensed",
+     "desc": "发行方本体无牌照",
+     "strict": false
+    },
+    {
+     "id": "third_party",
+     "desc": "由第三方承接兑付",
+     "strict": false
+    }
+   ]
+  }
+ ],
+ "profiles": [
+  {
+   "id": "strict",
+   "desc": "三项均取 strict 档",
+   "use": "大额与出金"
+  },
+  {
+   "id": "standard",
+   "desc": "license_type 取 payment 或更优；reserve 取月度鉴证或更优；jurisdiction 取 major_other 或更优",
+   "use": "白名单可选档"
+  },
+  {
+   "id": "broad",
+   "desc": "接受事实标准（如 MSB／MTL），但**不接受无牌照**",
+   "use": "小额 A2A"
+  }
+ ],
+ "current_profile": "broad",
+ "hard_floor": [
+  "license_type 不得为 none",
+  "redemption 不得为 third_party"
+ ],
+ "whitelist_note": "**四条均为「候选」，非「已接受」**：`accepted_by_us` 全部为 `false`，`verification_status` 全部为「未证」。空值与「未证」**不是疏忽，是结果**。",
+ "_evidence_note": "证据来源为**公开报道与发行方自述**，已标注链接；**凡我方未独立核实者，一律留空并标「未证」**；`accepted_by_us` 全部为 `false`，**待逐条核验后另出接受决定**。",
+ "_as_of": "未取数",
+ "_moved": "**具体币种白名单已搬出本件**，改列包根政策件 `POLICY-STABLECOIN-LIST.md`。**理由**：币种增删属**经营层政策**，**不应触发协议重冻结**。",
+ "_list_ref": "POLICY-STABLECOIN-LIST.md",
+ "_header": {
+  "编号": "PHAROS-FIN-101-V1.0",
+  "名称": "稳定币准入表（四维度）",
+  "上位": "PHAROS-FIN-100-V1.0",
+  "状态": "草案",
+  "批准人": "协议维护者",
+  "日期": "2026-10-11",
+  "持有方": "协议维护者"
+ },
+ "_est_note": "⭐ **本件阈值均为**待裁参数**，**不是未取数**：**参数本身已定义（名称与含义），只是**数值尚未裁定****。按 `000-070-001`，**未裁定数值不得作为实测值引用**。"
+}
