@@ -1343,7 +1343,7 @@ score · grade · level · percentile · rank · composite · weight · points �
 | **层级规范** | `spec/layers/`（**38 件**，逐件件名见 `spec/layers/件名清单.md`；**多为草案，判据与向量为准**） | **现行** |
 | **机读件** | `spec/clauses.json`／`spec/alias-map.json`／`spec/algorithm-registry.json`／`spec/anchor-set.json`／`spec/anchor-migration-4state.json`／`spec/anchor-exclusion-whitelist.json`／`spec/digest-set.json`／`spec/domain-tags.json`／`spec/extension-schema.json`／`spec/freeze-registry.json`／`spec/pending-five.json`／`spec/tree-head.json`／`spec/xref-confirmed.json` | **现行** |
 | **测试数据与向量** | `vectors/`（**54 件**：直接层 30／`jcs-official/` 13／`negative/` 8／`ledger-10/` 2）；**真值 `vectors/EXPECTED.md`** | **现行** |
-| **工具** | `tools/`（**62 件** = **61 个 `.py` 加 `char_inventory.txt` = **61 个 `.py` 加 `char_inventory.txt` = **61 个 `.py` 加 `char_inventory.txt` = **61 个 `.py` 加 `char_inventory.txt` = **61 个 `.py` 加 `char_inventory.txt` = **61 个 `.py` 加 `char_inventory.txt` = **61 个 `.py` 加 `char_inventory.txt` = **61 个 `.py` 加 `char_inventory.txt`**）；检查器如 `check_integrity`／`check_vectors`／`check_linenos`／`check_fields`／`check_scenarios`／`check_outsider`／`check_anchor_whitelist`／`check_freeze_extension`／`audit_extra`／`error_resolve`／`pharos_verify`／`sign_sums` | **现行** |
+| **工具** | `tools/`（**62 件** = **61 个 `.py` 加 `char_inventory.txt`**）；检查器如 `check_integrity`／`check_vectors`／`check_linenos`／`check_fields`／`check_scenarios`／`check_outsider`／`check_anchor_whitelist`／`check_freeze_extension`／`audit_extra`／`error_resolve`／`pharos_verify`／`sign_sums` | **现行** |
 | **配套件** | `配套件/`（**9 件**），见 `配套件/README.md` | **现行（乙档·治理规则）** |
 | **可据条款清单** | `可据条款清单.md`（**承 `152`／`163`**） | **现行（乙档·治理规则）** |
 | **层件集合清单** | `LAYERS.sha256`（**`spec/layers/` 逐件 ⊕ 集合哈希**；**用于看住层件变化**） | **现行** |
