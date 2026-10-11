@@ -26,3 +26,5 @@ spec/_anchor_ledger.json
 _signing/
 *.pem
 *.key
+# Local experiment backup (not source, not for release)
+.bak-layers-headers/

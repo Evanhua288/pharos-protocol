@@ -87,8 +87,14 @@ def _subproof(m, leaves, b=True):
     if m <= 0 or m > n:
         return [], False
     k = _k(n)
-    if b and m == k:
-        return [mth(leaves)], True          # \u65e7\u6811\u6070\u4e3a\u5de6\u5b50\u6811\uff1a\u8bc1\u660e\u5373\u65e7\u6839
+    # ⭐ V1.84 修：**删除旧特例 `b and m == k`**。
+    #   RFC 6962 §2.1.2 的 `SUBPROOF` **只有四条规则**（两个基例＋两个递归例），
+    #   **没有 `b 且 m == k` 特例**；`m == k` 落进下面的 `m <= k` 分支，
+    #   其子调用恰为基例 `m == n, b = true`（返回 `{}`）⇒ 本层只追加 `MTH(D[k:n])`。
+    #   实测（独立裁判，RFC §2.1.3 工作示例逐字）：
+    #   `PROOF(3,D[7]) = [c,d,g,l]`（4）、**`PROOF(4,D[7]) = [l]`（1）**、`PROOF(6,D[7]) = [i,j,k]`（3）。
+    #   旧版返回整段根 `MTH(leaves)`：**计数碰巧为 1，但节点值错**；
+    #   中间修法（返回 `[]`）**计数错**。两者均已废。
     if m <= k:
         sub, ok = _subproof(m, leaves[:k], b)
         return sub + [mth(leaves[k:])], ok

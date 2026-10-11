@@ -1,4 +1,4 @@
-## 2026.11 - admission table, amount bands, operational policies
+## 2026.10 - admission table, amount bands, operational policies
 
 Specification text unchanged. One layer file changed. No judgement criteria changed.
 
