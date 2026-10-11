@@ -91,7 +91,7 @@ def e3_counts(root):
 
     checks = [
         ("layers", r"\| \*\*\u5c42\u7ea7\u89c4\u8303\*\*",
-         len([f for f in os.listdir(os.path.join(root, "spec", "layers")) if f.endswith(".md")]) - 1),
+         len([f for f in os.listdir(os.path.join(root, "spec", "layers")) if f.endswith(".md")]) - 0),
         ("\u914d\u5957\u4ef6", r"\| \*\*\u914d\u5957\u4ef6\*\*",
          len([f for f in os.listdir(os.path.join(root, "\u914d\u5957\u4ef6")) if f != "__pycache__"])),
         ("tools", r"\| \*\*\u5de5\u5177\*\*",

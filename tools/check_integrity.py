@@ -238,10 +238,19 @@ def main(root):
     wl_n = 0
     if os.path.exists(wl_p):
         wl_txt = io.open(wl_p, encoding="utf-8-sig", errors="replace").read()
-        # 【发】段：`| `path` | **发** | ... |`
+        # 【发】段：兼容两种写法 ——
+        #   ① 旧：`| `path` | **发** | … |`（带【发】列）
+        #   ② 新（V1.82）：段落内逐行 `| n | `path` |`（路径带反引号，无【发】列）
         _ship_sec = wl_txt.split("## \u4e00\u3001\u3010\u53d1\u3011")[-1].split("## \u4e8c\u3001")[0] \
             if "## \u4e00\u3001\u3010\u53d1\u3011" in wl_txt else ""
         wl_set = set(re.findall(r"\| `([^`]+)` \| \*\*\u53d1\*\* \|", _ship_sec))
+        if not wl_set:
+            for _ln in _ship_sec.split("\n"):
+                _s = _ln.strip()
+                if _s.startswith("|") and _s.count("`") >= 2:
+                    _r = _s.split("`", 2)[1].strip()
+                    if _r:
+                        wl_set.add(_r)
         wl_n = len(wl_set)
         # 两清单自身**不自列**（设计如此），故比对前先剔除
         if (wl_set - SELF) != (set(sums) - SELF):

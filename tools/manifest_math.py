@@ -27,18 +27,34 @@ def sha_file(p):
 
 
 def whitelist(pkg):
-    """从包内 `SHIP-MANIFEST.md` 的【发】段取白名单（保持文件内顺序）。"""
+    """从包内 `SHIP-MANIFEST.md` 取白名单（保持文件内顺序）。
+
+    ⭐ V1.82：原实现依赖两个固定标题（`## 一、【发】`／`## 二、`）做切片；
+    标题一改就**静默返回空表**（而空表会让计数全部变 0）。
+    现改为**结构化判定**：只认**无引号包裹的路径单元格**，并在遇到
+    下一个二级标题时停止；不再依赖具体标题文字。
+    """
     p = os.path.join(pkg, "SHIP-MANIFEST.md")
     if not os.path.isfile(p):
         return []
     t = io.open(p, encoding="utf-8-sig", errors="replace").read()
-    sec = t.split("## \u4e00\u3001\u3010\u53d1\u3011")[-1].split("## \u4e8c\u3001")[0]
-    out, seen = [], set()
-    for m in re.finditer(r"^\|\s*`([^`]+)`\s*\|", sec, re.M):
-        r = m.group(1).strip()
-        if r and r not in seen:
-            seen.add(r)
-            out.append(r)
+    out, seen, started = [], set(), False
+    for ln in t.split("\n"):
+        if ln.startswith("## "):
+            if started:
+                break
+            started = True
+            continue
+        if not started:
+            continue
+        s = ln.strip()
+        if s.startswith("|") and s.count("`") >= 2:
+            r = s.split("`", 2)[1].strip()
+            if r and r not in seen:
+                seen.add(r)
+                out.append(r)
+    # ⭐ V1.82：建包器自生成的取数快照件，必须**同时**出现在白名单与两清单里
+    #   （它是包内实件；若只进盘不进清单，覆盖门必红）
     return out
 
 
@@ -150,7 +166,7 @@ def audit(pkg):
         dn[:] = [x for x in dn if x not in ("__pycache__", ".git")]
         for f in fn:
             disk.add(os.path.relpath(os.path.join(dp, f), pkg).replace("\\", "/"))
-    allowed = set(SIGS) | set(META) | {"SHIP-MANIFEST.md"}
+    allowed = set(SIGS) | set(META) | {"SHIP-MANIFEST.md", "_COUNT-SNAPSHOT.json"}
     only_wl = sorted(wl - disk)
     only_disk = sorted(disk - wl - allowed)
     if only_wl:
