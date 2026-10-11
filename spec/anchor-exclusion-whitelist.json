@@ -1,0 +1,46 @@
+{
+ "_note": "字段白名单式锚剔除清单：把口头“宽／严正则”变成**可逐字节对拍**的规则。",
+ "_origin": "第二实现方 2026-10-10 回函建议②（消解 `contentAnchor` 口径裂缝）。",
+ "_rule": "**A1 只用白名单内字段算锚**（白名单外**一律剔除**）；**A2 白名单按字段**路径**精确匹配**（不用正则）；**A3 剔除后序列化用 JCS**（键排序、无空白）；**A4 锚 = SHA-256(0x12 ‖ canonical(剔除后字典))**；**A5 白名单变更需 60 天冻结期**（承条 `223`）。",
+ "domainTag": "0x12",
+ "contentAnchor": {
+  "include": [
+   "entryId",
+   "entryVersion",
+   "taskId",
+   "clientRef",
+   "providerRef",
+   "agentRef",
+   "taskType",
+   "payloadDigest",
+   "deliverableRef",
+   "acceptCriteria",
+   "clauseRef",
+   "unitCost",
+   "units",
+   "markup",
+   "feeAmount",
+   "railMetering",
+   "railCurrency",
+   "railRight",
+   "prevEntryHash",
+   "entryHash"
+  ],
+  "exclude": [
+   "confirmOurs",
+   "confirmTheirs",
+   "confirmAt",
+   "riskFlag",
+   "supersedeOf",
+   "supersededBy",
+   "frozenUntil",
+   "extDigest",
+   "signatureSet",
+   "ext",
+   "checkableRef"
+  ],
+  "excludeWhy": "剔除项均为**时间、签名、状态与扩展**；它们会随操作变化，**不应进锚**"
+ },
+ "canonical": "JCS（RFC 8785）",
+ "frozenUntil": "2026-12-09"
+}

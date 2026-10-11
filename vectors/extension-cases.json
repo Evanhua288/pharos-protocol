@@ -1,0 +1,69 @@
+{
+  "_note": "`ext`（第 31 字段）样例与断言（**承 `extension-schema.json`**）。",
+  "_spec_refs": [
+    "CORE-001-221",
+    "CORE-001-222"
+  ],
+  "cases": [
+    {
+      "id": "ext-未知键原值保留",
+      "kind": "unknown_key_kept",
+      "desc": "条目带 `ext`，其中含未定义键 `vendorX`（对象值）",
+      "entry": {
+        "schemaId": "https://pharos.local/schema/task-1.json",
+        "schemaDialect": "pharos-core-v1",
+        "ext": {
+          "vendorX": {
+            "a": 1,
+            "中文": "值"
+          }
+        }
+      },
+      "expect": [
+        "OK"
+      ],
+      "why": "E3：未知 `ext` 键**原值保留不报错**"
+    },
+    {
+      "id": "ext-缺-schemaId",
+      "kind": "missing_schema_id",
+      "entry": {
+        "schemaDialect": "pharos-core-v1",
+        "ext": {
+          "x": 1
+        }
+      },
+      "expect": [
+        "FAIL"
+      ],
+      "why": "E2：`ext` 必须带 `schemaId`"
+    },
+    {
+      "id": "ext-缺-schemaDialect",
+      "kind": "missing_dialect",
+      "entry": {
+        "schemaId": "https://pharos.local/schema/x.json",
+        "ext": {
+          "x": 1
+        }
+      },
+      "expect": [
+        "FAIL"
+      ],
+      "why": "E2：必须带 `schemaDialect`"
+    },
+    {
+      "id": "ext-空对象合法",
+      "kind": "empty_ext_ok",
+      "entry": {
+        "schemaId": "https://pharos.local/schema/x.json",
+        "schemaDialect": "pharos-core-v1",
+        "ext": {}
+      },
+      "expect": [
+        "OK"
+      ],
+      "why": "空 `ext` 合法（不强制非空）"
+    }
+  ]
+}

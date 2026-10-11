@@ -1,0 +1,21 @@
+{
+ "_note": "`ext` 字段外挂与**机器契约**（**第 31 字段**）。",
+ "_rule": "**E1 必填 30 字段不变**；扩展一律进 `ext`；**E2 `ext` 必须带 `schemaId`（URI）与 `schemaDialect`**；**E3 未知 `ext` 键必须**原值保留不报错**；**E4 新增字段号必须登记**；废弃号**永不复用**（墓碑）；**E5 `ext` 进哈希输入**（**否则签名可被抗辩**）。",
+ "field": {
+  "ext": "object",
+  "schemaId": "URI",
+  "schemaDialect": "string"
+ },
+ "registry": {
+  "rangeReserved": "0x0000-0x00FF core | 0x0100-0x7FFF public | 0x8000-0x8FFF experimental | 0xF000-0xFFFF private",
+  "neverReuse": true
+ },
+ "metaSchema": {
+  "$id": "https://pharos.local/schema/entry-31.json",
+  "$vocabulary": {
+   "core": true,
+   "ext": true
+  },
+  "unevaluatedProperties": false
+ }
+}

@@ -1,0 +1,82 @@
+{
+  "_license": "SPDX-License-Identifier: Apache-2.0 （向量可自由复用；不得改 `expect`；对拍须留痕；署源）",
+  "_note": "防绕行用例组（`PH-REV-001-11`）。**不改已发向量**（承 `CORE-001-013`）；本组为**新增**，用于验证「同一报文多类并存时**按序首报、余码并列、至多两码**」是否真执行。",
+  "_spec_refs": [
+    "CORE-001-155",
+    "CORE-001-195",
+    "CORE-001-209",
+    "CORE-001-169",
+    "CORE-001-215",
+    "PA-PG-032"
+  ],
+  "cases": [
+    {
+      "id": "绕行-三轨越界",
+      "kind": "rail_mix",
+      "desc": "三轨混用（`rail` 与 `currency` 非法组合，例 `currency=XPH`），无其他类并存",
+      "expect": [
+        "E05"
+      ],
+      "expect_reason": [
+        "RAIL_MIX"
+      ],
+      "why": "155；209 ②：`E05` 四值之 `RAIL_MIX`"
+    },
+    {
+      "id": "绕行-净额为负",
+      "kind": "negative_net",
+      "desc": "同一 `taskId` 下冲正后净额为负",
+      "expect": [
+        "E05"
+      ],
+      "expect_reason": [
+        "NEGATIVE_NET"
+      ],
+      "why": "195 ②b；209 ②：`NEGATIVE_NET`"
+    },
+    {
+      "id": "绕行-冲正超限",
+      "kind": "reversal_over_limit",
+      "desc": "冲正累计超`185` 上限",
+      "expect": [
+        "E05"
+      ],
+      "expect_reason": [
+        "REVERSAL_OVER_LIMIT"
+      ],
+      "why": "195 ①；209 ②：`REVERSAL_OVER_LIMIT`"
+    },
+    {
+      "id": "绕行-生物特征",
+      "kind": "biometric",
+      "desc": "报文含生物特征类字段",
+      "expect": [
+        "E05"
+      ],
+      "expect_reason": [
+        "BIOMETRIC"
+      ],
+      "why": "PA-PG-032；209 ②：`BIOMETRIC`"
+    },
+    {
+      "id": "绕行-三轨越界兼时效超期",
+      "kind": "rail_mix_plus_expired",
+      "desc": "三轨越界（`E05`）**与**时效超期（`E10`）并存",
+      "expect": [
+        "E10",
+        "E05"
+      ],
+      "why": "§6.1 判定顺序：`E10` → … → `E05`；**按序首报、余码并列，至多两码** ⇒ 首报 `E10`、并列 `E05`"
+    },
+    {
+      "id": "绕行-超期兼真重复",
+      "kind": "expired_plus_true_dup",
+      "desc": "时效超期（`E10`）**与**真重复（`E01`/`TRUE_DUP`）并存",
+      "expect": [
+        "E10",
+        "E01"
+      ],
+      "why": "§6.1：`E10` 先于 `E01`；215 ①：真重复报 `E01`（`TRUE_DUP`）"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.tmp
+
+# Internal artefacts that must never be tracked (see POLICY-RELEASE-STEPS C4)
+*.bak
+*.orig
+*.rej
+
+# Release-time generated files: these belong to a package snapshot, not to source
+SHA256SUMS
+SHA256SUMS.sig
+SHA256SUMS.pub
+MANIFEST.sha256
+_FROZEN
+SELF-CHECK.txt
+VECTORS.sha256
+SHIP-MANIFEST.md
+_COUNT-SNAPSHOT.json
+spec/release-index.json
+spec/_anchor_ledger.json
+
+# Signing material
+_signing/
+*.pem
+*.key

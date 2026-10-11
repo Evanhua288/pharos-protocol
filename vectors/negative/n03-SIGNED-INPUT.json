@@ -1,0 +1,9 @@
+{
+  "did": "did:key:z7QFDLLrXEV5onOcWBB9NIZIOYMLSsqgij5ddo8ekgKujAA",
+  "publicKey": "7QFDLLrXEV5onOcWBB9NIZIOYMLSsqgij5ddo8ekgKujAA",
+  "createdAt": "2026-10-07T00:00:00Z",
+  "issuer": "did:key:z7QFDLLrXEV5onOcWBB9NIZIOYMLSsqgij5ddo8ekgKujAA",
+  "signSuite": "Ed25519",
+  "issuedAt": "2026-10-07T00:00:00Z",
+  "previousKeys": []
+}

@@ -1,0 +1,50 @@
+{
+ "_note": "锚级自描述信封（**引条不引版** 的骨架层）。",
+ "_rule": "**R1 `primary` 恒为 `sha-256`**（旧客户端与旧门继续工作）；**R2 身份比较必须三元组全等**（`algId`,`lengthBits`,`digest`）；**R3 `secondary` 含至少一个**异族锚**方可标 `hardened`；**R4 截断必须出现在 `algName` 里**；**R5 不得使用 `disallowed` 算法**；**R6 `algoSetDigest` 必须入整件锚与正文锚的哈希输入**。",
+ "envelope": {
+  "algId": "指向 `algorithm-registry.json`",
+  "algName": "规范化名（含截断后缀）",
+  "lengthBits": "显式长度（不得隐含）",
+  "digest": "左起截断后的字节",
+  "purpose": "IDENTITY｜INTEGRITY｜ACCOUNTING｜INDEX_ONLY"
+ },
+ "set": {
+  "primary": "AnchorEnvelope",
+  "secondary": [
+   "AnchorEnvelope"
+  ],
+  "setDigest": "AnchorEnvelope"
+ },
+ "algoProfile": {
+  "algIds": [
+   "uint8"
+  ],
+  "minStrength": "uint16",
+  "downgradeMark": "uint8",
+  "preferredAlgId": "uint8"
+ },
+ "defaults": {
+  "primary": {
+   "algId": "0x01",
+   "algName": "sha-256",
+   "lengthBits": 256
+  },
+  "secondary": [
+   {
+    "algId": "0x03",
+    "algName": "sha3-256",
+    "lengthBits": 256
+   }
+  ],
+  "minStrength": 128,
+  "downgradeMark": 0,
+  "preferredAlgId": "0x01",
+  "strengthTier": "hardened"
+ },
+ "finalRule": {
+  "口径": "**对外基线以锚套件为准**：`final` 指向 `setDigest`；单值 `primary` 作兼容视图仍可用。",
+  "AF1": "**对外件引用基线时，应同时给出 `primary` 与 `setDigest`**（**旧引用仅给 `primary` 仍可验**）",
+  "AF2": "**发版必须将 `setDigest` 写入台账**（**与 `specHash` 并存**）",
+  "AF3": "**不得因升格而改变已发布的 `primary` 值**"
+ }
+}

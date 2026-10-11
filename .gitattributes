@@ -1,0 +1,21 @@
+# Normalize to LF on every platform so that byte hashes match everywhere.
+#
+# This repository's trust model is built on per-file SHA-256 and on detached
+# signatures over SHA256SUMS. A line-ending conversion during checkout would
+# change file bytes and therefore break every published hash. Line endings are
+# therefore fixed, not normalised per platform.
+* text=auto eol=lf
+
+# Binary material: never touched.
+*.png binary
+*.jpg binary
+*.sig binary
+*.pub binary
+
+# Generated at release time; never tracked.
+SHA256SUMS        export-ignore
+SHA256SUMS.sig    export-ignore
+SHA256SUMS.pub    export-ignore
+MANIFEST.sha256   export-ignore
+_FROZEN           export-ignore
+SELF-CHECK.txt    export-ignore

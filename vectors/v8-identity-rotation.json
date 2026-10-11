@@ -1,0 +1,15 @@
+{
+  "did": "did:key:z7QEP3xWeQbW3hgmJP-6cLMyQIVJrk5U7UVLVvRxtrQ7OhQ",
+  "publicKey": "7QEP3xWeQbW3hgmJP-6cLMyQIVJrk5U7UVLVvRxtrQ7OhQ",
+  "createdAt": "2026-10-07T00:00:00Z",
+  "issuer": "did:key:z7QEP3xWeQbW3hgmJP-6cLMyQIVJrk5U7UVLVvRxtrQ7OhQ",
+  "signSuite": "Ed25519",
+  "issuedAt": "2026-10-07T00:00:00Z",
+  "previousKeys": [
+    {
+      "publicKey": "7QHdgUP_YGSwwDtg5AL0lukr1s56jLeh4jbel2rQDm3CbQ",
+      "validFrom": "2025-01-01T00:00:00Z",
+      "validTo": "2026-10-01T00:00:00Z"
+    }
+  ]
+}

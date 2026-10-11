@@ -1,0 +1,47 @@
+{
+ "_note": "树头与证明接口参数（**只定接口，不改链**）。",
+ "_rule": "**H1 叶哈希 ＝ SHA-256(0x00 ‖ canonicalEntryBytes)**；**节点哈希 ＝ SHA-256(0x01 ‖ 左 ‖ 右)**；**H2 `MTH(D[n])` 的 k ＝ 小于 n 的最大 2 的幂**（**非满树形状由 n 唯一确定**）；**H3 `tileHeight` 固定 8**，**不在路径里暴露 H**；**H4 `minimumIndex` 单调不减且 ≤ 当前 `treeSize`**；**剪裁＝拒绝提供，不删数据**；**H5 跨算法对拍只比 `algoSetDigest` 与业务负荷**，**不得逐字节比 hash**。",
+ "primitives": [
+  "head()",
+  "prove(index)",
+  "proveConsistency(oldSize)",
+  "verify(proof, head)"
+ ],
+ "treeHead": {
+  "treeSize": "uint64",
+  "rootHash": "AnchorEnvelope",
+  "timestamp": "uint64",
+  "sigs": [
+   "{cosignerName, keyId, algoId, sig, timestamp}"
+  ],
+  "minimumIndex": "uint64"
+ },
+ "proof": {
+  "leafIndex": "uint64",
+  "leafHash": "AnchorEnvelope",
+  "path": [
+   "AnchorEnvelope"
+  ],
+  "treeSize": "uint64"
+ },
+ "consistency": {
+  "oldSize": "uint64",
+  "newSize": "uint64",
+  "hashes": [
+   "AnchorEnvelope"
+  ]
+ },
+ "tile": {
+  "tileHeight": 8,
+  "fullTileBytes": 8192,
+  "path": "tile/<L>/<N>",
+  "partialNotBackfilled": true,
+  "maxTilesPerProof": 3
+ },
+ "gates": [
+  "G15 inclusion",
+  "G16 consistency",
+  "G17 pruning",
+  "G18 algo-set"
+ ]
+}

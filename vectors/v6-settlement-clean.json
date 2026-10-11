@@ -1,0 +1,9 @@
+{
+  "settleId": "01920000-0000-7000-8000-000000000006",
+  "rail": "unit",
+  "amount": "1000000",
+  "currency": "XPH",
+  "taskId": "T-006",
+  "status": "settled",
+  "hash": "709d23c552aeef3f75ca2c3f2b4f60ae12780766215c855905575c1b7dfe323f"
+}

@@ -1,0 +1,14 @@
+{
+ "_note": "域分隔前缀统一表（**抗二阶前像**）。",
+ "_rule": "同一前缀**不得**用于两种语义；新增前缀**只能追加**，**不得改已用者**。",
+ "tags": {
+  "0x00": "leaf（叶哈希）",
+  "0x01": "node（内部节点）",
+  "0x10": "anchorEnvelope",
+  "0x11": "anchorSet",
+  "0x12": "clauseAnchor",
+  "0x13": "algoProfile（algoSetDigest）",
+  "0x14": "extension段（ext）",
+  "0x15": "aliasMap"
+ }
+}

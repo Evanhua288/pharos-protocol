@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/entries/{id}",
+      "returns": "LedgerEntry"
+    },
+    {
+      "method": "POST",
+      "path": "/entries",
+      "returns": "LedgerEntry"
+    },
+    {
+      "method": "POST",
+      "path": "/sync/request",
+      "returns": "SyncResponse"
+    },
+    {
+      "method": "POST",
+      "path": "/sync/dispute",
+      "returns": "Ack"
+    }
+  ]
+}

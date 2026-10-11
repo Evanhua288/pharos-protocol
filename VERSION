@@ -1,0 +1,18 @@
+# CORE-001 Protocol — declared versions
+
+# Specification version (semantic). Changes only by governance decision.
+SPEC_VERSION=0.9.0
+
+# Package release identifier (date-based, YYYY.MM).
+PACKAGE_RELEASE=2026.10
+
+# Internal working snapshot numbers are NOT listed here and MUST NOT be
+# cited in any external document.
+#
+# Compatibility promise: within one MAJOR version, published test vectors
+# and proofs remain valid forever; prior versions stay supported for at
+# least 24 months from the release of a new MAJOR.
+# Source repository and release page (placeholders: replace OWNER and REPO)
+REPOSITORY=https://github.com/Evanhua288/pharos-protocol
+RELEASE_PAGE=https://github.com/Evanhua288/pharos-protocol/releases/latest
+SECURITY_CONTACT=evanhua288@gmail.com

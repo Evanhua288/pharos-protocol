@@ -1,0 +1,23 @@
+{
+  "_sample": "n05-sort-nonbmp",
+  "_trigger": "同一账本内两条目 when 相同，entryId 分别含 U+E000（BMP）与 U+1F600（非 BMP）",
+  "_expected": "按 UTF-8 字节序：U+E000（EE 80 80）排在 U+1F600（F0 9F 98 80）之前",
+  "_error_code": null,
+  "_counted": false,
+  "entries": [
+    {
+      "entryId": "01920000-0000-7000-8000-0000000000",
+      "when": "2026-10-07T00:00:00Z",
+      "subject": "did:key:z7QEP3xWeQbW3hgmJP-6cLMyQIVJrk5U7UVLVvRxtrQ7OhQ",
+      "what": "non-BMP ordering probe A (U+E000)",
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "entryId": "01920000-0000-7000-8000-0000000000😀",
+      "when": "2026-10-07T00:00:00Z",
+      "subject": "did:key:z7QEP3xWeQbW3hgmJP-6cLMyQIVJrk5U7UVLVvRxtrQ7OhQ",
+      "what": "non-BMP ordering probe B (U+1F600)",
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ]
+}

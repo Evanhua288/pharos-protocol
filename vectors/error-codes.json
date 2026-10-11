@@ -1,0 +1,158 @@
+{
+  "_license": "SPDX-License-Identifier: Apache-2.0 （向量可自由复用；不得改 `expect`；对拍须留痕；署源）",
+  "_note": "错误码对照向量（V1.24）。判据：tools/error_resolve.py。期望值依 CORE-001-155 §6.1 判定顺序（E10 → E01/E02 → E03/E04/E11 → E05/E06 → E07/E08/E09）与 CORE-001-167 归码映射。 ⏪ **V1.36 声明（应对攻 D-3）**：**本文件**不是对拍真值****——它只能证“与 `tools/error_resolve.py` 规则一致”，**不能证“与 `spec` 一致”**；**每条 `expect` 的依据条号见 `why`**；**若 `why` 空 ⇒ 该条不作数**。",
+  "_spec_refs": [
+    "CORE-001-155",
+    "CORE-001-156",
+    "CORE-001-157",
+    "CORE-001-167",
+    "CORE-001-191"
+  ],
+  "cases": [
+    {
+      "id": "e10-边界-15分整",
+      "kind": "stale_message",
+      "age_min": 15,
+      "expect": [],
+      "why": "157：15 分钟内为有效，不报码"
+    },
+    {
+      "id": "e10-超期-15分零1秒",
+      "kind": "stale_message",
+      "age_min": 16,
+      "expect": [
+        "E10"
+      ],
+      "why": "157：超过 15 分钟 ⇒ E10"
+    },
+    {
+      "id": "e10-超期-且格式错",
+      "kind": "stale_message",
+      "age_min": 16,
+      "also_format_error": true,
+      "expect": [
+        "E10",
+        "E01"
+      ],
+      "why": "155：**时效类（`E10`）先于字节类（`E01`）**；**但两类**并存时可并列**（同 `e11-与-e05-并存` 口径）"
+    },
+    {
+      "id": "e11-边界-60分整",
+      "kind": "signature_window",
+      "expect": [],
+      "why": "012-B：旧签名仅在 `[validFrom, validTo)` 内可验；窗口外报 `E11`",
+      "validFrom": "2026-10-01T00:00:00Z",
+      "validTo": "2026-10-01T01:00:00Z",
+      "at": "2026-10-01T00:59:00Z"
+    },
+    {
+      "id": "e11-超窗-61分",
+      "kind": "signature_window",
+      "expect": [
+        "E11"
+      ],
+      "why": "012-B：旧签名仅在 `[validFrom, validTo)` 内可验；窗口外报 `E11`",
+      "validFrom": "2026-10-01T00:00:00Z",
+      "validTo": "2026-10-01T01:00:00Z",
+      "at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "e11-与-e05-并存",
+      "kind": "signature_window",
+      "also_rail_currency_conflict": true,
+      "expect": [
+        "E11",
+        "E05"
+      ],
+      "why": "012-B：旧签名仅在 `[validFrom, validTo)` 内可验；窗口外报 `E11`",
+      "validFrom": "2026-10-01T00:00:00Z",
+      "validTo": "2026-10-01T01:00:00Z",
+      "at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "e01-字节层-金额正则",
+      "kind": "bad_format",
+      "layer": "bytes",
+      "field": "amount",
+      "expect": [
+        "E01"
+      ],
+      "why": "167：字节层归 E01"
+    },
+    {
+      "id": "e01-字节层-UUIDv7",
+      "kind": "bad_format",
+      "layer": "bytes",
+      "field": "entryId",
+      "expect": [
+        "E01"
+      ],
+      "why": "167"
+    },
+    {
+      "id": "e06-字段层-枚举越界",
+      "kind": "bad_format",
+      "layer": "field",
+      "field": "status",
+      "expect": [
+        "E06"
+      ],
+      "why": "167：字段层归 E06"
+    },
+    {
+      "id": "e06-字段层-必填缺失",
+      "kind": "bad_format",
+      "layer": "field",
+      "field": "currency",
+      "expect": [
+        "E06"
+      ],
+      "why": "167"
+    },
+    {
+      "id": "e06-禁止字段",
+      "kind": "forbidden_field",
+      "text_face": false,
+      "expect": [
+        "E06"
+      ],
+      "why": "155：禁用字段先于 E05 之外"
+    },
+    {
+      "id": "e05-文本面-三轨混同",
+      "kind": "forbidden_field",
+      "text_face": true,
+      "expect": [
+        "E05"
+      ],
+      "why": "155：E05 触发面含 what 文本"
+    },
+    {
+      "id": "e01-两键全同",
+      "kind": "dup_entry",
+      "expect": [
+        "E01"
+      ],
+      "why": "191：when 与 entryId 全同 ⇒ 拒收报 E01"
+    },
+    {
+      "id": "未知键-不报码",
+      "kind": "unknown_key",
+      "expect": [],
+      "why": "158/159：未知键忽略并原值回显，不报码"
+    },
+    {
+      "id": "e11与-e05-并存",
+      "kind": "signature_window",
+      "validFrom": "2026-10-01T00:00:00Z",
+      "validTo": "2026-10-01T01:00:00Z",
+      "at": "2026-10-01T09:00:00Z",
+      "also_rail_currency_conflict": true,
+      "expect": [
+        "E11",
+        "E05"
+      ],
+      "why": "155：`E11` 序号在 `E05` 之前，两类并存时只报首个为 `E11`"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "_license": "SPDX-License-Identifier: Apache-2.0 （向量可自由复用；不得改 `expect`；对拍须留痕；署源）",
+  "_note": "`068-A` 与 `195` 的交互用例（`PH-REV-001-02` 落条 `068-A`）。",
+  "_spec_refs": [
+    "CORE-001-068-A",
+    "CORE-001-195",
+    "CORE-001-066",
+    "CORE-001-067",
+    "CORE-001-208"
+  ],
+  "cases": [
+    {
+      "id": "重放-窗内重复报同果",
+      "kind": "dup_in_window_idempotent",
+      "desc": "同一报文在 15 分钟窗内**重复到达**（字节同）",
+      "expect": [
+        "OK_SAME_RESULT"
+      ],
+      "why": "068-A ①；`066`：返回同一结果"
+    },
+    {
+      "id": "重放-重发不改字节",
+      "kind": "retry_same_bytes",
+      "desc": "传输失败后**重发**，但**字节未变**",
+      "expect": [
+        "OK_SAME_RESULT"
+      ],
+      "why": "068-A ①；`218` ①：重试不改字节"
+    },
+    {
+      "id": "重放-冲正去重只留首次",
+      "kind": "reversal_first_only",
+      "desc": "同一 `settleId` 且同一 `refEntryId` 的**冲正重复到达**",
+      "expect": [
+        "OK_FIRST_ONLY"
+      ],
+      "why": "195 ①：走 `064` 去重（只留首次）"
+    },
+    {
+      "id": "重放-超窗与冲正并存",
+      "kind": "expired_plus_reversal",
+      "desc": "**超窗**（`E10`）与**冲正超限**（`E05`）并存",
+      "expect": [
+        "E10",
+        "E05"
+      ],
+      "why": "`220`：`E10` 全局最优先 ⇒ 首报 `E10`、并列 `E05`"
+    },
+    {
+      "id": "重放-216时效与冲正不得互抵",
+      "kind": "no_mutual_offset",
+      "desc": "以“**已超窗**”为由**免除冲正累计上限**",
+      "expect": [
+        "VIOLATION"
+      ],
+      "why": "068-A ②：抵消由**三件共同**承担，**不得以一项免除另一项**"
+    }
+  ]
+}

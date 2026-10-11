@@ -1,0 +1,41 @@
+{
+  "_note": "`setDigest` 与 `DigestSet` 的**反向用例**：改算法名或改值，摘要必变。",
+  "_spec_refs": [
+    "CORE-001-221",
+    "CORE-001-222"
+  ],
+  "cases": [
+    {
+      "id": "改第二算法名则摘要变",
+      "kind": "secondary_alg_changes_digest",
+      "primary": "aa",
+      "secondary_alg": "sha3-256",
+      "secondary_alg2": "sha3-512",
+      "expect": [
+        "DIGEST_DIFFERS"
+      ],
+      "why": "锚套件摘要必须把**第二算法名入输入**"
+    },
+    {
+      "id": "改主锚则摘要变",
+      "kind": "primary_changes_digest",
+      "primary": "aa",
+      "primary2": "bb",
+      "secondary_alg": "sha3-256",
+      "expect": [
+        "DIGEST_DIFFERS"
+      ],
+      "why": "主锚变 ⇒ 摘要必变"
+    },
+    {
+      "id": "同输入则摘要相同",
+      "kind": "same_input_same_digest",
+      "primary": "aa",
+      "secondary_alg": "sha3-256",
+      "expect": [
+        "DIGEST_SAME"
+      ],
+      "why": "**确定性**：同输入必同输出"
+    }
+  ]
+}

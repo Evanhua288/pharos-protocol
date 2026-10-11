@@ -1,0 +1,48 @@
+{
+  "_license": "SPDX-License-Identifier: Apache-2.0 （向量可自由复用；不得改 `expect`；对拍须留痕；署源）",
+  "_note": "档锚四元组用例（`PH-REV-001-05` 落条 `216`）。**不改已发向量**（承 `013`）。",
+  "_spec_refs": [
+    "CORE-001-216",
+    "CORE-001-206",
+    "CORE-001-128",
+    "CORE-001-205"
+  ],
+  "cases": [
+    {
+      "id": "档锚-四元组齐备",
+      "kind": "archive_anchor_ok",
+      "desc": "分档后哪怕只交换近期窗口，但**四元组齐备**（各档 `ledgerHash`／条数／末条 `hash`／链首尾 `prevHash`）",
+      "expect": [
+        "OK"
+      ],
+      "why": "216 ②：保留档锚四元组 ⇒ 可接受"
+    },
+    {
+      "id": "档锚-缺末条hash",
+      "kind": "archive_missing_tail",
+      "desc": "分档后**未保留各档末条 `hash`**",
+      "expect": [
+        "UNFINISHED_EXCHANGE"
+      ],
+      "why": "216 ②(c) 缺 ⇒ 视为未完成交换（同 206）"
+    },
+    {
+      "id": "档锚-伪称整本一致",
+      "kind": "archive_overclaim",
+      "desc": "只交换近期窗口，**却声称“整本一致”**",
+      "expect": [
+        "VIOLATION"
+      ],
+      "why": "216 ③：不得据本次交换声称整本一致"
+    },
+    {
+      "id": "档锚-裁剪已入链",
+      "kind": "archive_prune",
+      "desc": "将**已入链条目裁剪掉**",
+      "expect": [
+        "VIOLATION"
+      ],
+      "why": "216 ②：不得裁剪已入链条目"
+    }
+  ]
+}

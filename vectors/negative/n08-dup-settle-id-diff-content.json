@@ -1,0 +1,28 @@
+{
+  "_sample": "n08-dup-settle-id-diff-content",
+  "_trigger": "同一 `settleId`、内容不同（仅 `amount` 异）",
+  "_expected": "reject",
+  "_error_code": "E06",
+  "_reason": "DUP_SETTLE_ID",
+  "_source": "CORE-001-193",
+  "_counted": true,
+  "entries": [
+    {
+      "settleId": "01920000-0000-7000-8000-000000000005",
+      "rail": "currency",
+      "amount": "-0",
+      "currency": "MYR",
+      "taskId": "任务-中文-05",
+      "status": "pending",
+      "hash": "208e0ed39cbc6611596fcb6107d0facee3b7847daa9b409953549b683310f5d0"
+    },
+    {
+      "settleId": "01920000-0000-7000-8000-000000000005",
+      "rail": "currency",
+      "amount": "-1",
+      "currency": "MYR",
+      "taskId": "任务-中文-05",
+      "status": "pending"
+    }
+  ]
+}

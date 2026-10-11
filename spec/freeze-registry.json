@@ -1,0 +1,4438 @@
+{
+ "_note": "`223`（变更权与冻结期）**机检登记**。",
+ "_rule": "**FR1 每条必登记首次发布日**；**FR2 首发日起 60 天内为冻结期**；**FR3 冻结期内不得改该条 `text`**；**FR4 要改则新增条目并登记取代关系**；**FR5 登记只加不删**。",
+ "freezeDays": 60,
+ "registeredAt": "2026-10-10",
+ "clauses": {
+  "ARCH-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-101": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-110": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-111": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-112": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-113": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-120": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-121": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-122": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-123": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-124": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-100-A-125": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-200": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-200-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-200-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-200-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-200-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-300": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-300-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-300-006": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-400": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COG-400-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-023": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-024": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-025": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-026": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-033": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-034": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-041": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-042": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-043": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-051": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-053": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-070": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-071": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-072": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-073": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-080": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-081": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-082": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-083": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "COM-100-084": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-012-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-012-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-015": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-016": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-017": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-018": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-019": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-023": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-024": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-025": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-026": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-027": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-028": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-029": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-030-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-033": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-033-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-034": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-043": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-044": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-045": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-046": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-047": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-048": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-049": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-051": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-053": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-054": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-055": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-056": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-057": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-058": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-059": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-060": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-061": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-062": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-063": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-064": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-065": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-066": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-067": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-068": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-068-A": {
+   "firstPublished": "2026-10-10",
+   "frozenUntil": "2026-12-09",
+   "status": "FROZEN"
+  },
+  "CORE-001-069": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-070": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-071": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-072": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-072-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-072-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-073": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-074": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-075": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-076": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-077": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-078": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-078-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-078-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-079": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-080": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-081": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-082": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-083": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-084": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-085": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-086": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-087": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-088": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-089": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-090": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-091": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-092": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-093": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-096": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-097": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-098": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-099": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-101": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-102": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-103": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-104": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-105": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-106": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-107": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-108": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-109": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-110": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-111": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-112": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-113": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-114": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-115": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-116": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-117": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-118": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-120": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-121": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-122": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-123": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-124": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-125": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-126": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-127": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-128": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-129": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-145": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-146": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-147": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-148": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-149": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-150": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-151": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-152": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-153": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-154": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-155": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-156": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-157": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-158": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-159": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-160": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-161": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-162": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-163": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-164": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-165": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-166": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-167": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-168": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-169": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-170": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-171": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-172": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-173": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-174": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-175": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-176": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-177": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-178": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-179": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-180": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-181": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-182": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-183": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-184": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-185": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-186": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-187": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-188": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-188-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-191": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-192": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-193": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-194": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-195": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-196": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-197": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-198": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-199": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-200": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-201": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-202": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-203": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-204": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-205": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-206": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-207": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-208": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-209": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-210": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-211": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-212": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-213": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-214": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-215": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "CORE-001-216": {
+   "firstPublished": "2026-10-10",
+   "frozenUntil": "2026-12-09",
+   "status": "FROZEN"
+  },
+  "CORE-001-217": {
+   "firstPublished": "2026-10-10",
+   "frozenUntil": "2026-12-09",
+   "status": "FROZEN"
+  },
+  "CORE-001-218": {
+   "firstPublished": "2026-10-10",
+   "frozenUntil": "2026-12-09",
+   "status": "FROZEN"
+  },
+  "CORE-001-219": {
+   "firstPublished": "2026-10-10",
+   "frozenUntil": "2026-12-09",
+   "status": "FROZEN"
+  },
+  "CORE-001-220": {
+   "firstPublished": "2026-10-10",
+   "frozenUntil": "2026-12-09",
+   "status": "FROZEN"
+  },
+  "CORE-001-221": {
+   "firstPublished": "2026-10-10",
+   "frozenUntil": "2026-12-09",
+   "status": "FROZEN"
+  },
+  "CORE-001-222": {
+   "firstPublished": "2026-10-10",
+   "frozenUntil": "2026-12-09",
+   "status": "FROZEN"
+  },
+  "CORE-001-223": {
+   "firstPublished": "2026-10-10",
+   "frozenUntil": "2026-12-09",
+   "status": "FROZEN"
+  },
+  "EXP-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "EXP-100-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "EXP-100-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "EXP-100-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "EXP-100-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-030-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-006": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-015": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-041": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-042": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-043": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-044": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-045": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-046": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-051": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-053": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-060": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-061": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-062": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-070": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-071": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-072": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-073": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-080": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-081": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-082": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-090": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-091": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-092": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "FIN-100-093": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "GV-COUNCIL-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "GV-DEC-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-023": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-033": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-034": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-035": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-036": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-037": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-041": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-042": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-043": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-044": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-051": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-053": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-060": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-061": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-062": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-063": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-064": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-065": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-066": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "ID-100-067": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-033": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-051": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-053": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-060": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-061": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-062": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-063": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-064": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-065": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-066": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-070": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-071": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-072": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-073": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "MOD-100-080": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "NA-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-006": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-007": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-008": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-009": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-015": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-016": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-017": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-018": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-000": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-000-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-000-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-006": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-007": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-008": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-009": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-015": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-016": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-017": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-018": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-018-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-018-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-019": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-019-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-023": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-024": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-025": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-026": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-027": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-027-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-027-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-028": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-028-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-028-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-028-C": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-028-D": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-029": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-031-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-031-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-031-C": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-033": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-034": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-035": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-035-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-035-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-036": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-037": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-037-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-037-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-037-D": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-037-F": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-037-G": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-037-H": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-037-I": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-037-J": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-037-K": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-037-L": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-038": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-038-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-038-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-038-C": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-038-D": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-038-E": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-038-F": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-039": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-041": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-042": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-042-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-042-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-042-C": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-042-D": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-042-E": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-042-F": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-043": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-044": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-045": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-046": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-047": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-048": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-049": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-049-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-049-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-049-E": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-049-F": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-049-G": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-049-H": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-051": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-052-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-053": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-054": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-054-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-055": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-055-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-055-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-055-C": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-055-D": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-056": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-057": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-058": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-059": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-060": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-061": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-062": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-063": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-063-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-063-B": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-064": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-065": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-066": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-070": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-071": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-072": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-073": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-074": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-075": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-076": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-077": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-078": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-079": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-100-080": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-110": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-111": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-112": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-113": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-114": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-115": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-116": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-120": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-120-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-120-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-120-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-120-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-120-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-120-006": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-120-007": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-120-008": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-130": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-015": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-150-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "OPEN-160": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-041": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-051": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-MY-053": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-033": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-041": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-051": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-053": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-023": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-041": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-042": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-051": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-053": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-060": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-061": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-062": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-063": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-070": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-080": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-081": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PA-PG-V10-082": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-060": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-070": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-110": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-120": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-130": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-140": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-150": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-160": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-000-170": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-100-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-100-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-100-A": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-200": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-200-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-200-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-200-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-200-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-200-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-300": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-300-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-300-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-300-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-300-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-300-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-300-006": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-400": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-400-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-400-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-400-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-400-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-400-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-400-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-400-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-400-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-400-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COG-400-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-COM-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-EC-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-EXP-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-EXPL-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-FIN-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-FIN-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-GV-DEC-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-ID-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-MA-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-MOD-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-OPEN-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-OPEN-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-OPEN-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-OPEN-110": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-OPEN-120": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-OPEN-130": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-OPEN-140": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-OPEN-150": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-OPEN-160": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PHY-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-200": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-200-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-200-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-200-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-200-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-200-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-200-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-300": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-300-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-300-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-300-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-300-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-PRC-300-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-VAL-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-VAL-200": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-VAL-300": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-VAL-300-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-VAL-300-017": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-VAL-400": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-VAL-490": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-VAL-500": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHAROS-VUL-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-041": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-042": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-060": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-061": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-062": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-080": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-081": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-082": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-083": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-084": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-090": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-091": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-092": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-093": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PHY-100-094": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-200": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-200-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-200-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-200-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-200-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-200-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-041": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PRC-300-042": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PS-500": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PS-600": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "PS-700": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "REPLY-DEV-006": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "SHA-256": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100-006": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-100-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-015": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-016": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-017": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-018": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-019": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-023": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-200-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-015": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-016": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-017": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-023": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-033": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-041": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-042": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-043": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-051": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-300-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-400": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-400-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-400-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-400-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-400-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-400-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-400-008": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-400-018": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-400-019": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-400-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-490-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-490-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-490-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-003": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-004": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-005": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-006": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VAL-500-015": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-001": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-002": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-010": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-011": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-012": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-013": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-014": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-015": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-016": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-020": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-021": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-022": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-023": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-030": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-031": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-032": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-033": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-040": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-041": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-042": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-050": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-051": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "VUL-100-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  },
+  "XFER-052": {
+   "firstPublished": "<=2026-10-09",
+   "frozenUntil": "<=2026-12-08",
+   "status": "EXPIRED"
+  }
+ }
+}

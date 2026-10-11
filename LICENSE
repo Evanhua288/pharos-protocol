@@ -1,0 +1,38 @@
+CORE-001 Protocol — Licensing
+================================
+
+This repository contains two kinds of material, licensed separately.
+
+1. SPECIFICATION TEXT
+   Path: spec/**
+   License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+   Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+   You may share and adapt the specification for any purpose, including
+   commercially, provided you give appropriate attribution, link to the
+   license, and indicate if changes were made. No additional restrictions
+   may be applied.
+
+2. REFERENCE IMPLEMENTATION, TEST VECTORS, AND TOOLS
+   Paths: tools/**, vectors/**
+   License: Apache License, Version 2.0
+   Full text: https://www.apache.org/licenses/LICENSE-2.0
+   You may use, modify, and distribute these files, including commercially,
+   under the terms of that license.
+
+EXCLUDED — NOT LICENSED FOR DISTRIBUTION
+------------------------------------------
+The following are not part of this license grant and must not be published
+or redistributed: signing private keys, release pipeline scripts and
+ledgers, customer lists, pricing rules, and internal decision records.
+
+NO CLAIM OF COMPLIANCE
+----------------------
+Provision of this material does not state or imply that any party is
+compliant with any law, regulation, standard, or certification scheme.
+It evidences only that an implementation is consistent with the
+specification as published.
+
+Filename convention
+-------------------
+Specification version:  MAJOR.MINOR.PATCH  (e.g. 1.0.0)
+Package release date:   YYYY.MM             (e.g. 2026.10)

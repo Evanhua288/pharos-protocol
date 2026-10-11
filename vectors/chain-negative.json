@@ -1,0 +1,47 @@
+{
+  "_license": "SPDX-License-Identifier: Apache-2.0 （向量可自由复用；不得改 `expect`；对拍须留痕；署源）",
+  "_note": "链向量组（B9 落条）。**不改已发向量**（承 CORE-001-013）；本组为**新增**，用于覆盖『删一条／插一条／换链（分叉）』三类——此前全包**零向量**。",
+  "_spec_refs": [
+    "CORE-001-128",
+    "CORE-001-205",
+    "CORE-001-206"
+  ],
+  "cases": [
+    {
+      "id": "n-链-删一条",
+      "kind": "chain_delete",
+      "desc": "十条目链中删去第 5 条（0 基）：第 6 条的 prevHash 不再等于其**规范序前驱**（第 5 条被删，前驱变为第 4 条）⇒ 须报 CHAIN_BREAK",
+      "expect": [
+        "CHAIN_BREAK"
+      ],
+      "why": "205 ①：prevHash 必须等于规范序前一条 hash；删条 ⇒ 断链"
+    },
+    {
+      "id": "n-链-插一条",
+      "kind": "chain_insert",
+      "desc": "在链中插入一条：其后继仍指向**原前驱** ⇒ 后继的 prevHash ≠ 新前驱 ⇒ 须报 CHAIN_BREAK",
+      "expect": [
+        "CHAIN_BREAK"
+      ],
+      "why": "205 ①：插入条不改后继 prevHash ⇒ 后继与规范序前驱不符"
+    },
+    {
+      "id": "n-链-换链-分叉",
+      "kind": "chain_fork",
+      "desc": "同一前驱（同一 prevHash）下存在**两条**不同后继 hash ⇒ 须报 FORK（本地即判）",
+      "expect": [
+        "FORK"
+      ],
+      "why": "205 ②：同一 prevHash 被 n>1 条引用 ⇒ 本地即判 FORK"
+    },
+    {
+      "id": "n-链-截尾",
+      "kind": "chain_truncate",
+      "desc": "只交出前 7 条、第 8–10 条整段截去，且**未声明条目数** ⇒ 仅凭 ledgerHash 不可发现；**须以『条目数 ＋ 末条 hash』三元组识破**（现缺 ⟹ 报 EXCHANGE_INCOMPLETE）",
+      "expect": [
+        "EXCHANGE_INCOMPLETE"
+      ],
+      "why": "206：ledgerHash 三项缺一（缺条目数与末条 hash）即视为未完成交换"
+    }
+  ]
+}

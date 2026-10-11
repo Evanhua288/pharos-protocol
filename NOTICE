@@ -1,0 +1,43 @@
+CORE-001 Protocol — NOTICE
+========================
+
+Attribution
+-----------
+This specification and its reference implementation build on, and align
+with, published work of others. Where alignment is claimed, the alignment
+is stated in the specification and is independently re-checkable by the
+implementer. No affiliation with, endorsement by, or certification from
+the following organizations is claimed.
+
+Standards and mechanisms referenced
+-----------------------------------
+- RFC 6962 / RFC 9162 — Certificate Transparency, Merkle tree
+  (Merkle Tree Head, inclusion and consistency proofs)
+- RFC 8785 — JSON Canonicalization Scheme (JCS)
+- RFC 6920 — Naming Things with Hashes
+- RFC 8446 — TLS 1.3 downgrade sentinel (used as a design pattern)
+- RFC 6916 — Cross-log anchoring (used as a design pattern)
+- DSSE v1.0.2 — Dead Simple Signing Envelope (pre-authentication encoding)
+- C2SP tlog-tiles, signed-note, tlog-cosignature
+- SLSA — DigestSet
+- NIST SP 800-131A — algorithm transition states
+- Sigstore Rekor — entry UUID and idempotency conventions
+- protobuf — field-number tombstone convention
+- FastCDC — content-defined chunking (evaluated)
+
+Trademarks
+----------
+Protocol names used by others remain the property of their owners.
+The name of this protocol is intentionally not claimed as a trademark, so
+that the protocol remains a public instrument rather than a brand.
+
+Third-party verification
+------------------------
+Independent reproduction results, when available, are published alongside
+the release they refer to and are labelled with the party that produced
+them. A reproduction record evidences consistency with the specification;
+it does not evidence compliance by any party.
+
+Contact
+-------
+evanhua288@gmail.com — 暂用，可替换

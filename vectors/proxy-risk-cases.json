@@ -1,0 +1,76 @@
+{
+  "_license": "SPDX-License-Identifier: Apache-2.0 （向量可自由复用；不得改 `expect`；对拍须留痕；署源）",
+  "_note": "`221`（代理责任落点）与 `222`（可核指向／风险标识）防绕行用例。",
+  "_spec_refs": [
+    "CORE-001-221",
+    "CORE-001-222",
+    "CORE-001-197",
+    "CORE-001-178",
+    "CORE-001-088"
+  ],
+  "cases": [
+    {
+      "id": "代理-无被代理人声明即提交",
+      "kind": "proxy_no_principal",
+      "desc": "**声称为代理人**，**但 `Attestation` 中无被代理人的附加声明**",
+      "expect": [
+        "E06"
+      ],
+      "why": "221 ②：**代理关系必须由被代理人声明** ⇒ 视同未声明代理，回到 197"
+    },
+    {
+      "id": "代理-责任落点空",
+      "kind": "proxy_no_liability_anchor",
+      "desc": "**声明了代理关系**，**但责任落点为空或不可核**",
+      "expect": [
+        "UNFINISHED_EXCHANGE"
+      ],
+      "why": "221 ③ ⇒ 222 ① 三类指向之一"
+    },
+    {
+      "id": "代理-自动化免责声明",
+      "kind": "proxy_automation_excuse",
+      "desc": "**以“代理人是自动的”为由拒绝承认代理关系**",
+      "expect": [
+        "VIOLATION"
+      ],
+      "why": "221 ④：**不得以自动化免除责任**"
+    },
+    {
+      "id": "代理-平台自发自接",
+      "kind": "platform_self_both_ends",
+      "desc": "**同一主体既发任务又接任务**，**并以“我们有代理人”为由自确认**",
+      "expect": [
+        "E06"
+      ],
+      "why": "221 ①：**不得以机器代理人为由认为不适用 197**"
+    },
+    {
+      "id": "风险-已声明者被单方拒收",
+      "kind": "riskflag_unilateral_reject",
+      "desc": "**对方已声明 `riskFlag`**，**或已声明有责任方**，**但接收方仍单方拒收**",
+      "expect": [
+        "VIOLATION"
+      ],
+      "why": "222 ②：**不得以缺风险标识为由单方拒收已声明者**"
+    },
+    {
+      "id": "风险-三类指向之外",
+      "kind": "liability_anchor_invalid",
+      "desc": "**提供了一条“指向”**，**但不属三类任一**（**仅自我声明、无背书**）",
+      "expect": [
+        "UNFINISHED_EXCHANGE"
+      ],
+      "why": "222 ①：**形式仅限三类**"
+    },
+    {
+      "id": "风险-以资格类别拒收匿名",
+      "kind": "anonymity_exclusion",
+      "desc": "**以“匿名”本身为由报拒收**",
+      "expect": [
+        "VIOLATION"
+      ],
+      "why": "222 ③；178：**不取消匿名权**；088 不得排他"
+    }
+  ]
+}

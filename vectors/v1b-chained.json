@@ -1,0 +1,8 @@
+{
+  "entryId": "01920000-0000-7000-8000-000000000002",
+  "subject": "did:key:z7QEP3xWeQbW3hgmJP-6cLMyQIVJrk5U7UVLVvRxtrQ7OhQ",
+  "what": "delivered task T-001",
+  "when": "2026-10-06T12:00:00Z",
+  "prevHash": "1af49e7dddfe5c920d791cf1149af26c5687d5c193468e9b71fafec9ef73af06",
+  "evidenceRef": "sha256:3f786850e387550fdab836ed7e6dc881de23001b"
+}

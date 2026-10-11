@@ -1,0 +1,9 @@
+{
+  "did": "did:key:z7QEP3xWeQbW3hgmJP-6cLMyQIVJrk5U7UVLVvRxtrQ7OhQ",
+  "publicKey": "7QEP3xWeQbW3hgmJP-6cLMyQIVJrk5U7UVLVvRxtrQ7OhQ",
+  "createdAt": "2026-10-07T00:00:00Z",
+  "issuer": "did:key:z7QEP3xWeQbW3hgmJP-6cLMyQIVJrk5U7UVLVvRxtrQ7OhQ",
+  "signSuite": "Ed25519",
+  "issuedAt": "2026-10-07T00:00:00Z",
+  "previousKeys": []
+}

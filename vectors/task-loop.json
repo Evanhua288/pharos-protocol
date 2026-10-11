@@ -1,0 +1,35 @@
+{
+ "_note": "锚 5 真实任务闭环（用现成件生成）。",
+ "_rule": "① 先验包含证明（不过则拒绝出结论）；② 对拍报**首个差异字节**；③ 计量轨＝单位成本×1.20（**不出我方名义标价**）；④ 可核指向只出指向值。",
+ "task": {
+  "taskId": "TASK-20261010-0001",
+  "client": "受托方-甲",
+  "declaredBy": "经营主体-新加坡",
+  "acceptCriteria": [
+   "CORE-001-221",
+   "CORE-001-222"
+  ],
+  "deliverable": "批量任务交付与计量结算结果集"
+ },
+ "proofPre": "OK",
+ "treeSize": 12,
+ "root": "7e58cefe8451037a814f6655a96f00d0aad70bb141c1d9c205fe5778b9a23e4a",
+ "reconcile": {
+  "equal": 12,
+  "unequal": []
+ },
+ "metering": {
+  "unitCost": 3.0,
+  "markup": 1.2,
+  "units": 12,
+  "fee": 43.2,
+  "rail": "计量轨"
+ },
+ "checkableRef": "175e58f99a1940686c59b18f72bb72ccb0fd0c56b694f98b3d984c5a590340b2",
+ "receipts": [
+  "任务声明",
+  "双方产出",
+  "对拍结论",
+  "可核指向"
+ ]
+}

@@ -1,0 +1,23 @@
+{
+  "_license": "SPDX-License-Identifier: Apache-2.0 （向量可自由复用；不得改 `expect`；对拍须留痕；署源）",
+  "_note": "`159`（未知键原值回显）示例（`PH-REV-001-04`）。**输入**含两个未定义键；**期望回显**原值转引。",
+  "_spec_refs": [
+    "CORE-001-159",
+    "CORE-001-076",
+    "CORE-001-091",
+    "CORE-001-092"
+  ],
+  "features": {
+    "previousKeys": true,
+    "visionTier": "x1",
+    "futureThing": {
+      "a": 1
+    }
+  },
+  "echoedUnknownKeys": {
+    "visionTier": "x1",
+    "futureThing": {
+      "a": 1
+    }
+  }
+}

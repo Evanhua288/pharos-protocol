@@ -1,0 +1,93 @@
+{
+  "_note": "字段实体：**一条真实条目**（必填 30 字段＋`ext`）。",
+  "_rule": "必填 30 字段不变；扩展一律进 `ext`；`entryHash` = SHA-256(canonical)。",
+  "fieldCount": 30,
+  "fields": [
+    "entryId",
+    "entryVersion",
+    "taskId",
+    "clientRef",
+    "providerRef",
+    "agentRef",
+    "taskType",
+    "payloadDigest",
+    "deliverableRef",
+    "acceptCriteria",
+    "clauseRef",
+    "confirmOurs",
+    "confirmTheirs",
+    "confirmAt",
+    "unitCost",
+    "units",
+    "markup",
+    "feeAmount",
+    "railMetering",
+    "railCurrency",
+    "railRight",
+    "checkableRef",
+    "riskFlag",
+    "supersedeOf",
+    "supersededBy",
+    "frozenUntil",
+    "extDigest",
+    "prevEntryHash",
+    "entryHash",
+    "signatureSet"
+  ],
+  "entry": {
+    "entryId": "E-20261010-000001",
+    "entryVersion": "1.0.0",
+    "taskId": "TASK-20261010-0001",
+    "clientRef": "受托方-甲",
+    "providerRef": "经营主体-新加坡",
+    "agentRef": "agent:auto-07",
+    "taskType": "batch-delivery",
+    "payloadDigest": "pharos:payloadDigest",
+    "deliverableRef": "pharos:deliverableRef",
+    "acceptCriteria": [
+      "CORE-001-221",
+      "CORE-001-222"
+    ],
+    "clauseRef": [
+      "CORE-001-221",
+      "CORE-001-222",
+      "CORE-001-223"
+    ],
+    "confirmOurs": true,
+    "confirmTheirs": true,
+    "confirmAt": "2026-10-10T21:00:00+08:00",
+    "unitCost": 3.0,
+    "units": 12,
+    "markup": 1.2,
+    "feeAmount": 43.2,
+    "railMetering": "metering",
+    "railCurrency": "currency(licensed)",
+    "railRight": "right(fixed-small)",
+    "checkableRef": "175e58f99a194068",
+    "riskFlag": 0,
+    "supersedeOf": null,
+    "supersededBy": null,
+    "frozenUntil": "2026-12-09",
+    "extDigest": "f5f81c15331d70f0f83b1e603c8cedfcfb5748ac5b47e6331812f4c4469437d8",
+    "prevEntryHash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "entryHash": "ce8a4485e43b80e70ddaa952229b543a34c81e3bd48390fc1c005a2294410c6b",
+    "signatureSet": [
+      {
+        "keyId": "k1",
+        "algoId": "0x81",
+        "sig": "待签"
+      }
+    ]
+  },
+  "extEnvelope": {
+    "schemaId": "https://pharos.local/schema/entry-31.json",
+    "schemaDialect": "pharos-core-v1",
+    "ext": {
+      "vendorX": {
+        "a": 1,
+        "中文": "值"
+      }
+    }
+  },
+  "canonicalization": "JCS（键排序、无空白）"
+}

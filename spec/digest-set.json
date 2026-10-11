@@ -1,0 +1,13 @@
+{
+ "_note": "SLSA `DigestSet` 语义（**任一可接受算法匹配即相等**）。",
+ "_rule": "**DS1 相等判定：若两个 `DigestSet` 在**至少一个共同算法**上值相同，则视为相等**；**DS2 不得以“算法不同”为由判不等**；**DS3 若无共同算法 ⇒ 判不可比（`INCOMPARABLE`），不判不等**；**DS4 算法必须已在 `algorithm-registry.json` 登记**。",
+ "example": {
+  "sha-256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sha3-256": "a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a"
+ },
+ "verdicts": [
+  "EQUAL",
+  "UNEQUAL",
+  "INCOMPARABLE"
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "_note": "算法注册表（**加入后不可改、不可删，只能追加状态**）。",
+ "_rule": "状态：`acceptable`／`deprecated`／`legacy`／`disallowed`；**状态是「算法 × 用途」的函数**（故 `disallowFor` 为数组）；**截断是独立算法名**（长度必须出现在名字里）；**身份比较必须三元组全等**（algId,lengthBits,digest）。",
+ "version": "PHAROS-REG-v1",
+ "entries": [
+  {
+   "algId": "0x01",
+   "class": "HASH",
+   "name": "sha-256",
+   "outputBits": 256,
+   "truncation": null,
+   "collisionBits": 128,
+   "preimageBits": 256,
+   "secondPreimageBits": "outputBits - L(M)",
+   "status": "acceptable",
+   "disallowFor": [],
+   "reference": "FIPS 180-4",
+   "deprecateAfter": null,
+   "supersededBy": null
+  },
+  {
+   "algId": "0x02",
+   "class": "HASH",
+   "name": "sha-512",
+   "outputBits": 512,
+   "truncation": null,
+   "collisionBits": 256,
+   "preimageBits": 512,
+   "secondPreimageBits": "outputBits - L(M)",
+   "status": "acceptable",
+   "disallowFor": [],
+   "reference": "FIPS 180-4",
+   "deprecateAfter": null,
+   "supersededBy": null
+  },
+  {
+   "algId": "0x03",
+   "class": "HASH",
+   "name": "sha3-256",
+   "outputBits": 256,
+   "truncation": null,
+   "collisionBits": 128,
+   "preimageBits": 256,
+   "secondPreimageBits": 256,
+   "status": "acceptable",
+   "disallowFor": [],
+   "reference": "FIPS 202（异族）",
+   "deprecateAfter": null,
+   "supersededBy": null
+  },
+  {
+   "algId": "0x05",
+   "class": "HASH",
+   "name": "sha-256-128",
+   "outputBits": 256,
+   "truncation": 128,
+   "collisionBits": 64,
+   "preimageBits": 128,
+   "secondPreimageBits": 128,
+   "status": "acceptable",
+   "disallowFor": [
+    "IDENTITY",
+    "ATTESTATION"
+   ],
+   "reference": "RFC 6920 ID=2（仅索引）",
+   "deprecateAfter": null,
+   "supersededBy": null
+  },
+  {
+   "algId": "0x06",
+   "class": "HASH",
+   "name": "sha-1",
+   "outputBits": 160,
+   "truncation": null,
+   "collisionBits": 80,
+   "preimageBits": 160,
+   "secondPreimageBits": 160,
+   "status": "disallowed",
+   "disallowFor": [
+    "SIGN",
+    "IDENTITY",
+    "ATTESTATION",
+    "INTEGRITY"
+   ],
+   "reference": "SP 800-131A Rev.2",
+   "deprecateAfter": null,
+   "supersededBy": "sha-256"
+  },
+  {
+   "algId": "0x81",
+   "class": "SIGN",
+   "name": "ed25519",
+   "outputBits": 256,
+   "truncation": null,
+   "collisionBits": null,
+   "preimageBits": null,
+   "secondPreimageBits": null,
+   "status": "acceptable",
+   "disallowFor": [],
+   "reference": "RFC 8032",
+   "deprecateAfter": null,
+   "supersededBy": null
+  }
+ ]
+}

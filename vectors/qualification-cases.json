@@ -1,0 +1,66 @@
+{
+  "_license": "SPDX-License-Identifier: Apache-2.0 （向量可自由复用；不得改 `expect`；对拍须留痕；署源）",
+  "_note": "`217` 边界情形用例（`PH-REV-001-06` 落条 `217`）。",
+  "_spec_refs": [
+    "CORE-001-217",
+    "CORE-001-197",
+    "CORE-001-088",
+    "CORE-001-003"
+  ],
+  "cases": [
+    {
+      "id": "资格-未声明不构成拒收",
+      "kind": "no_declaration_ok",
+      "desc": "`Attestation` **未声明资格类别**，其余均合规",
+      "expect": [
+        "OK"
+      ],
+      "why": "217 ④：未声明者不构成拒收理由"
+    },
+    {
+      "id": "资格-未声明可合作前补齐",
+      "kind": "no_declaration_ask",
+      "desc": "接收方**在合作前要求补齐**",
+      "expect": [
+        "OK_WITH_REQUEST"
+      ],
+      "why": "217 ④：有权要求补齐"
+    },
+    {
+      "id": "资格-三值合法",
+      "kind": "declared_ok",
+      "desc": "`by` 资格＝`natural_person`／`registered_entity`／`licensed_party` 任一",
+      "expect": [
+        "OK"
+      ],
+      "why": "217 ①：三值枚举"
+    },
+    {
+      "id": "资格-排他违规",
+      "kind": "used_for_exclusion",
+      "desc": "**据资格类别排他或评估**",
+      "expect": [
+        "VIOLATION"
+      ],
+      "why": "217 ②：同 `088`"
+    },
+    {
+      "id": "资格-改结算违规",
+      "kind": "used_to_change_settlement",
+      "desc": "**据资格类别改变结算结果**",
+      "expect": [
+        "VIOLATION"
+      ],
+      "why": "217 ②：同 `003` 置空对照"
+    },
+    {
+      "id": "资格-索要证照副本",
+      "kind": "demand_documents",
+      "desc": "接收方**要求提供证照副本**",
+      "expect": [
+        "VIOLATION"
+      ],
+      "why": "217 ③：为声明、非审核；只能要“可核验的指向”"
+    }
+  ]
+}
