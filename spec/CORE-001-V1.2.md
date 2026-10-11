@@ -85,7 +85,7 @@
 
 | 版本 | 性质 | 新增条款 | 状态 |
 |---|---|---|---|
-| **`V1.81`** | **MINOR（只增不破）** | ⭐ **发布前检查口径冲突消解**：为**已定义错误码值 `NULL_PLACEHOLDER`（两处）与已定义术语“`XPH` 为占位符”**加“非草稿占位”注记（**不改码值与语义**）；**因正文字节变动，正式重新冻结并重发锚** | **现行** |
+| **`V1.81`** | **MINOR（只增不破）** | ⭐ **① 发布前检查口径冲突消解**：为**已定义错误码值 `NULL_PLACEHOLDER`（两处）与已定义术语“`XPH` 为占位符”**加“非草稿占位”注记（**不改码值与语义**）；⭐ **② 交付范围表据实重写**：原表所列内部治理留痕、往来件、评审邀请清单等**件并不在公开仓内**，**已改为按公开仓实际构成表述，并显式声明"不随公开仓发布的内部件"**；**因正文字节变动，正式重新冻结并重发锚** | **现行** |
 | **`V1.80`** | **MINOR（只增不破）** | ⭐ **`E4` 条款化**：**新增 `223`（变更权与冻结期）**；**新增 `AnchorSet` 升格规则（锚套件为对外基线）** | **现行** |
 | **`V1.80`** | **MINOR（只增不破）** | ⭐ **两条矛盾拍定落条**：**① 新增 `221`（代理身份与责任落点；`E2`）**；**② 新增 `222`（可核指向与风险标识；匿名与可追责分层）**；**两条均**不新增必填字段**（以附加声明载体） | **现行** |
 | **`V1.80`** | **MINOR（只增不破）** | ⭐ **`PH-091` 形式化**：**新增 `220`（`E10` 全局优先级）**；**消 `§6.1` “表格分类序 vs 判定序”歧义**；**`§6.1` 相应段落注明“已成条 `220`”** | **现行** |
@@ -1338,25 +1338,25 @@ score · grade · level · percentile · rank · composite · weight · points �
 | 类 | 件 | 状态 |
 |---|---|---|
 | **内核件** | `spec/CORE-001-V1.2.md` | **现行** |
-| **层级规范** | `spec/layers/`（**37 件**；**若含《件名清单.md》本身则为 38 件**） | **逐件件名见 `spec/layers/件名清单.md`**（**V1.6 新增**）；**原"33 件／29 草案／4 生效"口径已两处不一致，见该清单 §三** |
-| **发布说明** | `spec/DEV-001`／`spec/SPDX-NOTE`／`spec/SPEC-HISTORY` | **现行** |
-| **测试数据与向量** | `vectors/`（**10 正向 ＋ 4 反面 ＋ `jcs-official/` 12 文件**）；**真值 `vectors/EXPECTED.md`**；**`vectors/ledger-10/`（`§3B` 测试账本）** | **现行** |
-| **工具** | `tools/`（**54 件** = **53 个 `.py` 加 `char_inventory.txt`**（**V1.55 订正**：新增 `check_linenos.py`，**条号↔行号 引用机检**；承 `WORKBUDDY-PH-082` §三②）；含 `check_integrity`／`check_vectors`／`check_fields`／`check_scenarios`／`check_linenos`／`selfcheck_spec`／`check_invite`／`audit_extra`／`error_resolve`／`check_outsider`／`tcore1/2/3`） | **现行** |
-| **配套件** | `配套件/`（**10 件**（**V1.19 订正**：原写 9 件，未计入新增的 `禁语词表.md`），见 `# 配套件与包内纪律件` 一节） | **现行（乙档·治理规则）** |
-| **可据条款清单** | `可据条款清单.md`（**承 `152`／`163`，须随包**） | **现行（乙档·治理规则）** |
-| **承重清单** | `承重清单.md`（**已被试拆而未破的条号**；**乙档·治理规则**） | **现行（乙档·治理规则）** |
-| **声明实现对照表** | 声明实现对照表.md（**对外声明 ↔ 可跑证明；未证者标 未证**） | **现行（乙档·治理规则）** |
-| **事实登记表** | `事实登记表.md`（**所有可被引用的硬事实，一处可查**） | **现行（乙档·治理规则）** |
-| **四层对拍情形库** | `四层对拍情形库.md`（**金融／交易／支付／结算 二轮专项弹药**） | **现行（乙档·治理规则）** |
+| **规范附属件** | `spec/PHAROS-PENDING-001-协议侧待裁册.md`／`spec/SPDX-NOTE.md`／`spec/SPEC-HISTORY.md`／`spec/SPEC-PROVENANCE.md` | **现行** |
+| **层级规范** | `spec/layers/`（**38 件**，逐件件名见 `spec/layers/件名清单.md`；**多为草案，判据与向量为准**） | **现行** |
+| **机读件** | `spec/clauses.json`／`spec/alias-map.json`／`spec/algorithm-registry.json`／`spec/anchor-set.json`／`spec/anchor-migration-4state.json`／`spec/anchor-exclusion-whitelist.json`／`spec/digest-set.json`／`spec/domain-tags.json`／`spec/extension-schema.json`／`spec/freeze-registry.json`／`spec/pending-five.json`／`spec/tree-head.json`／`spec/xref-confirmed.json` | **现行** |
+| **测试数据与向量** | `vectors/`（**54 件**：直接层 30／`jcs-official/` 14／`negative/` 8／`ledger-10/` 2）；**真值 `vectors/EXPECTED.md`** | **现行** |
+| **工具** | `tools/`（**62 件**，其中 `.py` 61）；检查器如 `check_integrity`／`check_vectors`／`check_linenos`／`check_fields`／`check_scenarios`／`check_outsider`／`check_anchor_whitelist`／`check_freeze_extension`／`audit_extra`／`error_resolve`／`pharos_verify`／`sign_sums` | **现行** |
+| **配套件** | `配套件/`（**9 件**），见 `配套件/README.md` | **现行（乙档·治理规则）** |
+| **可据条款清单** | `可据条款清单.md`（**承 `152`／`163`**） | **现行（乙档·治理规则）** |
 | **层件集合清单** | `LAYERS.sha256`（**`spec/layers/` 逐件 ⊕ 集合哈希**；**用于看住层件变化**） | **现行** |
-| **凭据与清单** | `SHA256SUMS`／`MANIFEST.sha256`／`SHA256SUMS.NOTE.md`／`HANDOFF-WHITELIST.md` | **现行** |
-| **评审邀请清单** | `评审邀请清单.txt`（**交付范围口径的唯一事实源**；**邀请外部评审时照它一件不差地发**） | **现行（甲档·协议要求）** |
-| **包根文档** | `README`／`GETTING-STARTED`／`HANDOFF`／`CHANGELOG`／`SELFCHECK`／`CONTRIBUTING`／`CONFORMANCE`／`CONFORMANCE-LEVELS`／`CONFORMANCE-REGISTRY`／`PARTNER-GUIDE`／`FIRST-EXTERNAL-TRIAL` | **现行（甲档·协议要求）** |
-| **许可与署名** | `LICENSE`／`DCO`／`著作权与署名待定说明.md` | **现行** |
-| **包内纪律件** | `包内与包外范围声明.md`／`外部依赖登记表.md`／`效力档说明.md`／`编号登记册.md`／`版本变更类型登记.md`／`可据条款清单.md`／`109冲突扫描结果.md`／`语义层判定报告.md`／`_versions.md`／`.gitignore` | **现行（乙档·治理规则）** |
+| **凭据与清单** | `SHA256SUMS`／`SHA256SUMS.sig`／`SHA256SUMS.pub`／`MANIFEST.sha256`／`SHA256SUMS.NOTE.md`／`_FROZEN`／`SELF-CHECK.txt` | **现行** |
+| **包根文档** | `README`／`GETTING-STARTED`／`CHANGELOG`／`SELFCHECK`／`CONTRIBUTING`／`DCO`／`CONFORMANCE`／`CONFORMANCE-LEVELS`／`CONFORMANCE-REGISTRY`／`PARTNER-GUIDE`／`FIRST-EXTERNAL-TRIAL`／`CONTRIBUTORS-REGISTRY`／`PLAN-FREE-VS-FEE`／`POLICY-COMPAT`／`POLICY-RELEASE-STEPS`／`SECURITY`／`CODE_OF_CONDUCT`／`NOTICE`／`VERSION`／`.gitattributes`／`.gitignore`／`.github/`（3 件） | **现行（甲档·协议要求）** |
+| **许可与署名** | `LICENSE`（**双许可 ＋ 排除集 ＋ 不主张合规**） | **现行** |
 | **参考件与示例** | `routes.example.json`／`Identity完整性与验签要求说明.md`／`《JCS官方向量25条》数据包.md` | **现行** |
-| **往来件** | `_correspondence/`（**全部回函与来函**） | **现行（甲档·协议要求）** |
-| **（非交付件）** | `PHAROS开源协议-图文概览册-V1.0-20261008.docx`／`.pdf` | 🔴 **不入包**（**对外宣传物**；**不构成协议依据**；**故不列入《评审邀请清单》**） |
+
+> ## ⚠️ **本仓**不包含**的件（**有意不为，非缺失**）
+> ## **→ **内部治理留痕**：判据反向验证留痕、事实登记表、语义层判定报告、编号登记册、版本变更类型登记、效力档说明、包内与包外范围声明、外部依赖登记表、承重清单、声明实现对照表、四层对拍情形库、待核条号原文与行号、人工核清单、109 冲突扫描结果。
+> ## **→ **往来件**：`_correspondence/`（**全部回函与来函**）。
+> ## **→ **评审与邀请件**：评审邀请清单、交付范围白名单声明。
+> ## **→ **著作权与署名待定说明**：**署名事项未定稿前不随公开仓发布**。
+> ## **→ **说明**：**少这些件，**不影响**本仓判据与向量的可验证性**；**凡判据均以本仓 `spec/` 与 `vectors/` 为准**。
 
 
 > ## ⏪ **V1.15 补全（承 `check_invite` 机检**）**：本表原只列 **11 行**，而**盘上共 132 件**（**相差 88 条路径**）；**现已补齐为上表 ± 。**
