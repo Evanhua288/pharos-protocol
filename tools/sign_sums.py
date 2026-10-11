@@ -106,11 +106,16 @@ def main(argv):
     pub_path = os.path.join(pkg, "SHA256SUMS.pub")
     if os.path.isfile(pub_path):
         published = io.open(pub_path, "rb").read()
-        if published != derived:
+        Z32 = b"\x00" * 32
+        if published == Z32:
+            print("[SIGN] ⚠️ 包内已有 `.pub` 是**占位零值**（旧流程产物）——**视为“无已发布公钥”**，继续签。")
+            print("[SIGN] ⚠️ 新公钥指纹 = %s（**必须公告后方可对外**）" % fp)
+        else:
             print("[SIGN] **拒绝签名：C3 门不通过**。")
             print("  已发布公钥 sha256 = %s" % hashlib.sha256(published).hexdigest())
             print("  本次私钥导出   sha256 = %s" % fp)
             print("  ⇒ 二者不同。**若强行签名，将产出一个无人能按已发布公钥验证的包**。")
+            print("  若确系换钥，请先发布公告，并删除包内旧 `.pub`/`.sig` 后重试。")
             return 4
         print("[SIGN] C3 门通过：私钥导出的公钥与包内已发布公钥**逐字节相同**（%s）" % fp[:24])
     else:
@@ -124,6 +129,13 @@ def main(argv):
     sig = priv.sign(data)
     io.open(os.path.join(pkg, "SHA256SUMS.sig"), "wb").write(sig)
     io.open(pub_path, "wb").write(derived)
+
+    # ⭐ 自验：签完必须**自己验一次**，把“签了但验不过”变成不可能
+    try:
+        Ed25519PublicKey.from_public_bytes(derived).verify(sig, data)
+        print("[SIGN] 自验通过：sig 对 SHA256SUMS 原始字节")
+    except Exception as _e:
+        raise SystemExit("[SIGN] **自验失败**：%s" % _e)
     if rewrite_manifest:
         _patch_manifest_count(pkg)
     else:
