@@ -1,0 +1,8 @@
+# PHAROS tools 的第三方依赖（审计 P0：此前未声明）
+# 缺任一个即有一类门不可用：
+#   cryptography  -> 签名与验签（sign_sums / check-sig）
+#   rfc8785       -> JCS 序列化门（check_vectors）
+#   python-docx   -> 函件生成与对外函件门（audit_extra / check_letter_gates）
+cryptography>=42
+rfc8785==0.1.4
+python-docx>=1.1

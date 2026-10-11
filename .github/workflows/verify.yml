@@ -1,0 +1,51 @@
+name: verify
+
+# 自检以前只能手工跑（审计 P0）。本工作流把六个顺序固定下来：
+#   冻结前预检 -> 打包 -> 签名 -> 冻结后全门。
+# 只读作业；不推任何东西。
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 依赖必须显式声明（审计 P0：三个依赖未声明）。
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install cryptography rfc8785==0.1.4 python-docx
+
+      # 一键复现（含向量、Merkle、锚、冻结门）。
+      - name: Reproduce all checks
+        run: |
+          python tools/reproduce_all.py .
+          python tools/check_merkle.py
+          python tools/check_vectors.py
+          python tools/check_integrity.py .
+          python tools/check_manifest_math.py .
+          python tools/gen_clauses.py spec/CORE-001-V1.2.md --check --no-write
+
+      # “自检自污染”守卫：跑完不得在树里留下 `__pycache__` 等运行产物。
+      - name: Assert no run artefacts were created
+        run: |
+          found=$(find . -name '__pycache__' -o -name '*.pyc' | head -n 20)
+          if [ -n "$found" ]; then
+            echo "::error::run artefacts left in the tree:"; echo "$found"; exit 1
+          fi
+
+      # 文件头与版本自洽（与 E1／E6 同口径）。
+      - name: Header and version coherence
+        run: python tools/audit_extra.py .
