@@ -3261,8 +3261,7 @@
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
       "status": "EXPIRED",
-      "inForce": false,
-      "planned": true
+      "inForce": true
     },
     "PHAROS-000-060": {
       "firstPublished": "<=2026-10-09",

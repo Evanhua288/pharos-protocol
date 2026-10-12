@@ -124,8 +124,33 @@ def build(spec_path):
     # ⏪ T4：CORE 定义行也补 occurrences（便于统一消费）
     for r in rows:
         r.setdefault("occurrences", [])
+    # ⭐ 第 1 步：把“规划中·未生效”的编号标 `inForce=False`
+    #   为何在生成器里做：**手改生成物会被下一次重生成冲掉**。
+    _planned = _planned_ids(spec_path)
+    for r in rows:
+        if r.get("id") in _planned:
+            r["inForce"] = False
+            r["status"] = "规划中·未生效"
     return rows
 
+
+def _planned_ids(spec_path):
+    """⭐ 从 `000-060 §9.3` 的状态行**动态提取**"规划中·未生效"的编号。
+
+    为何：**这些编号在盘上无件**，若不标 `inForce: false`，
+    任何"索引命中"都会被误读为"条款存在"（审计 F-02）。
+    **不写死名单** —— 从登记表现状提取，登记一改，重生成即跟随。"""
+    reg = os.path.join(os.path.dirname(spec_path), "layers",
+                       "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md")
+    if not os.path.isfile(reg):
+        return set()
+    out = set()
+    for ln in io.open(reg, encoding="utf-8", errors="replace").read().split("\n"):
+        if "规划中·未生效" in ln:
+            m = re.search(r"`(PHAROS-[A-Z0-9\-]+)`", ln)
+            if m:
+                out.add(m.group(1))
+    return out
 
 def check(spec_path, rows):
     fails = []
