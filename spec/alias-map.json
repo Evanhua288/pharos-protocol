@@ -1,7 +1,7 @@
 {
  "_note": "条号别名映射表：**展示侧身份可变，规范身份不变**。",
  "_rule": "canonical 是条号的**唯一称命**；alias 只能指向 canonical；**一个 alias 不得指向两个 canonical**；条号一旦发布不得改名，只能**新增别名**。`removedIn` 非空者仅供历史解析。",
- "specSha256": "0d4aaf2f241157166c6e225141025617109d02a6f90144e89380f1cbd29031d5",
+ "specSha256": "0c248ec36b334897a34dbb8190462b6e369615737330627630e783d5c359c962",
  "clauseCount": 938,
  "entries": [
   {
