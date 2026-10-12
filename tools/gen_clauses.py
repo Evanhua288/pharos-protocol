@@ -54,10 +54,11 @@ except Exception:
     pass
 
 REF = re.compile(r"`((?:CORE-001-)?\d{3}(?:-[A-Z])?)`")
-LAYER_REF = re.compile(r"`([A-Z][A-Z0-9-]*-\d{3}(?:-[A-Z])?)`")
+LAYER_REF = re.compile(r"`((?:PHAROS-)?[A-Z][A-Z0-9-]*-\d{3}(?:-[A-Z])?|PHAROS-(?:GV|PA)-[A-Z]+(?:-[A-Z]+)*)`")
 LAYER_ROOT = None
 LIST = re.compile(r"`((?:CORE-001-\d{3})(?:`\uff0f`CORE-001-\d{3})*)`")
 # ⏪ T4：裸前缀码（家族/件号本身，不是条号）：整串只有 家族-3位数，后面不再有编号
+REGISTRY_RX = re.compile(r"^PHAROS-(?:GV|PA)-[A-Z]+(?:-[A-Z]+)*$")  # 000-080 §三 3.2
 PREFIX_RX = re.compile(r"(?:PHAROS-)?[A-Z][A-Z0-9]*-\d{3}")
 
 
@@ -119,7 +120,8 @@ def build(spec_path):
             _f0, _l0, _t0 = places[0]
             rows.append({"id": _cid, "line": _l0, "level": "layer", "text": _t0,
                          "refs": [], "_kw": [], "_ext": _f0,
-                         "type": "prefix" if PREFIX_RX.fullmatch(_cid) else "layer",
+                         "type": ("prefix" if PREFIX_RX.fullmatch(_cid) else
+                                    ("registry" if REGISTRY_RX.match(_cid) else "layer")),
                          "occurrences": o})
     # ⏪ T4：CORE 定义行也补 occurrences（便于统一消费）
     for r in rows:

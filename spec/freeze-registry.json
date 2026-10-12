@@ -4735,6 +4735,41 @@
       "firstPublished": "2026-10-12",
       "frozenUntil": "2026-12-11",
       "status": "FROZEN"
+    },
+    "PHAROS-000-080": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PHAROS-GV-COUNCIL": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PHAROS-GV-ETHICS": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PHAROS-OPEN-100-010": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PHAROS-PA-MY": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PHAROS-PA-PG": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PHAROS-PA-SG": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
     }
   }
 }

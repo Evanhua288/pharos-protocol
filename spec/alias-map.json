@@ -1,8 +1,8 @@
 {
  "_note": "条号别名映射表：**展示侧身份可变，规范身份不变**。",
  "_rule": "canonical 是条号的**唯一称命**；alias 只能指向 canonical；**一个 alias 不得指向两个 canonical**；条号一旦发布不得改名，只能**新增别名**。`removedIn` 非空者仅供历史解析。",
- "specSha256": "f57d6157f27d9f57f8adb3e3699367c40bae3f6d31965796c7c0290829cb13a4",
- "clauseCount": 941,
+ "specSha256": "0df58b728e29b305a735327c2dc53987237086e7649aef99a381e2d5602f7541",
+ "clauseCount": 948,
  "entries": [
   {
    "canonical": "ARCH-001",
@@ -4247,6 +4247,12 @@
    "removedIn": null
   },
   {
+   "canonical": "PHAROS-000-080",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
    "canonical": "PHAROS-000-100",
    "aliases": [],
    "addedIn": "V1.x",
@@ -4499,9 +4505,21 @@
    "removedIn": null
   },
   {
+   "canonical": "PHAROS-GV-COUNCIL",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
    "canonical": "PHAROS-GV-DEC-001",
    "aliases": [],
    "addedIn": "V1.x",
+   "removedIn": null
+  },
+  {
+   "canonical": "PHAROS-GV-ETHICS",
+   "aliases": [],
+   "addedIn": "V1.86",
    "removedIn": null
   },
   {
@@ -4541,6 +4559,12 @@
    "removedIn": null
   },
   {
+   "canonical": "PHAROS-OPEN-100-010",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
    "canonical": "PHAROS-OPEN-110",
    "aliases": [],
    "addedIn": "V1.x",
@@ -4574,6 +4598,24 @@
    "canonical": "PHAROS-OPEN-160",
    "aliases": [],
    "addedIn": "V1.x",
+   "removedIn": null
+  },
+  {
+   "canonical": "PHAROS-PA-MY",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PHAROS-PA-PG",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PHAROS-PA-SG",
+   "aliases": [],
+   "addedIn": "V1.86",
    "removedIn": null
   },
   {

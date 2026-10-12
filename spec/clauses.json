@@ -1,17 +1,18 @@
 {
  "_note": "机读条款索引（由 gen_clauses.py 从 spec 生成，不手写）。",
  "spec": "CORE-001-V1.2.md",
- "specSha256": "f57d6157f27d9f57f8adb3e3699367c40bae3f6d31965796c7c0290829cb13a4",
+ "specSha256": "0df58b728e29b305a735327c2dc53987237086e7649aef99a381e2d5602f7541",
  "specBytes": 161959,
- "clauses": 941,
- "clauseCount": 941,
- "clauseIds": 941,
+ "clauses": 948,
+ "clauseCount": 948,
+ "clauseIds": 948,
  "prefixCount": 98,
- "occurrenceCount": 1384,
+ "occurrenceCount": 1413,
  "typeCounts": {
   "clause": 201,
   "prefix": 98,
-  "layer": 642
+  "layer": 644,
+  "registry": 5
  },
  "hashRule": "clauseHash ＝ SHA256(UTF-8 字节（该条 text 字段）)；不含行号、不含版本行、不含沿革表。故**引条不引版**：条号变、条文未变 ⇒ 哈希不变。",
  "index": [
@@ -1552,6 +1553,10 @@
    "refs": [],
    "occurrences": [
     {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 79
+    },
+    {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
      "line": 77
     },
@@ -2425,13 +2430,17 @@
   },
   {
    "id": "ARCH-001",
-   "line": 39,
+   "line": 81,
    "level": "layer",
-   "text": "| **1** | **镜子不是尺子** | 方法论 | `ARCH-001` §四 |",
+   "text": "| **`prefix`** | **族码或子域码**（**只能指族，不能单独引用**） | `ARCH-001`／`COG-100` |",
    "refs": [],
-   "_ext": "PHAROS-EXP-100-表达规范-V1.0-20261006.md",
+   "_ext": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
    "type": "prefix",
    "occurrences": [
+    {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 81
+    },
     {
      "file": "PHAROS-EXP-100-表达规范-V1.0-20261006.md",
      "line": 39
@@ -2445,17 +2454,21 @@
      "line": 160
     }
    ],
-   "clauseHash": "2f760d5247314cb4adbd486a83f74bd1df366704482109fb25522784ada66568"
+   "clauseHash": "a456f59903d3a6635aaa77bd0364bdf9620b5b3fc8e6f68e5efd4973225e134b"
   },
   {
    "id": "COG-100",
-   "line": 19,
+   "line": 81,
    "level": "layer",
-   "text": "## 1. Profile 声明（**`COG-100` §2.2 五要件**）",
+   "text": "| **`prefix`** | **族码或子域码**（**只能指族，不能单独引用**） | `ARCH-001`／`COG-100` |",
    "refs": [],
-   "_ext": "PHAROS-COG-100-A-东方认知Profile-V1.0-20261006.md",
+   "_ext": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
    "type": "prefix",
    "occurrences": [
+    {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 81
+    },
     {
      "file": "PHAROS-COG-100-A-东方认知Profile-V1.0-20261006.md",
      "line": 19
@@ -2465,7 +2478,7 @@
      "line": 150
     }
    ],
-   "clauseHash": "5e89c0949a75e2d3d4b405b10e5454694b68049a3c0910b1d80a7cd6713b4c2e"
+   "clauseHash": "a456f59903d3a6635aaa77bd0364bdf9620b5b3fc8e6f68e5efd4973225e134b"
   },
   {
    "id": "COG-100-010",
@@ -3825,13 +3838,21 @@
   },
   {
    "id": "CORE-001",
-   "line": 26,
+   "line": 79,
    "level": "layer",
-   "text": "| **协议层** | `spec/` 全部（`CORE-001` ＋ `spec/layers/`） | ⭐ **协议层自己** | **公司侧／操作层**引而不抄**；**不得改其语义** |",
+   "text": "| **`clause`** | **`CORE-001` 定义的条款**（**可引用的判定依据**） | `CORE-001-176` |",
    "refs": [],
-   "_ext": "PHAROS-000-170-双层SSOT与互引不复制-V1.0-20261008.md",
+   "_ext": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
    "type": "prefix",
    "occurrences": [
+    {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 79
+    },
+    {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 115
+    },
     {
      "file": "PHAROS-000-170-双层SSOT与互引不复制-V1.0-20261008.md",
      "line": 26
@@ -3873,7 +3894,7 @@
      "line": 96
     }
    ],
-   "clauseHash": "129903cb1765d9bbe29cd4f5790f18ada98bf35088709a75b446f0949f90031d"
+   "clauseHash": "07127117d640c07b8e9279f2c02a6ed4ae9441d9d08a38534898548d020a4855"
   },
   {
    "id": "EXP-100",
@@ -9781,7 +9802,7 @@
   },
   {
    "id": "OPEN-130",
-   "line": 192,
+   "line": 193,
    "level": "layer",
    "text": "> ## **　　**（**如 `OPEN-130` 等在前表标\"草案\"、后表标\"空头登记·盘上无件\"，而盘上确无件**）。",
    "refs": [],
@@ -9790,7 +9811,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 192
+     "line": 193
     },
     {
      "file": "PHAROS-OPEN-150-实现方登记册与投票人核验-V1.0-20261006.md",
@@ -11630,7 +11651,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 266
+     "line": 267
     }
    ],
    "inForce": false,
@@ -11655,6 +11676,10 @@
      "line": 46
     },
     {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 105
+    },
+    {
      "file": "件名清单.md",
      "line": 26
     }
@@ -11676,7 +11701,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 267
+     "line": 268
     }
    ],
    "inForce": false,
@@ -11698,11 +11723,11 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 63
+     "line": 64
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 268
+     "line": 269
     }
    ],
    "inForce": false,
@@ -11724,7 +11749,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 270
+     "line": 271
     }
    ],
    "inForce": false,
@@ -11750,11 +11775,11 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 127
+     "line": 128
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 271
+     "line": 272
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
@@ -11821,6 +11846,14 @@
      "line": 52
     },
     {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 7
+    },
+    {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 103
+    },
+    {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
      "line": 7
     },
@@ -11849,6 +11882,10 @@
      "line": 53
     },
     {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 104
+    },
+    {
      "file": "PHAROS-PA-MY-马来西亚附则-V1.0-20261006.md",
      "line": 7
     },
@@ -11868,10 +11905,10 @@
    "clauseHash": "7f985dc7a8d70134732ef417ec66e7442d41bb3b57e5eee5db3a8315fcaa9c92"
   },
   {
-   "id": "PHAROS-000-100",
+   "id": "PHAROS-000-080",
    "line": 54,
    "level": "layer",
-   "text": "| **`PHAROS-000-100`** | **许可与认证补件** | V1.0 | **🔴 空头登记（盘上无件）** | 流程确认 |",
+   "text": "| **`PHAROS-000-080`** | **登记级编号号形规范** | V1.0 | **现行** | 本期新增 |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "layer",
@@ -11879,21 +11916,15 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 54
-    },
-    {
-     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 272
     }
    ],
-   "inForce": false,
-   "status": "规划中·未生效",
-   "clauseHash": "077f0337d839caa8bafa45317096c4435accb7e99654f0c071be9bb83e6dd31b"
+   "clauseHash": "9f2cabc468840d7a2254d4979d57b270c0f70ed4e35c3589fa6ed7d45fab8830"
   },
   {
-   "id": "PHAROS-000-110",
+   "id": "PHAROS-000-100",
    "line": 55,
    "level": "layer",
-   "text": "| **`PHAROS-000-110`** | **正本位置登记** | V1.0 | **🔴 空头登记（盘上无件）** | 流程确认 |",
+   "text": "| **`PHAROS-000-100`** | **许可与认证补件** | V1.0 | **🔴 空头登记（盘上无件）** | 流程确认 |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "layer",
@@ -11909,13 +11940,13 @@
    ],
    "inForce": false,
    "status": "规划中·未生效",
-   "clauseHash": "a0d9a565bca313af1e6824b27ac470dc2426ed6f0288124cfb5ebff8fc818d39"
+   "clauseHash": "077f0337d839caa8bafa45317096c4435accb7e99654f0c071be9bb83e6dd31b"
   },
   {
-   "id": "PHAROS-000-120",
+   "id": "PHAROS-000-110",
    "line": 56,
    "level": "layer",
-   "text": "| **`PHAROS-000-120`** | **许可声明（LICENSE）** | V0.9 | **草案**（待法律确认） | 流程确认 |",
+   "text": "| **`PHAROS-000-110`** | **正本位置登记** | V1.0 | **🔴 空头登记（盘上无件）** | 流程确认 |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "layer",
@@ -11931,20 +11962,20 @@
    ],
    "inForce": false,
    "status": "规划中·未生效",
-   "clauseHash": "ed1e7992204adb173d9b0f163d1e05da9aeacf3a6216cfca83cc6ce3b46882c7"
+   "clauseHash": "a0d9a565bca313af1e6824b27ac470dc2426ed6f0288124cfb5ebff8fc818d39"
   },
   {
-   "id": "PHAROS-000-130",
-   "line": 238,
+   "id": "PHAROS-000-120",
+   "line": 57,
    "level": "layer",
-   "text": "| **`PHAROS-000-130`** | **未处理清单** | **V1.0** | **🔴 空头登记（盘上无件）** |",
+   "text": "| **`PHAROS-000-120`** | **许可声明（LICENSE）** | V0.9 | **草案**（待法律确认） | 流程确认 |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "layer",
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 238
+     "line": 57
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
@@ -11953,13 +11984,13 @@
    ],
    "inForce": false,
    "status": "规划中·未生效",
-   "clauseHash": "1475790f7e4991c84780d792e4a0c707094b6a55b935f0ae04c0d71fab839b43"
+   "clauseHash": "ed1e7992204adb173d9b0f163d1e05da9aeacf3a6216cfca83cc6ce3b46882c7"
   },
   {
-   "id": "PHAROS-000-140",
+   "id": "PHAROS-000-130",
    "line": 239,
    "level": "layer",
-   "text": "| **`PHAROS-000-140`** | **吸收核验规程** | **V1.0** | **草案** |",
+   "text": "| **`PHAROS-000-130`** | **未处理清单** | **V1.0** | **🔴 空头登记（盘上无件）** |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "layer",
@@ -11975,37 +12006,35 @@
    ],
    "inForce": false,
    "status": "规划中·未生效",
-   "clauseHash": "85a5c127b757e2908fa20b49b8361fe30e91e394ec9590037f180d76a0834d23"
+   "clauseHash": "1475790f7e4991c84780d792e4a0c707094b6a55b935f0ae04c0d71fab839b43"
   },
   {
-   "id": "PHAROS-000-150",
-   "line": 57,
+   "id": "PHAROS-000-140",
+   "line": 240,
    "level": "layer",
-   "text": "| **`PHAROS-000-150`** | **本体底座与架构支柱自检表** | V1.0 | **现行** | 流程确认 |",
+   "text": "| **`PHAROS-000-140`** | **吸收核验规程** | **V1.0** | **草案** |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "layer",
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 57
+     "line": 240
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 242
-    },
-    {
-     "file": "件名清单.md",
-     "line": 29
+     "line": 277
     }
    ],
-   "clauseHash": "3f3afb945c2629c11c261881ae9ead1ead854d1eac01b15c2f8aa65597f34717"
+   "inForce": false,
+   "status": "规划中·未生效",
+   "clauseHash": "85a5c127b757e2908fa20b49b8361fe30e91e394ec9590037f180d76a0834d23"
   },
   {
-   "id": "PHAROS-000-160",
+   "id": "PHAROS-000-150",
    "line": 58,
    "level": "layer",
-   "text": "| **`PHAROS-000-160`** | **适配层理念原则** | V1.0 | **现行** | 流程确认 |",
+   "text": "| **`PHAROS-000-150`** | **本体底座与架构支柱自检表** | V1.0 | **现行** | 流程确认 |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "layer",
@@ -12020,16 +12049,16 @@
     },
     {
      "file": "件名清单.md",
-     "line": 30
+     "line": 29
     }
    ],
-   "clauseHash": "1a0a5676ea0dc312c9a05700f2c265b8d5e5bbd90eaba8ca1afe03178cd921a2"
+   "clauseHash": "3f3afb945c2629c11c261881ae9ead1ead854d1eac01b15c2f8aa65597f34717"
   },
   {
-   "id": "PHAROS-000-170",
+   "id": "PHAROS-000-160",
    "line": 59,
    "level": "layer",
-   "text": "| **`PHAROS-000-170`** | **双层 SSOT 与互引不复制** | V1.0 | **现行** | 流程确认 |",
+   "text": "| **`PHAROS-000-160`** | **适配层理念原则** | V1.0 | **现行** | 流程确认 |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "layer",
@@ -12041,6 +12070,30 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 244
+    },
+    {
+     "file": "件名清单.md",
+     "line": 30
+    }
+   ],
+   "clauseHash": "1a0a5676ea0dc312c9a05700f2c265b8d5e5bbd90eaba8ca1afe03178cd921a2"
+  },
+  {
+   "id": "PHAROS-000-170",
+   "line": 60,
+   "level": "layer",
+   "text": "| **`PHAROS-000-170`** | **双层 SSOT 与互引不复制** | V1.0 | **现行** | 流程确认 |",
+   "refs": [],
+   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+   "type": "layer",
+   "occurrences": [
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 60
+    },
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 245
     },
     {
      "file": "件名清单.md",
@@ -12080,7 +12133,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 78
+     "line": 79
     },
     {
      "file": "PHAROS-COG-100-A-东方认知Profile-V1.0-20261006.md",
@@ -12168,7 +12221,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 98
+     "line": 99
     },
     {
      "file": "PHAROS-COG-100-A补正-自算门-V1.0-20261006.md",
@@ -12208,7 +12261,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 79
+     "line": 80
     },
     {
      "file": "件名清单.md",
@@ -12316,7 +12369,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 80
+     "line": 81
     },
     {
      "file": "PHAROS-COG-100-A-东方认知Profile-V1.0-20261006.md",
@@ -12448,7 +12501,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 81
+     "line": 82
     },
     {
      "file": "PHAROS-COG-100-A补正-自算门-V1.0-20261006.md",
@@ -12631,7 +12684,7 @@
   },
   {
    "id": "PHAROS-COM-100",
-   "line": 75,
+   "line": 76,
    "level": "layer",
    "text": "| **`PHAROS-COM-100`** | 关系与社区规范 | V1.0 | **现行** |",
    "refs": [],
@@ -12640,7 +12693,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 75
+     "line": 76
     },
     {
      "file": "件名清单.md",
@@ -12667,7 +12720,7 @@
   },
   {
    "id": "PHAROS-EXP-100",
-   "line": 100,
+   "line": 101,
    "level": "layer",
    "text": "| **`PHAROS-EXP-100`** | **表达规范**（**丙档：对外术语映射与禁语**） | V1.0 | **草案**（**V1.1 补登**） |",
    "refs": [],
@@ -12676,7 +12729,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 100
+     "line": 101
     },
     {
      "file": "件名清单.md",
@@ -12687,7 +12740,7 @@
   },
   {
    "id": "PHAROS-EXPL-001",
-   "line": 240,
+   "line": 241,
    "level": "layer",
    "text": "| **`PHAROS-EXPL-001`** | **完整图文框架（先看这个）** | **V2.0** | **🔴 空头登记（盘上无件）** |",
    "refs": [],
@@ -12696,11 +12749,11 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 240
+     "line": 241
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 277
+     "line": 278
     }
    ],
    "inForce": false,
@@ -12729,7 +12782,7 @@
   },
   {
    "id": "PHAROS-FIN-100",
-   "line": 77,
+   "line": 78,
    "level": "layer",
    "text": "| **`PHAROS-FIN-100`** | 经济与三轨规范 | V1.0 | **现行** |",
    "refs": [],
@@ -12738,7 +12791,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 77
+     "line": 78
     },
     {
      "file": "件名清单.md",
@@ -12748,8 +12801,40 @@
    "clauseHash": "2ef20166c5c0a316cffe21003ff93715a3ca6351eabf6ae35ff52d48c7526ea1"
   },
   {
+   "id": "PHAROS-GV-COUNCIL",
+   "line": 154,
+   "level": "layer",
+   "text": "| **`PHAROS-GV-COUNCIL`** | 协议治理委员会章程 | V1.0 | **现行** |",
+   "refs": [],
+   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+   "type": "registry",
+   "occurrences": [
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 154
+    },
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 279
+    },
+    {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 33
+    },
+    {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 60
+    },
+    {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 82
+    }
+   ],
+   "clauseHash": "d83d9a280c6182655e97e995c525c5b9c3d11a8c3a4aad8eea7159c17e348d0c"
+  },
+  {
    "id": "PHAROS-GV-DEC-001",
-   "line": 151,
+   "line": 152,
    "level": "layer",
    "text": "| **`PHAROS-GV-DEC-001`** | 投票权裁定 | V1.0 | **🔴 空头登记（盘上无件）** |",
    "refs": [],
@@ -12758,11 +12843,11 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 151
+     "line": 152
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 279
+     "line": 280
     }
    ],
    "inForce": false,
@@ -12770,8 +12855,30 @@
    "clauseHash": "6efd622f739e021bf91992826a8bb2bcf2f8c4307e80c0e5e288ea839f6b7c34"
   },
   {
+   "id": "PHAROS-GV-ETHICS",
+   "line": 153,
+   "level": "layer",
+   "text": "| **`PHAROS-GV-ETHICS`** | 伦理委员会章程 | V1.0 | **草案** |",
+   "refs": [],
+   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+   "type": "registry",
+   "occurrences": [
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 153
+    },
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 281
+    }
+   ],
+   "inForce": false,
+   "status": "规划中·未生效",
+   "clauseHash": "786bea59978d8733da009806ab0b65c2eb0eabcc710697e20f6e513806e5d308"
+  },
+  {
    "id": "PHAROS-ID-100",
-   "line": 74,
+   "line": 75,
    "level": "layer",
    "text": "| **`PHAROS-ID-100`** | 本体与身份规范 | V1.0 | **现行** |",
    "refs": [],
@@ -12780,7 +12887,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 74
+     "line": 75
     },
     {
      "file": "件名清单.md",
@@ -12820,7 +12927,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 76
+     "line": 77
     },
     {
      "file": "件名清单.md",
@@ -12831,29 +12938,9 @@
   },
   {
    "id": "PHAROS-OPEN-001",
-   "line": 109,
-   "level": "layer",
-   "text": "| **`PHAROS-OPEN-001`** | **开放架构**（**架构修正件**） | V1.0 | **现行**（**V1.1 补登**） |",
-   "refs": [],
-   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-   "type": "prefix",
-   "occurrences": [
-    {
-     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 109
-    },
-    {
-     "file": "件名清单.md",
-     "line": 43
-    }
-   ],
-   "clauseHash": "dcff87c20768f5ef88b55b7c9d28da1ad40ee395182bf41e2d921813d8f9625e"
-  },
-  {
-   "id": "PHAROS-OPEN-002",
    "line": 110,
    "level": "layer",
-   "text": "| **`PHAROS-OPEN-002`** | **自驱模型**（**架构件**） | V1.0 | **草案**（**V1.1 补登**） |",
+   "text": "| **`PHAROS-OPEN-001`** | **开放架构**（**架构修正件**） | V1.0 | **现行**（**V1.1 补登**） |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "prefix",
@@ -12864,16 +12951,16 @@
     },
     {
      "file": "件名清单.md",
-     "line": 44
+     "line": 43
     }
    ],
-   "clauseHash": "7f4e6a199b7b365a403b4dd993ab8bbac2b075c0c2f56878d73b20f933dad2e0"
+   "clauseHash": "dcff87c20768f5ef88b55b7c9d28da1ad40ee395182bf41e2d921813d8f9625e"
   },
   {
-   "id": "PHAROS-OPEN-100",
+   "id": "PHAROS-OPEN-002",
    "line": 111,
    "level": "layer",
-   "text": "| **`PHAROS-OPEN-100`** | 开放条款总表 | V1.0 | **草案** |",
+   "text": "| **`PHAROS-OPEN-002`** | **自驱模型**（**架构件**） | V1.0 | **草案**（**V1.1 补登**） |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "prefix",
@@ -12883,8 +12970,28 @@
      "line": 111
     },
     {
+     "file": "件名清单.md",
+     "line": 44
+    }
+   ],
+   "clauseHash": "7f4e6a199b7b365a403b4dd993ab8bbac2b075c0c2f56878d73b20f933dad2e0"
+  },
+  {
+   "id": "PHAROS-OPEN-100",
+   "line": 112,
+   "level": "layer",
+   "text": "| **`PHAROS-OPEN-100`** | 开放条款总表 | V1.0 | **草案** |",
+   "refs": [],
+   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+   "type": "prefix",
+   "occurrences": [
+    {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 229
+     "line": 112
+    },
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 230
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
@@ -12922,34 +13029,26 @@
    "clauseHash": "83182a3909e9728df272d10befc929a68d12160c7b566f3819a01fbcc51c010a"
   },
   {
-   "id": "PHAROS-OPEN-110",
-   "line": 112,
+   "id": "PHAROS-OPEN-100-010",
+   "line": 80,
    "level": "layer",
-   "text": "| **`PHAROS-OPEN-110`** | 规范许可声明 | V1.0 | **现行**（**2026-10-07**） |",
+   "text": "| **`layer`** | **层件内的条款** | `PHAROS-OPEN-100-010` |",
    "refs": [],
-   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-   "type": "prefix",
+   "_ext": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+   "type": "layer",
    "occurrences": [
     {
-     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 112
-    },
-    {
-     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 230
-    },
-    {
-     "file": "件名清单.md",
-     "line": 46
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 80
     }
    ],
-   "clauseHash": "2f524f9543d12b2f6cb3bf4d1ea97e30e13ca0e2b03e59fa5d51d2e88e90cbf2"
+   "clauseHash": "4e3501da904045b3bdaac4f8f6080d1ed7dc9504571cbb8a5dcf2991dd1d141f"
   },
   {
-   "id": "PHAROS-OPEN-120",
+   "id": "PHAROS-OPEN-110",
    "line": 113,
    "level": "layer",
-   "text": "| **`PHAROS-OPEN-120`** | 名称使用政策 | V1.0 | **草案** |",
+   "text": "| **`PHAROS-OPEN-110`** | 规范许可声明 | V1.0 | **现行**（**2026-10-07**） |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "prefix",
@@ -12960,7 +13059,31 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 232
+     "line": 231
+    },
+    {
+     "file": "件名清单.md",
+     "line": 46
+    }
+   ],
+   "clauseHash": "2f524f9543d12b2f6cb3bf4d1ea97e30e13ca0e2b03e59fa5d51d2e88e90cbf2"
+  },
+  {
+   "id": "PHAROS-OPEN-120",
+   "line": 114,
+   "level": "layer",
+   "text": "| **`PHAROS-OPEN-120`** | 名称使用政策 | V1.0 | **草案** |",
+   "refs": [],
+   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+   "type": "prefix",
+   "occurrences": [
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 114
+    },
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 233
     },
     {
      "file": "件名清单.md",
@@ -12971,7 +13094,7 @@
   },
   {
    "id": "PHAROS-OPEN-130",
-   "line": 233,
+   "line": 234,
    "level": "layer",
    "text": "| **`PHAROS-OPEN-130`** | **托管方更换程序** | **V1.0** | **草案** |",
    "refs": [],
@@ -12980,11 +13103,11 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 233
+     "line": 234
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 281
+     "line": 282
     },
     {
      "file": "PHAROS-OPEN-150-实现方登记册与投票人核验-V1.0-20261006.md",
@@ -13001,7 +13124,7 @@
   },
   {
    "id": "PHAROS-OPEN-140",
-   "line": 234,
+   "line": 235,
    "level": "layer",
    "text": "| **`PHAROS-OPEN-140`** | **未经程序变更登记册** | **V1.0** | **草案** |",
    "refs": [],
@@ -13010,11 +13133,11 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 234
+     "line": 235
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 282
+     "line": 283
     }
    ],
    "inForce": false,
@@ -13023,33 +13146,9 @@
   },
   {
    "id": "PHAROS-OPEN-150",
-   "line": 114,
-   "level": "layer",
-   "text": "| **`PHAROS-OPEN-150`** | 实现方登记册与投票人核验 | V1.0 | **现行**（**核验规则部分属甲档；登记册部分属乙档**） |",
-   "refs": [],
-   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-   "type": "prefix",
-   "occurrences": [
-    {
-     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 114
-    },
-    {
-     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 235
-    },
-    {
-     "file": "件名清单.md",
-     "line": 48
-    }
-   ],
-   "clauseHash": "8b15703c663a7c1bd3ef890a43aaef63d8ff35a06918931cf33eaff6b31cb5ae"
-  },
-  {
-   "id": "PHAROS-OPEN-160",
    "line": 115,
    "level": "layer",
-   "text": "| **`PHAROS-OPEN-160`** | 托管方登记表 | V1.0 | **现行**（**乙档**） |",
+   "text": "| **`PHAROS-OPEN-150`** | 实现方登记册与投票人核验 | V1.0 | **现行**（**核验规则部分属甲档；登记册部分属乙档**） |",
    "refs": [],
    "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
    "type": "prefix",
@@ -13060,7 +13159,31 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 231
+     "line": 236
+    },
+    {
+     "file": "件名清单.md",
+     "line": 48
+    }
+   ],
+   "clauseHash": "8b15703c663a7c1bd3ef890a43aaef63d8ff35a06918931cf33eaff6b31cb5ae"
+  },
+  {
+   "id": "PHAROS-OPEN-160",
+   "line": 116,
+   "level": "layer",
+   "text": "| **`PHAROS-OPEN-160`** | 托管方登记表 | V1.0 | **现行**（**乙档**） |",
+   "refs": [],
+   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+   "type": "prefix",
+   "occurrences": [
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 116
+    },
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 232
     },
     {
      "file": "PHAROS-OPEN-100-开放条款总表-V1.0-20261006.md",
@@ -13074,8 +13197,88 @@
    "clauseHash": "3e33e999df6773702b137157fb08bf5e23c431134f40987eeae3e3acbb5830b9"
   },
   {
+   "id": "PHAROS-PA-MY",
+   "line": 126,
+   "level": "layer",
+   "text": "| **`PHAROS-PA-MY`** | 马来西亚附则 | V1.0 | **已交付**（**⏪ V1.38 订正**：盘上有件**） |",
+   "refs": [],
+   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+   "type": "registry",
+   "occurrences": [
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 126
+    },
+    {
+     "file": "件名清单.md",
+     "line": 50
+    }
+   ],
+   "clauseHash": "68edd2c850126f42e488d1b7334c1e7a60e1000e5607b1d0076e225460324a30"
+  },
+  {
+   "id": "PHAROS-PA-PG",
+   "line": 124,
+   "level": "layer",
+   "text": "| **`PHAROS-PA-PG`** | 巴布亚新几内亚附则 | **V1.1 精简版** | **待用附件·未生效** |",
+   "refs": [],
+   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+   "type": "registry",
+   "occurrences": [
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 124
+    },
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 167
+    },
+    {
+     "file": "PHAROS-PA-PG-巴布亚新几内亚附则-V1.1-20261006.md",
+     "line": 354
+    },
+    {
+     "file": "件名清单.md",
+     "line": 51
+    }
+   ],
+   "clauseHash": "b78fe0f71a062b71c77c1dc6c39d2a15a11f5318e0b4eb85193461a6c1154519"
+  },
+  {
+   "id": "PHAROS-PA-SG",
+   "line": 125,
+   "level": "layer",
+   "text": "| **`PHAROS-PA-SG`** | 新加坡附则 | — | **草案·待生效** |",
+   "refs": [],
+   "_ext": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+   "type": "registry",
+   "occurrences": [
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 125
+    },
+    {
+     "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
+     "line": 284
+    },
+    {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 34
+    },
+    {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 60
+    },
+    {
+     "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
+     "line": 82
+    }
+   ],
+   "clauseHash": "52183609fa82cc7f8400cb1a4b34f0000acac4dec951718a10d360e6512375f4"
+  },
+  {
    "id": "PHAROS-PHY-100",
-   "line": 73,
+   "line": 74,
    "level": "layer",
    "text": "| **`PHAROS-PHY-100`** | 物理与节点规范 | V1.0 | **现行** |",
    "refs": [],
@@ -13084,7 +13287,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 73
+     "line": 74
     },
     {
      "file": "件名清单.md",
@@ -13112,7 +13315,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 82
+     "line": 83
     },
     {
      "file": "PHAROS-PRC-200-位阶要件与判定-V1.0-20261006.md",
@@ -13148,7 +13351,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 83
+     "line": 84
     },
     {
      "file": "PHAROS-VAL-400-意义层红线规范-V1.0-20261006.md",
@@ -13276,7 +13479,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 84
+     "line": 85
     },
     {
      "file": "件名清单.md",
@@ -13384,7 +13587,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 85
+     "line": 86
     },
     {
      "file": "PHAROS-VAL-200-贡献记录规范-V1.0-20261006.md",
@@ -13432,7 +13635,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 86
+     "line": 87
     },
     {
      "file": "PHAROS-VAL-400-意义层红线规范-V1.0-20261006.md",
@@ -13464,7 +13667,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 87
+     "line": 88
     },
     {
      "file": "PHAROS-VAL-400-意义层红线规范-V1.0-20261006.md",
@@ -13548,7 +13751,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 88
+     "line": 89
     },
     {
      "file": "PHAROS-COG-100-A-东方认知Profile-V1.0-20261006.md",
@@ -13627,7 +13830,7 @@
   },
   {
    "id": "PHAROS-VAL-490",
-   "line": 241,
+   "line": 242,
    "level": "layer",
    "text": "| **`PHAROS-VAL-490`** | **违反示例集** | **V1.0** | **现行（甲）** |",
    "refs": [],
@@ -13636,7 +13839,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 241
+     "line": 242
     },
     {
      "file": "件名清单.md",
@@ -13647,7 +13850,7 @@
   },
   {
    "id": "PHAROS-VAL-500",
-   "line": 236,
+   "line": 237,
    "level": "layer",
    "text": "| **`PHAROS-VAL-500`** | **成长表达规范（六位）** | **V1.0** | **草案** |",
    "refs": [],
@@ -13656,7 +13859,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 236
+     "line": 237
     },
     {
      "file": "件名清单.md",
@@ -13667,7 +13870,7 @@
   },
   {
    "id": "PHAROS-VUL-100",
-   "line": 237,
+   "line": 238,
    "level": "layer",
    "text": "| **`PHAROS-VUL-100`** | **脆弱用户与未成年人保护** | **V1.0** | **草案** |",
    "refs": [],
@@ -13676,7 +13879,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 237
+     "line": 238
     },
     {
      "file": "件名清单.md",
@@ -14131,7 +14334,7 @@
   },
   {
    "id": "PRC-100",
-   "line": 162,
+   "line": 163,
    "level": "layer",
    "text": "| **`PS-500`** 成长与贡献规范 | `PRC-100` ＋ `PRC-200` ＋ `PRC-300` | **作废·仅追溯** |",
    "refs": [],
@@ -14140,7 +14343,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 162
+     "line": 163
     },
     {
      "file": "PHAROS-COG-100-认知层总则-V1.0-20261006.md",
@@ -14167,7 +14370,7 @@
   },
   {
    "id": "PRC-200",
-   "line": 162,
+   "line": 163,
    "level": "layer",
    "text": "| **`PS-500`** 成长与贡献规范 | `PRC-100` ＋ `PRC-200` ＋ `PRC-300` | **作废·仅追溯** |",
    "refs": [],
@@ -14176,7 +14379,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 162
+     "line": 163
     },
     {
      "file": "PHAROS-VAL-200-贡献记录规范-V1.0-20261006.md",
@@ -14279,7 +14482,7 @@
   },
   {
    "id": "PRC-300",
-   "line": 162,
+   "line": 163,
    "level": "layer",
    "text": "| **`PS-500`** 成长与贡献规范 | `PRC-100` ＋ `PRC-200` ＋ `PRC-300` | **作废·仅追溯** |",
    "refs": [],
@@ -14288,7 +14491,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 162
+     "line": 163
     },
     {
      "file": "PHAROS-000-150-本体底座与架构支柱自检表-V1.0-20261008.md",
@@ -14552,7 +14755,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 162
+     "line": 163
     }
    ],
    "clauseHash": "78d14f5f9eb5218b2add3164d7f4f74122d33722292a347817f9b1690b45c2d4"
@@ -14580,7 +14783,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 161
+     "line": 162
     }
    ],
    "clauseHash": "36eb542e3b9f9b292d99bc2613b776d92fc7ba53dc71b019bacbae0abd30aa49"
@@ -14608,7 +14811,7 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 163
+     "line": 164
     },
     {
      "file": "PHAROS-VUL-100-脆弱用户与未成年人保护规范-V1.0-20261006.md",
@@ -14651,7 +14854,7 @@
   },
   {
    "id": "VAL-100",
-   "line": 161,
+   "line": 162,
    "level": "layer",
    "text": "| **`PS-600`** 意义与三观规范 | `VAL-100` ＋ `VAL-200` ＋ `VAL-400` | **作废·仅追溯** |",
    "refs": [],
@@ -14660,7 +14863,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 161
+     "line": 162
     },
     {
      "file": "PHAROS-000-150-本体底座与架构支柱自检表-V1.0-20261008.md",
@@ -14887,7 +15090,7 @@
   },
   {
    "id": "VAL-200",
-   "line": 161,
+   "line": 162,
    "level": "layer",
    "text": "| **`PS-600`** 意义与三观规范 | `VAL-100` ＋ `VAL-200` ＋ `VAL-400` | **作废·仅追溯** |",
    "refs": [],
@@ -14896,7 +15099,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 161
+     "line": 162
     },
     {
      "file": "PHAROS-000-070-文件头规范与附则编写规则-V1.0-20261006.md",
@@ -15191,7 +15394,7 @@
   },
   {
    "id": "VAL-300",
-   "line": 163,
+   "line": 164,
    "level": "layer",
    "text": "| **`PS-700`** 镜映与引导规范 | `VAL-300` | **作废·仅追溯** |",
    "refs": [],
@@ -15200,7 +15403,7 @@
    "occurrences": [
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 163
+     "line": 164
     },
     {
      "file": "PHAROS-VAL-500-成长表达规范-六位-V1.0-20261006.md",
@@ -15628,15 +15831,15 @@
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 137
+     "line": 138
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 161
+     "line": 162
     },
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
-     "line": 222
+     "line": 223
     },
     {
      "file": "PHAROS-000-070-文件头规范与附则编写规则-V1.0-20261006.md",
