@@ -1691,6 +1691,24 @@
    "removedIn": null
   },
   {
+   "canonical": "CORE-001-224",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "CORE-001-225",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "CORE-001-226",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
    "canonical": "EXP-100",
    "aliases": [],
    "addedIn": "V1.x",
@@ -1826,6 +1844,18 @@
    "canonical": "FIN-100-022",
    "aliases": [],
    "addedIn": "V1.x",
+   "removedIn": null
+  },
+  {
+   "canonical": "FIN-100-023",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "FIN-100-024",
+   "aliases": [],
+   "addedIn": "V1.86",
    "removedIn": null
   },
   {
@@ -1985,9 +2015,135 @@
    "removedIn": null
   },
   {
+   "canonical": "GV-COUNCIL-001",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-002",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-003",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-004",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-010",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-011",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-012",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-013",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-020",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-021",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-022",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
    "canonical": "GV-COUNCIL-030",
    "aliases": [],
    "addedIn": "V1.x",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-031",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-032",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-040",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-041",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-042",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-050",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-051",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-052",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-053",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-054",
+   "aliases": [],
+   "addedIn": "V1.86",
    "removedIn": null
   },
   {
@@ -3863,6 +4019,162 @@
    "removedIn": null
   },
   {
+   "canonical": "PA-SG-001",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-002",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-003",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-004",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-005",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-010",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-011",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-020",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-021",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-022",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-023",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-024",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-030",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-031",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-040",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-041",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-042",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-050",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-051",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-052",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-053",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-060",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-061",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-070",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-071",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-072",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
    "canonical": "PHAROS-000",
    "aliases": [],
    "addedIn": "V1.x",
@@ -5318,318 +5630,6 @@
    "canonical": "XFER-052",
    "aliases": [],
    "addedIn": "V1.x",
-   "removedIn": null
-  },
-  {
-   "canonical": "CORE-001-224",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "CORE-001-225",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "CORE-001-226",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "FIN-100-023",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "FIN-100-024",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-001",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-002",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-003",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-004",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-010",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-011",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-012",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-013",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-020",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-021",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-022",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-031",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-032",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-040",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-041",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-042",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-050",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-051",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-052",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-053",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "GV-COUNCIL-054",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-001",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-002",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-003",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-004",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-005",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-010",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-011",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-020",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-021",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-022",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-023",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-024",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-030",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-031",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-040",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-041",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-042",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-050",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-051",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-052",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-053",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-060",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-061",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-070",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-071",
-   "aliases": [],
-   "addedIn": "V1.86",
-   "removedIn": null
-  },
-  {
-   "canonical": "PA-SG-072",
-   "aliases": [],
-   "addedIn": "V1.86",
    "removedIn": null
   }
  ]

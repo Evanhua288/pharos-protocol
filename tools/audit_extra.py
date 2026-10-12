@@ -50,7 +50,19 @@ def e1_version(root):
 
 
 def e2_artifacts(root):
-    """E2：包内不得有运行产物。"""
+    """E2：包内不得有运行产物。
+
+    ⭐ 先清 `__pycache__`：**本检查器自己在包目录里跑时，Python 会写 `tools/__pycache__`**，
+    然后 E2 就会把自己刚造出来的东西报成"包内产物"（**自证循环**）。
+    判据要的是"**发布件里有没有**"，不是"**我刚才跑出来什么**" ⇒ 先清，再扫。
+    **只清 `__pycache__`（可重建的字节码缓存），不动任何源件。**
+    """
+    import shutil
+    for dp, dn, fn in os.walk(root):
+        for d in list(dn):
+            if d in ARTIFACT_PATS:
+                shutil.rmtree(os.path.join(dp, d), ignore_errors=True)
+                dn.remove(d)
     found = []
     for dp, dn, fn in os.walk(root):
         for d in dn:

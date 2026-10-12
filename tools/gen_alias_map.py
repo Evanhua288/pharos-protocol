@@ -33,6 +33,8 @@ def build():
         if cid not in have:
             ent.append({"canonical": cid, "aliases": [], "addedIn": "V1.86", "removedIn": None})
             added += 1
+    # 按 canonical 排序：否则“原有顺序 + 追加”会使包与仓逐字节不同
+    ent.sort(key=lambda e: e.get("canonical") or "")
     j["entries"] = ent
     j["clauseCount"] = len(ent)
     j["specSha256"] = hashlib.sha256(io.open(SPEC, "rb").read()).hexdigest()
