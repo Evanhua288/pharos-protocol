@@ -1,29 +1,42 @@
 CORE-001 Protocol — Licensing
 ================================
 
-This repository contains two kinds of material, licensed separately.
+This repository is licensed under a single license, with one narrow
+carve-out. It used to be split in two, with the specification text under
+CC BY 4.0 and everything else under Apache-2.0. That split is now removed.
 
-1. SPECIFICATION TEXT
-   Path: spec/**
-   License: Creative Commons Attribution 4.0 International (CC BY 4.0)
-   Full text: https://creativecommons.org/licenses/by/4.0/legalcode
-   You may share and adapt the specification for any purpose, including
-   commercially, provided you give appropriate attribution, link to the
-   license, and indicate if changes were made. No additional restrictions
-   may be applied.
-
-2. REFERENCE IMPLEMENTATION, TEST VECTORS, AND TOOLS
-   Paths: tools/**, vectors/**
+1. SPECIFICATION TEXT, REFERENCE IMPLEMENTATION, TEST VECTORS, AND TOOLS
+   Paths: spec/**, tools/**, vectors/**, and every other file in this
+   repository except the carve-out in section 2.
    License: Apache License, Version 2.0
    Full text: https://www.apache.org/licenses/LICENSE-2.0
-   You may use, modify, and distribute these files, including commercially,
-   under the terms of that license.
+   You may use, modify, and distribute these files, including for
+   commercial purposes, under the terms of that license.
 
-EXCLUDED — NOT LICENSED FOR DISTRIBUTION
-------------------------------------------
-The following are not part of this license grant and must not be published
-or redistributed: signing private keys, release pipeline scripts and
-ledgers, customer lists, pricing rules, and internal decision records.
+   Why a single license, and why this one
+   --------------------------------------
+   An implementer needs the specification text and an implementation of
+   it to carry the same permissions. Apache-2.0 section 3 grants an
+   express patent license. The Creative Commons licenses state that they
+   do not grant patent rights at all, and Creative Commons itself advises
+   against using them for software. A specification that implementers are
+   expected to build on, but which carries no patent grant, exposes those
+   implementers to patent claims on the very material they were invited
+   to implement. That is the wrong risk to hand to the people this
+   protocol is asking to build on it, so the specification text is under
+   the same license as the code.
+
+2. CARVE-OUT
+   ---------
+   The following are not part of this license grant and must not be
+   published or redistributed: signing private keys, release pipeline
+   scripts and ledgers, customer lists, pricing rules, and internal
+   decision records.
+
+Trademarks
+----------
+Apache-2.0 section 6 does not grant trademark rights. Use of the protocol
+name is governed separately, see the name usage policy.
 
 NO CLAIM OF COMPLIANCE
 ----------------------
