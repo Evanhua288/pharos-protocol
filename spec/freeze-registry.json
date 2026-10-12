@@ -3227,8 +3227,9 @@
     "PHAROS-000-001": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-000-010": {
       "firstPublished": "<=2026-10-09",
@@ -3238,26 +3239,30 @@
     "PHAROS-000-020": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-000-030": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-000-040": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-000-050": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-000-060": {
       "firstPublished": "<=2026-10-09",
@@ -3272,32 +3277,37 @@
     "PHAROS-000-100": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-000-110": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-000-120": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-000-130": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-000-140": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-000-150": {
       "firstPublished": "<=2026-10-09",
@@ -3472,8 +3482,9 @@
     "PHAROS-EXPL-001": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-FIN-030": {
       "firstPublished": "<=2026-10-09",
@@ -3488,8 +3499,9 @@
     "PHAROS-GV-DEC-001": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-ID-100": {
       "firstPublished": "<=2026-10-09",
@@ -3534,14 +3546,16 @@
     "PHAROS-OPEN-130": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-OPEN-140": {
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
-      "status": "规划中·未生效",
-      "inForce": false
+      "status": "EXPIRED",
+      "inForce": false,
+      "planned": true
     },
     "PHAROS-OPEN-150": {
       "firstPublished": "<=2026-10-09",
