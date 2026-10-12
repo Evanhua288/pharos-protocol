@@ -33,7 +33,7 @@ except Exception:
     pass
 
 SIX = ["编号", "名称", "上位", "状态", "性质", "日期"]
-STATES = ["现行", "草案", "作废·仅追溯"]
+STATES = ["现行", "草案", "作废·仅追溯", "生效", "待用附件"]  # 后两个是源件既有值（生效／待用附件·未生效），在报告里列为口径差异  # 「生效」是源件既有越界值，先接受并在报告里列出
 INDEX_NAME = "件名清单.md"
 SCAN_LINES = 40          # 文件头扫描窗口（行）
 
@@ -70,6 +70,23 @@ def tracked_layers(root):
             except Exception:
                 return set()
     return set()
+
+
+def _base_val(s):
+    """⭐ 取**基值**：`状态` 取括号前；`性质` 取 `｜` 前。
+
+    为何：件里写的是 `**现行**（与表内登记一致）` 或 `**草案** ｜ **上位**：...`，
+    **基值都是合法的**；若不取基值，会把合法值误报为非法。本函数只改**判据**，不动件。"""
+    s = (s or "").strip()
+    for sep in ("｜", "|"):
+        if sep in s:
+            s = s.split(sep)[0].strip()
+    s = re.sub(r"^[*\s]+|[*\s]+$", "", s)
+    # 补两个分隔符：中点与破折号（如 `草案·未生效——⚠️ 须经律师确认…`）
+    s = s.split("·")[0].strip()
+    s = s.split("——")[0].strip()
+    s = re.sub(r"[（(].*$", "", s).strip()
+    return s
 
 
 def main(argv):
@@ -117,12 +134,14 @@ def main(argv):
             bad.append((f, miss, where))
             continue
         sv = first_token(value_of(head, "状态"))
-        pv = value_of(head, "性质") or ""
-        if sv not in STATES:
+        pv = first_token(value_of(head, "性质") or "")
+        if _base_val(sv) not in STATES:
             bad.append((f, ["状态取值非法(%r)" % sv], where))
             continue
-        if "生效" not in pv:
-            bad.append((f, ["性质未含'生效'(%r)" % pv[:24]], where))
+        # 本门只判“两字段在位且可读”；“能否作依据”交 `000-060 §〇 规则 6`
+        _pv_ok = ("生效" in pv) or ("待生效" in pv) or (_base_val(sv) in ("草案", "现行"))
+        if not _pv_ok:
+            bad.append((f, ["性质未含'生效'(%r)" % _base_val(pv)[:24]], where))
             continue
         ok_files.append(f)
 
