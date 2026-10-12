@@ -4720,6 +4720,21 @@
       "firstPublished": "2026-10-12",
       "frozenUntil": "2026-12-11",
       "status": "FROZEN"
+    },
+    "OPEN-100-081": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "OPEN-100-082": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "OPEN-100-083": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
     }
   }
 }

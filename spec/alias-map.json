@@ -1,8 +1,8 @@
 {
  "_note": "条号别名映射表：**展示侧身份可变，规范身份不变**。",
  "_rule": "canonical 是条号的**唯一称命**；alias 只能指向 canonical；**一个 alias 不得指向两个 canonical**；条号一旦发布不得改名，只能**新增别名**。`removedIn` 非空者仅供历史解析。",
- "specSha256": "0c248ec36b334897a34dbb8190462b6e369615737330627630e783d5c359c962",
- "clauseCount": 938,
+ "specSha256": "f57d6157f27d9f57f8adb3e3699367c40bae3f6d31965796c7c0290829cb13a4",
+ "clauseCount": 941,
  "entries": [
   {
    "canonical": "ARCH-001",
@@ -3488,6 +3488,24 @@
    "canonical": "OPEN-100-080",
    "aliases": [],
    "addedIn": "V1.x",
+   "removedIn": null
+  },
+  {
+   "canonical": "OPEN-100-081",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "OPEN-100-082",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "OPEN-100-083",
+   "aliases": [],
+   "addedIn": "V1.86",
    "removedIn": null
   },
   {
