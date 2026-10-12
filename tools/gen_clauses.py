@@ -8,9 +8,22 @@ r"""gen_clauses.py —— 从 spec **机读生成**条款索引 `clauses.json`�
   CITE_SEMANTIC—— 引用必须与目标条语义相关（粗判：共享至少一个关键词）
   DUP          —— 条号不得重复
   LINENO       —— 索引行号必须与实读一致
+  IDX_DUP      —— ⭐ 产出的索引内 id 不得重复（含层件侧）
+  IDX_PREFIX   —— ⭐ 裸前缀（如 `PHAROS-000`／`VAL-400`／`CORE-001`）不得占"条款 id"位，
+                  须带 `type: "prefix"` 隔离
+  IDX_COUNT    —— ⭐ `clauseCount` 必须等于实际条目数
+  IDX_STALE    —— ⭐ 盘上 `clauses.json` 必须与当场重生成逐字节一致（防陈旧）
+
+⏪ T4 整改（2026-10-12）：
+  · 层件侧由"**一次出现一行**"改为"**一个条号一条**＋`occurrences` 记全部出现位置"
+    ——原写法使同一 id 重复登记（实测重复 id 225 个），且 `line` 一律 -1（无法定位）。
+  · 新增 `type` 字段：`clause`（CORE 定义行）／`layer`（层件条号）／
+    `prefix`（裸前缀码，不是条号）——满足 T-索引判据 3。
+  · 新增计数字段：`clauseCount`（＝条目数）／`prefixCount`／`occurrenceCount`／`typeCounts`。
+  · 新增索引自检 `IDX_*`（见上）。
 
 用法：
-  python gen_clauses.py <spec路径> [--check]
+  python gen_clauses.py <spec路径> [--check] [--no-write]
 """
 import hashlib
 import io
@@ -44,6 +57,8 @@ REF = re.compile(r"`((?:CORE-001-)?\d{3}(?:-[A-Z])?)`")
 LAYER_REF = re.compile(r"`([A-Z][A-Z0-9-]*-\d{3}(?:-[A-Z])?)`")
 LAYER_ROOT = None
 LIST = re.compile(r"`((?:CORE-001-\d{3})(?:`\uff0f`CORE-001-\d{3})*)`")
+# ⏪ T4：裸前缀码（家族/件号本身，不是条号）：整串只有 家族-3位数，后面不再有编号
+PREFIX_RX = re.compile(r"(?:PHAROS-)?[A-Z][A-Z0-9]*-\d{3}")
 
 
 def load(path):
@@ -65,7 +80,8 @@ def build(spec_path):
         level = cells[1].replace("*", "").strip() if len(cells) > 1 else ""
         body = cells[2] if len(cells) > 2 else s
         text = re.sub(r"[*`]", "", body)
-        rows.append({"id": cid, "line": i, "level": level, "text": text, "_raw": body})
+        rows.append({"id": cid, "line": i, "level": level, "text": text, "_raw": body,
+                     "type": "clause"})
     # \u5f15\u7528\u5173\u7cfb
     for r in rows:
         _rr = []
@@ -83,16 +99,31 @@ def build(spec_path):
             for seg in re.findall(r"[\u4e00-\u9fff]{2,4}", m):
                 kw.add(seg)
         r["_kw"] = sorted(kw)[:40]
-    # 层件条号：收为“外部条号”，供引用存在性校验
+    # ⏪ T4：层件侧改为「**一个条号一条** ＋ `occurrences` 记全部出现位置」
     _lay = os.path.join(os.path.dirname(spec_path), "layers")
+    occ = {}          # id -> [(file, line, text)]
     if os.path.isdir(_lay):
         for _f in sorted(os.listdir(_lay)):
             if not _f.endswith(".md"):
                 continue
             for _i, _ln in enumerate(io.open(os.path.join(_lay, _f), encoding="utf-8", errors="replace").read().split("\n"), 1):
                 for _cid in LAYER_REF.findall(_ln):
-                    rows.append({"id": _cid, "line": -1, "level": "layer",
-                                 "text": _ln.strip(), "refs": [], "_kw": [], "_ext": _f})
+                    occ.setdefault(_cid, []).append((_f, _i, _ln.strip()))
+    by = {r["id"]: r for r in rows}
+    for _cid, places in sorted(occ.items()):
+        o = [{"file": f, "line": l} for f, l, _t in places]
+        if _cid in by:
+            by[_cid]["occurrences"] = o
+            by[_cid].setdefault("type", "clause")
+        else:
+            _f0, _l0, _t0 = places[0]
+            rows.append({"id": _cid, "line": _l0, "level": "layer", "text": _t0,
+                         "refs": [], "_kw": [], "_ext": _f0,
+                         "type": "prefix" if PREFIX_RX.fullmatch(_cid) else "layer",
+                         "occurrences": o})
+    # ⏪ T4：CORE 定义行也补 occurrences（便于统一消费）
+    for r in rows:
+        r.setdefault("occurrences", [])
     return rows
 
 
@@ -100,9 +131,9 @@ def check(spec_path, rows):
     fails = []
     by = {}
     for r in rows:
-        if r["line"] > 0 and r["id"] in by:
+        if r["line"] > 0 and r["type"] == "clause" and r["id"] in by:
             fails.append(("DUP", "%s \u91cd\u590d\uff08L%s \u4e0e L%s\uff09" % (r["id"], by[r["id"]], r["line"])))
-        if r["line"] > 0:
+        if r["line"] > 0 and r["type"] == "clause":
             by[r["id"]] = r["line"]
     lay_ids = set(r["id"] for r in rows if r["line"] < 0)
     by_all = dict(by)
@@ -141,9 +172,38 @@ def check(spec_path, rows):
     return fails
 
 
+def check_index(out, dst):
+    """⭐ T4：索引自检（在同一份产出上跑，供 `--check` 与独立门复用）。"""
+    fails = []
+    idx = out.get("index", [])
+    ids = [e.get("id") for e in idx]
+    seen = {}
+    for n, e in enumerate(idx):
+        i = e.get("id")
+        if i in seen:
+            fails.append(("IDX_DUP", "id 重复：%s（条目 #%d 与 #%d）" % (i, seen[i], n)))
+        else:
+            seen[i] = n
+    for n, e in enumerate(idx):
+        i = e.get("id", "")
+        if PREFIX_RX.fullmatch(i) and e.get("type") != "prefix":
+            fails.append(("IDX_PREFIX", "裸前缀占条款 id 位：%s（type=%r；应为 prefix）" % (i, e.get("type"))))
+    if int(out.get("clauseCount", -1)) != len(idx):
+        fails.append(("IDX_COUNT", "clauseCount=%s ≠ 条目数 %d" % (out.get("clauseCount"), len(idx))))
+    if "clauseIds" in out and int(out["clauseIds"]) != len(set(ids)):
+        fails.append(("IDX_COUNT", "clauseIds=%s ≠ 唯一 id 数 %d" % (out["clauseIds"], len(set(ids)))))
+    if os.path.isfile(dst):
+        disk = io.open(dst, "rb").read()
+        fresh = (json.dumps(out, ensure_ascii=False, indent=1) + "\n").encode("utf-8")
+        if disk != fresh:
+            fails.append(("IDX_STALE", "盘上 %s（%d B）与当场重生成（%d B）**逐字节不同**"
+                          % (os.path.basename(dst), len(disk), len(fresh))))
+    return fails
+
+
 def main(argv):
     if len(argv) < 2:
-        print("usage: gen_clauses.py <spec.md> [--check]")
+        print("usage: gen_clauses.py <spec.md> [--check] [--no-write]")
         return 2
     sp = argv[1]
     global _XOK
@@ -153,31 +213,43 @@ def main(argv):
     rows = build(sp)
     if "--selftest" in argv or "--check" in argv:
         selftest(sp)
+    ids = [r["id"] for r in rows]
+    type_counts = {}
+    for r in rows:
+        type_counts[r.get("type", "clause")] = type_counts.get(r.get("type", "clause"), 0) + 1
+    dst = os.path.join(os.path.dirname(sp), "clauses.json")
     out = {
         "_note": "\u673a\u8bfb\u6761\u6b3e\u7d22\u5f15\uff08\u7531 gen_clauses.py \u4ece spec \u751f\u6210\uff0c\u4e0d\u624b\u5199\uff09\u3002",
         "spec": os.path.basename(sp),
         "specSha256": hashlib.sha256(io.open(sp, "rb").read()).hexdigest(),
         "specBytes": os.path.getsize(sp),
-        "clauses": len(rows),          # 条文块行数（同一条号可占多行）
-        "clauseIds": len({r["id"] for r in rows}),   # 唯一条号数
+        "clauses": len(rows),                        # ⏪ 兼容旧字段：＝条目数（同 clauseCount）
+        "clauseCount": len(rows),                    # ⭐ T4：条目数（id 唯一）
+        "clauseIds": len(set(ids)),                  # ⭐ 唯一 id 数
+        "prefixCount": type_counts.get("prefix", 0),
+        "occurrenceCount": sum(len(r.get("occurrences", [])) for r in rows),
+        "typeCounts": type_counts,
         "hashRule": "clauseHash ＝ SHA256(UTF-8 字节（该条 text 字段）)；不含行号、不含版本行、不含沿革表。故**引条不引版**：条号变、条文未变 ⇒ 哈希不变。",
         "index": [dict(list((k, v) for k, v in r.items() if k not in ("_kw", "_raw"))
                        + [("clauseHash", hashlib.sha256(str(r.get("text", "")).encode("utf-8")).hexdigest())])
                   for r in rows],
     }
-    dst = os.path.join(os.path.dirname(sp), "clauses.json")
     if no_write:
-        print("[CLAUSES] %s；条款 %d；**--no-write**（未写盘）" % (os.path.basename(sp), len(rows)))
+        print("[CLAUSES] %s；条目 %d（唯一 id %d；前缀 %d）；**--no-write**（未写盘）" % (
+            os.path.basename(sp), len(rows), len(set(ids)), type_counts.get("prefix", 0)))
     else:
         io.open(dst, "w", encoding="utf-8", newline="\n").write(
             json.dumps(out, ensure_ascii=False, indent=1) + "\n")
-        print("[CLAUSES] %s；条款 %d；产 %s（%d B）" % (
-            os.path.basename(sp), len(rows), os.path.basename(dst), os.path.getsize(dst)))
+        print("[CLAUSES] %s；条目 %d（唯一 id %d；前缀 %d）；产 %s（%d B）" % (
+            os.path.basename(sp), len(rows), len(set(ids)), type_counts.get("prefix", 0),
+            os.path.basename(dst), os.path.getsize(dst)))
     if not do_check:
         return 0
-    fails = check(sp, rows)
-    hard = [f for f in fails if f[0] in ("CITE_EXISTS", "DUP", "LINENO")]
-    soft = [f for f in fails if f[0] not in ("CITE_EXISTS", "DUP", "LINENO")]
+    fails = check(sp, rows) + check_index(out, dst)
+    hard = [f for f in fails if f[0] in ("CITE_EXISTS", "DUP", "LINENO",
+                                         "IDX_DUP", "IDX_PREFIX", "IDX_COUNT", "IDX_STALE")]
+    soft = [f for f in fails if f[0] not in ("CITE_EXISTS", "DUP", "LINENO",
+                                             "IDX_DUP", "IDX_PREFIX", "IDX_COUNT", "IDX_STALE")]
     for kind, msg in hard[:20]:
         print("  [FAIL] %-14s %s" % (kind, msg))
     for kind, msg in soft[:20]:
