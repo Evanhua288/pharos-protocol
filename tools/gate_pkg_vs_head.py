@@ -93,10 +93,41 @@ def main(argv):
         allow = set(x.strip() for x in argv[argv.index("--allow-missing") + 1].split(",") if x.strip())
     require_clean = "--require-clean" in argv
     if repo is None:
-        cand = os.path.join(os.path.dirname(pkg), "pharos-core")
-        repo = cand if os.path.isdir(os.path.join(cand, ".git")) else None
+        # ⭐ 多候选定位（第三方 G-4）：原写法**只在 `dirname(pkg)/pharos-core` 找一个候选** ⇒
+        #   对"包副本"（如在临时目录里复验）跑必然找不到仓，返回 rc=2 而**易被误读为 FAIL**。
+        #   改为**按顺序找多个候选**，并把"有没有找到"与"找到哪个"都打出来。
+        cands = []
+        cands.append(os.path.join(os.path.dirname(pkg), "pharos-core"))
+        # ① 从包目录与其各级父目录找 `pharos-core`
+        d = pkg
+        for _ in range(6):
+            d = os.path.dirname(d)
+            if not d or d == os.path.dirname(d):
+                break
+            cands.append(os.path.join(d, "pharos-core"))
+        # ② 从当前工作目录往各级父目录找 `pharos-core`
+        d = os.getcwd()
+        for _ in range(6):
+            cands.append(os.path.join(d, "pharos-core"))
+            nd = os.path.dirname(d)
+            if not nd or nd == d:
+                break
+            d = nd
+        # ③ 包内自带 `tools/` 时，其父目录也可能是仓（**包＝仓**的情况）
+        cands.append(os.path.dirname(pkg))
+        seen = set()
+        for c in cands:
+            c = os.path.abspath(c)
+            if c in seen:
+                continue
+            seen.add(c)
+            if os.path.isdir(os.path.join(c, ".git")):
+                repo = c
+                break
     if not repo or not os.path.isdir(os.path.join(repo, ".git")):
-        print("[RESULT] FAIL -- 找不到 Git 仓（--repo 缺失或非仓）：%s" % repo)
+        print("  [无法执行] 找不到 Git 仓 —— 这不等于 FAIL（是「没得比」）")
+        print("             已试候选：%s" % "、".join(sorted(seen)[:8]))
+        print("             ⭐ 请显式指定：python tools/gate_pkg_vs_head.py <包目录> --repo <仓目录>")
         return 2
     if not os.path.isdir(pkg):
         print("[RESULT] FAIL -- 包目录不存在：%s" % pkg)
