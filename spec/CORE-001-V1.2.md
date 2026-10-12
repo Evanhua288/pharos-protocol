@@ -11,7 +11,7 @@
 > ⏪ **版本自述订正（V1.6.1，回应外部评审"自述矛盾"）**：
 > **本件存在**两个版本号**，**此前只写了一个，第三方无法从版本号判定"我符合哪一版"**：
 > · **件名版本 ＝ `V1.2`**（**文件名 `CORE-001-V1.2.md`；**不改**——**改件名会动 `101`／`103`／`078` 三个锚相关条款的路径**）
-> · ⭐ **内容版本 ＝ `V1.85`**（**现行；**见本件版本沿革表**）
+> · ⭐ **内容版本 ＝ `V1.86`**（**现行；**见本件版本沿革表**）
 > ## ⏪ **V1.58 新增（承第二方 `WORKBUDDY-PH-076` §九）**：**内容版本号所指向的字节不存在时，引用者**以 `specHash` 为准****，**且**不得据版本号断言字节****。
 > ## **　　**理由：**`101`／`102` 已把“唯一锚”定为**文件字节的 SHA-256****；**而层级修订并入后一版字节时，中间版本号**在盘上无独立文件**。
 > **→ 判定口径**：**互操作与合规判定**以 **`specHash` 对字节比对**为准**（**`101`／`103`／`078`**），**不以版本号为准**；**引用本件时**必须同时写**件名版本与内容版本****，**并给 `specHash`**。
@@ -86,6 +86,7 @@
 | 版本 | 性质 | 新增条款 | 状态 |
 |---|---|---|---|
 | **`V1.85`** | **PATCH（**仅改既有措辞；**属"只增不破"的**明示例外****，申报见 `_audit/T5/`）** | ⭐ **协议层去商业内容**（**第三方 `F-05`；承 `10-整改验收标准` §一 `T-内容`**）：**① `176`② 的触发时点由"外部资本事件"改为**中立时点"规范生效后 12 个月内"**（**同一义务、仅换时点**）；**② `§5B.1` 表内工程用词订正**（**"保守估算"，非商业内容**）；**③ `FIN-100` §4C 的**用途性表述移出协议层****，**落包根经营层政策件 `POLICY-FINANCE-ANCHOR.md`**（**非协议判据**），**协议层原地仅保留操作性规则并加行首明标**。**不改任何禁止事项、不改任何字段与判据、不改任何必填／必报义务** | **现行** |
+| **`V1.86`** | **MINOR（只增不破）** | ⭐ **新增 `tools/gen_alias_map.py`**（**条号别名表首次有了生成器**）；⭐ **交付范围表件数订正**（**层级规范 %d；`tools/` %d/%d；`vectors/` %d**）——**因本期新增 3 件层件与 4 个工具**；**同期完成**：三件真件落盘、条件号与冻结登记同步。 | **现行** |
 | **`V1.84`** | **MINOR（只增不破）** | ⭐ **新增 `225`–`226`**（**`entryId`／`settleId` 的 UUIDv7 生成与校验规则**；**按对象的哈希排除集与 `Settlement`／`Attestation` 的 `hash` 口径**）；**填两处空缺**（**Q3：此前无 `settleId` 规则**；**Q2：此前无按对象分别的排除集**）。**本版不改任何已写公式** | **现行** |
 | **`V1.83`** | **PATCH / MINOR** | ⭐ **三处修**：**① 修八处引用前缀**（`OPEN-100-078-A`／`078-B`／`012-B` → `CORE-001-078-A`／`078-B`／`012-B`，**承 `118`**）；**② 新增 `CORE-001-224`「固定句适用位置」**（**对外函件收尾句，不入协议正文**）；**③ `213`② 用语更正**（「先到者先入」→「**规范序在前者先入**」，**与 `125` 同坐标系**）；**另补三处消自指口径**（见 `018`／`114`／`115` 各行）。**不改任何语义** | **现行** |
 | **`V1.82`** | **MINOR（只增不破）** | ⭐ **第一闸可配置（`FIN-100-023`）与宝额分层（`FIN-100-024`）落条**；**新增两份协议附属件与两份包根经营层政策件**；**交付范围表相应补列**；⭐ **第二闸与全部禁止事项未动** | **现行** |
@@ -1358,10 +1359,10 @@ score · grade · level · percentile · rank · composite · weight · points �
 |---|---|---|
 | **内核件** | `spec/CORE-001-V1.2.md` | **现行** |
 | **规范附属件** | `spec/PHAROS-PENDING-001-协议侧待裁册.md`／`spec/SPDX-NOTE.md`／`spec/SPEC-HISTORY.md`／`spec/SPEC-PROVENANCE.md` | **现行** |
-| **层级规范** | `spec/layers/`（**38 件**，逐件件名见 `spec/layers/件名清单.md`；**多为草案，判据与向量为准**） | **现行** |
+| **层级规范** | `spec/layers/`（**41 件**，逐件件名见 `spec/layers/件名清单.md`；**多为草案，判据与向量为准**） | **现行** |
 | **机读件** | `spec/clauses.json`／`spec/alias-map.json`／`spec/algorithm-registry.json`／`spec/anchor-set.json`／`spec/anchor-migration-4state.json`／`spec/anchor-exclusion-whitelist.json`／`spec/digest-set.json`／`spec/domain-tags.json`／`spec/extension-schema.json`／`spec/freeze-registry.json`／`spec/pending-five.json`／`spec/tree-head.json`／`spec/xref-confirmed.json` | **现行** |
-| **测试数据与向量** | `vectors/`（**54 件**：直接层 30／`jcs-official/` 13／`negative/` 8／`ledger-10/` 2）；**真值 `vectors/EXPECTED.md`** | **现行** |
-| **工具** | `tools/`（**62 件** = **61 个 `.py` 加 `char_inventory.txt`**）；检查器如 `check_integrity`／`check_vectors`／`check_linenos`／`check_fields`／`check_scenarios`／`check_outsider`／`check_anchor_whitelist`／`check_freeze_extension`／`audit_extra`／`error_resolve`／`pharos_verify`／`sign_sums` | **现行** |
+| **测试数据与向量** | `vectors/`（**53 件**：直接层 30／`jcs-official/` 13／`negative/` 8／`ledger-10/` 2）；**真值 `vectors/EXPECTED.md`** | **现行** |
+| **工具** | `tools/`（**69 件** = **67 个 `.py` 加 `char_inventory.txt`**）；检查器如 `check_integrity`／`check_vectors`／`check_linenos`／`check_fields`／`check_scenarios`／`check_outsider`／`check_anchor_whitelist`／`check_freeze_extension`／`audit_extra`／`error_resolve`／`pharos_verify`／`sign_sums` | **现行** |
 | **配套件** | `配套件/`（**9 件**），见 `配套件/README.md` | **现行（乙档·治理规则）** |
 | **可据条款清单** | `可据条款清单.md`（**承 `152`／`163`**） | **现行（乙档·治理规则）** |
 | **层件集合清单** | `LAYERS.sha256`（**`spec/layers/` 逐件 ⊕ 集合哈希**；**用于看住层件变化**） | **现行** |

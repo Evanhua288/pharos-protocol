@@ -1,8 +1,8 @@
 {
  "_note": "条号别名映射表：**展示侧身份可变，规范身份不变**。",
  "_rule": "canonical 是条号的**唯一称命**；alias 只能指向 canonical；**一个 alias 不得指向两个 canonical**；条号一旦发布不得改名，只能**新增别名**。`removedIn` 非空者仅供历史解析。",
- "specSha256": "df2063cae3aef76b14910b1e79ceb9112e225a65e3c1617310e3db3c804a08c5",
- "clauseCount": 886,
+ "specSha256": "0d4aaf2f241157166c6e225141025617109d02a6f90144e89380f1cbd29031d5",
+ "clauseCount": 938,
  "entries": [
   {
    "canonical": "ARCH-001",
@@ -5318,6 +5318,318 @@
    "canonical": "XFER-052",
    "aliases": [],
    "addedIn": "V1.x",
+   "removedIn": null
+  },
+  {
+   "canonical": "CORE-001-224",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "CORE-001-225",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "CORE-001-226",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "FIN-100-023",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "FIN-100-024",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-001",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-002",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-003",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-004",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-010",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-011",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-012",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-013",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-020",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-021",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-022",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-031",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-032",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-040",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-041",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-042",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-050",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-051",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-052",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-053",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "GV-COUNCIL-054",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-001",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-002",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-003",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-004",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-005",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-010",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-011",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-020",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-021",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-022",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-023",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-024",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-030",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-031",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-040",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-041",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-042",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-050",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-051",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-052",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-053",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-060",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-061",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-070",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-071",
+   "aliases": [],
+   "addedIn": "V1.86",
+   "removedIn": null
+  },
+  {
+   "canonical": "PA-SG-072",
+   "aliases": [],
+   "addedIn": "V1.86",
    "removedIn": null
   }
  ]

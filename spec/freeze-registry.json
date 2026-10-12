@@ -4460,6 +4460,266 @@
       "firstPublished": "<=2026-10-09",
       "frozenUntil": "<=2026-12-08",
       "status": "EXPIRED"
+    },
+    "CORE-001-224": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "CORE-001-225": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "CORE-001-226": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "FIN-100-023": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "FIN-100-024": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-001": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-002": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-003": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-004": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-010": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-011": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-012": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-013": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-020": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-021": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-022": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-031": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-032": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-040": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-041": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-042": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-050": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-051": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-052": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-053": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "GV-COUNCIL-054": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-001": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-002": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-003": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-004": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-005": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-010": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-011": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-020": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-021": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-022": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-023": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-024": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-030": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-031": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-040": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-041": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-042": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-050": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-051": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-052": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-053": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-060": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-061": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-070": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-071": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
+    },
+    "PA-SG-072": {
+      "firstPublished": "2026-10-12",
+      "frozenUntil": "2026-12-11",
+      "status": "FROZEN"
     }
   }
 }
