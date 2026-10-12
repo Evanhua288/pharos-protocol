@@ -1,0 +1,169 @@
+# -*- coding: utf-8 -*-
+r"""gate_pkg_vs_head.py —— **包 vs HEAD 门**（F-03 闭合门）。
+
+检什么：交付包内**每一件** 与 `git show HEAD:<同路径>`（即 HEAD blob 的**原始字节**）**逐字节比**。
+报两个数：**缺失**（包内有、HEAD 树内无）／**字节不同**。
+
+判定：
+  PASS ⇔ **字节不同 ＝ 0** 且 **缺失 ⊆ 允许清单**（包内自生成锚件，本来就不在 Git 树里）。
+  允许清单默认＝`MANIFEST.sha256, SELF-CHECK.txt, SHA256SUMS, SHA256SUMS.pub, SHA256SUMS.sig,
+  SHIP-MANIFEST.md, _FROZEN`（7 件；可用 `--allow-missing a,b` 覆盖）。
+  ★ 任何**不在**允许清单内的缺失 ⇒ FAIL（不得靠"反正 HEAD 没有"放过）。
+
+附（**不计入 PASS/FAIL**，只报事实）：
+  · `git status --porcelain` 是否为空（`--require-clean` 可把它升为硬门）；
+  · HEAD 树内有、包内无的件（仅信息：包由白名单构建，本就不含全部仓内件）。
+
+纪律：**只读**（`git cat-file` 不写对象库；不写任何文件）。退出码 0＝PASS，1＝FAIL，2＝无法执行。
+
+用法：
+    python tools/gate_pkg_vs_head.py .                       # 在包目录内，自动找 ../pharos-core
+    python tools/gate_pkg_vs_head.py <包目录> --repo <仓目录>
+"""
+import hashlib
+import io
+import os
+import subprocess
+import sys
+
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
+ALLOW_MISSING_DEFAULT = {
+    "MANIFEST.sha256", "SELF-CHECK.txt", "SHA256SUMS", "SHA256SUMS.pub",
+    "SHA256SUMS.sig", "SHIP-MANIFEST.md", "_FROZEN",
+}
+
+
+def git(repo, args, binary=False):
+    p = subprocess.run(["git", "-C", repo] + args, capture_output=True)
+    if p.returncode != 0:
+        raise RuntimeError("git %s 失败：%s" % (" ".join(args), (p.stderr or b"").decode("utf-8", "replace")[:200]))
+    return p.stdout if binary else p.stdout.decode("utf-8", "replace")
+
+
+def head_tree(repo):
+    """返回 {relpath: blob_sha}（-z：不做路径引号转义，中文路径安全）。"""
+    out = git(repo, ["ls-tree", "-r", "-z", "HEAD"], binary=True)
+    d = {}
+    for rec in out.split(b"\0"):
+        if not rec:
+            continue
+        meta, path = rec.split(b"\t", 1)
+        mode, typ, sha = meta.split(b" ")
+        if typ == b"blob":
+            d[path.decode("utf-8")] = sha.decode("ascii")
+    return d
+
+
+def cat_blobs(repo, shas):
+    """一次 `git cat-file --batch` 取回多个 blob 原始字节。"""
+    if not shas:
+        return {}
+    p = subprocess.run(["git", "-C", repo, "cat-file", "--batch"],
+                       input=("\n".join(shas) + "\n").encode("ascii"), capture_output=True)
+    out = p.stdout
+    res, i = {}, 0
+    while i < len(out):
+        nl = out.find(b"\n", i)
+        if nl < 0:
+            break
+        header = out[i:nl].split(b" ")
+        if len(header) < 3:
+            break
+        sha, typ, size = header[0].decode(), header[1].decode(), int(header[2])
+        start = nl + 1
+        res[sha] = out[start:start + size]
+        i = start + size + 1
+    return res
+
+
+def main(argv):
+    if len(argv) < 2:
+        print("usage: gate_pkg_vs_head.py <包目录> [--repo <仓目录>] [--allow-missing a,b] [--require-clean]")
+        return 2
+    pkg = os.path.abspath(argv[1])
+    repo = None
+    if "--repo" in argv:
+        repo = os.path.abspath(argv[argv.index("--repo") + 1])
+    allow = set(ALLOW_MISSING_DEFAULT)
+    if "--allow-missing" in argv:
+        allow = set(x.strip() for x in argv[argv.index("--allow-missing") + 1].split(",") if x.strip())
+    require_clean = "--require-clean" in argv
+    if repo is None:
+        cand = os.path.join(os.path.dirname(pkg), "pharos-core")
+        repo = cand if os.path.isdir(os.path.join(cand, ".git")) else None
+    if not repo or not os.path.isdir(os.path.join(repo, ".git")):
+        print("[RESULT] FAIL -- 找不到 Git 仓（--repo 缺失或非仓）：%s" % repo)
+        return 2
+    if not os.path.isdir(pkg):
+        print("[RESULT] FAIL -- 包目录不存在：%s" % pkg)
+        return 2
+
+    print("== gate_pkg_vs_head：包=%s" % pkg)
+    print("   repo=%s  HEAD=%s" % (repo, git(repo, ["rev-parse", "--short", "HEAD"]).strip()))
+    ht = head_tree(repo)
+    files = []
+    for dp, dn, fn in os.walk(pkg):
+        if "__pycache__" in dp:
+            continue
+        for f in fn:
+            full = os.path.join(dp, f)
+            files.append(os.path.relpath(full, pkg).replace("\\", "/"))
+    files.sort()
+
+    missing = [r for r in files if r not in ht]
+    common = [r for r in files if r in ht]
+    blobs = cat_blobs(repo, sorted(set(ht[r] for r in common)))
+    diff = []
+    for r in common:
+        b = io.open(os.path.join(pkg, r.replace("/", os.sep)), "rb").read()
+        hb = blobs.get(ht[r])
+        if hb is None:
+            diff.append((r, len(b), -1, "HEAD blob 读取失败"))
+        elif b != hb:
+            off = next((i for i in range(min(len(b), len(hb))) if b[i] != hb[i]), min(len(b), len(hb)))
+            diff.append((r, len(b), len(hb), "首个不同 offset=%d" % off))
+
+    print("   包内件＝%d；HEAD 树内件＝%d" % (len(files), len(ht)))
+    print("   ⭐ 缺失（包内有、HEAD 无）＝%d" % len(missing))
+    print("   ⭐ 字节不同＝%d" % len(diff))
+    for r, a, b, why in diff[:20]:
+        print("      [不同] %-52s 包=%d B HEAD=%d B %s" % (r, a, b, why))
+    if len(diff) > 20:
+        print("      … 共 %d 件不同" % len(diff))
+    bad_missing = [r for r in missing if r not in allow]
+    if missing:
+        print("   缺失明细：")
+        for r in missing:
+            print("      %-52s %s" % (r, "允许（包内自生成锚件）" if r in allow else "★ 不在允许清单 ⇒ FAIL"))
+    head_only = [r for r in ht if r not in files]
+    print("   [INFO] HEAD 有、包内无＝%d 件%s" % (len(head_only),
+          ("（前 5：%s）" % "、".join(head_only[:5])) if head_only else ""))
+    porcelain = git(repo, ["status", "--porcelain"]).strip()
+    if porcelain:
+        print("   [INFO] git status --porcelain 非空（%d 行）%s" % (len(porcelain.split("\n")),
+              "；--require-clean 时计为硬门" if require_clean else "（本门默认不计入 PASS/FAIL）"))
+        for l in porcelain.split("\n")[:5]:
+            print("      %s" % l[:110])
+    else:
+        print("   [PASS] git status --porcelain 为空")
+
+    print("-" * 68)
+    ok = (not diff) and (not bad_missing)
+    if require_clean and porcelain:
+        ok = False
+        print("  [FAIL] --require-clean：工作树不干净")
+    for r in bad_missing:
+        print("  [FAIL] 缺失且不在允许清单：%s" % r)
+    for r, a, b, why in diff[:10]:
+        print("  [FAIL] 字节不同：%s（%s）" % (r, why))
+    print("  [RESULT] %s（缺失 %d／字节不同 %d）"
+          % ("PASS -- 包内件与 HEAD blob 逐字节一致" if ok else "FAIL -- 包与 HEAD 不一致", len(missing), len(diff)))
+    return 0 if ok else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))
