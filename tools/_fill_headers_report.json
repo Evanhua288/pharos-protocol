@@ -1,0 +1,200 @@
+{
+ "root": "D:\\PHAROS工作区\\交付包\\pharos-core",
+ "dry_run": true,
+ "changed": [],
+ "skipped": [
+  {
+   "file": "PHAROS-000-010-吸收与编号统一-V1.0-20261006.md",
+   "code": "PHAROS-000-010",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-000-050-协议与商业开发边界澄清-V1.0-20261012.md",
+   "code": "PHAROS-000-050",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-000-070-文件头规范与附则编写规则-V1.0-20261006.md",
+   "code": "PHAROS-000-070",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-000-150-本体底座与架构支柱自检表-V1.0-20261008.md",
+   "code": "PHAROS-000-150",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-000-160-适配层理念原则-V1.0-20261008.md",
+   "code": "PHAROS-000-160",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-000-170-双层SSOT与互引不复制-V1.0-20261008.md",
+   "code": "PHAROS-000-170",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-COG-100-A-东方认知Profile-V1.0-20261006.md",
+   "code": "PHAROS-COG-100-A",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-COG-100-A补正-自算门-V1.0-20261006.md",
+   "code": "PHAROS-COG-100-A-P1",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-COG-100-认知层总则-V1.0-20261006.md",
+   "code": "PHAROS-COG-100",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-COG-200-认知六维规范-V1.0-20261006.md",
+   "code": "PHAROS-COG-200",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-COG-300-双线互证规范-V1.0-20261006.md",
+   "code": "PHAROS-COG-300",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-COG-400-认知呈现禁语与数据主权-V1.0-20261006.md",
+   "code": "PHAROS-COG-400",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-COM-100-关系与社区规范-V1.0-20261006.md",
+   "code": "PHAROS-COM-100",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-EXP-100-表达规范-V1.0-20261006.md",
+   "code": "PHAROS-EXP-100",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-FIN-100-经济与三轨规范-V1.0-20261006.md",
+   "code": "PHAROS-FIN-100",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-ID-100-本体与身份规范-V1.0-20261006.md",
+   "code": "PHAROS-ID-100",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-MOD-100-世界与模块规范-V1.0-20261006.md",
+   "code": "PHAROS-MOD-100",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-OPEN-001-开放架构-V1.0-20261006.md",
+   "code": "PHAROS-OPEN-001",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-OPEN-002-自驱模型-V1.0-20261006.md",
+   "code": "PHAROS-OPEN-002",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-OPEN-100-开放条款总表-V1.0-20261006.md",
+   "code": "PHAROS-OPEN-100",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-OPEN-110-规范许可声明-V1.0-20261007.md",
+   "code": "PHAROS-OPEN-110",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-OPEN-120-名称使用政策-V1.0-20261006.md",
+   "code": "PHAROS-OPEN-120",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-OPEN-150-实现方登记册与投票人核验-V1.0-20261006.md",
+   "code": "PHAROS-OPEN-150",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-OPEN-160-托管方登记表-V1.0-20261006.md",
+   "code": "PHAROS-OPEN-160",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-PHY-100-物理与节点规范-V1.0-20261006.md",
+   "code": "PHAROS-PHY-100",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-PRC-100-修行层总则-V1.0-20261006.md",
+   "code": "PHAROS-PRC-100",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-PRC-200-位阶要件与判定-V1.0-20261006.md",
+   "code": "PHAROS-PRC-200",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-PRC-300-特权隔离可见性与传承-V1.0-20261006.md",
+   "code": "PHAROS-PRC-300",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-VAL-100-意义层总则与三观槽位-V1.0-20261006.md",
+   "code": "PHAROS-VAL-100",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-VAL-200-贡献记录规范-V1.0-20261006.md",
+   "code": "PHAROS-VAL-200",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-VAL-300-镜映规范-V1.0-20261006.md",
+   "code": "PHAROS-VAL-300",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-VAL-400-意义层红线规范-V1.0-20261006.md",
+   "code": "PHAROS-VAL-400",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-VAL-490-违反示例集-V1.0-20261008.md",
+   "code": "PHAROS-VAL-490",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-VAL-500-成长表达规范-六位-V1.0-20261006.md",
+   "code": "PHAROS-VAL-500",
+   "why": "两字段已齐备"
+  },
+  {
+   "file": "PHAROS-VUL-100-脆弱用户与未成年人保护规范-V1.0-20261006.md",
+   "code": "PHAROS-VUL-100",
+   "why": "两字段已齐备"
+  }
+ ],
+ "uncovered": [
+  {
+   "file": "PHAROS-PA-MY-马来西亚附则-V1.0-20261006.md",
+   "code": "PHAROS-PA-MY",
+   "why": "性质不可派生：状态未定（登记状态原文不含三选一基值：已交付（⏪ V1.38 订正：盘上有件））"
+  },
+  {
+   "file": "PHAROS-PA-PG-巴布亚新几内亚附则-V1.1-20261006.md",
+   "code": "PHAROS-PA-PG",
+   "why": "性质不可派生：状态未定（登记状态原文不含三选一基值：待用附件·未生效）"
+  },
+  {
+   "file": "件名清单.md",
+   "code": "(无编号)",
+   "why": "000-060 查无登记"
+  }
+ ],
+ "total_added": 0
+}
