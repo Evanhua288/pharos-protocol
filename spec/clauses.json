@@ -7,7 +7,7 @@
  "clauseCount": 938,
  "clauseIds": 938,
  "prefixCount": 98,
- "occurrenceCount": 1366,
+ "occurrenceCount": 1367,
  "typeCounts": {
   "clause": 201,
   "prefix": 98,
@@ -1561,7 +1561,7 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 84
+     "line": 80
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
@@ -1569,11 +1569,15 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 87
+     "line": 86
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 96
+     "line": 88
+    },
+    {
+     "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
+     "line": 97
     },
     {
      "file": "PHAROS-ID-100-本体与身份规范-V1.0-20261006.md",
@@ -1644,7 +1648,7 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 97
+     "line": 98
     }
    ],
    "clauseHash": "31f280277c5e3fa3f2e63ec5a2b1fe3d8fcc36acd9d5ec049cc6059b66f16ab1"
@@ -4518,7 +4522,7 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 86
+     "line": 87
     }
    ],
    "clauseHash": "17ea8b01f0c35d06acd6e1970c2407d92244645833822ba07864a610f794c719"
@@ -4814,7 +4818,7 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 86
+     "line": 87
     },
     {
      "file": "PHAROS-OPEN-002-自驱模型-V1.0-20261006.md",
@@ -4838,7 +4842,7 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 86
+     "line": 87
     }
    ],
    "clauseHash": "46d8da5d016618dd170d01fd539a909fcaf27270831a62f0b3721999d7a6058f"
@@ -4922,11 +4926,11 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 97
+     "line": 98
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 100
+     "line": 101
     }
    ],
    "clauseHash": "d289bfb8b545eade07a9f4e8d809f2cf43ab675068a3a780caf998ad3acae747"
@@ -5042,7 +5046,7 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 102
+     "line": 103
     }
    ],
    "clauseHash": "8042f821545ea3bd8471180ce6dc0446ac9e1d51f1a1945b55e6d7b5fa1c1c4b"
@@ -5062,7 +5066,7 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 102
+     "line": 103
     },
     {
      "file": "PHAROS-VUL-100-脆弱用户与未成年人保护规范-V1.0-20261006.md",
@@ -5153,25 +5157,9 @@
   },
   {
    "id": "GV-COUNCIL-050",
-   "line": 84,
-   "level": "layer",
-   "text": "| **`GV-COUNCIL-050`** | ⭐ **必须** | **基金计提比例的**产生程序**：**必须**按本件 §二（**涉红线或铁律者按 §2.3 甲级程序**；**其余按 §2.1–§2.2、§2.4**）产生；**比例数值**必须**在托管方**年报**中公开**（**承 `CORE-001-176`；**本件**不写该数值 |",
-   "refs": [],
-   "_ext": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-   "type": "layer",
-   "occurrences": [
-    {
-     "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 84
-    }
-   ],
-   "clauseHash": "a6710ffcc031bdbe6778c9210ae8b5775442cfa626b70ed0c4738f75955c05cd"
-  },
-  {
-   "id": "GV-COUNCIL-051",
    "line": 85,
    "level": "layer",
-   "text": "| **`GV-COUNCIL-051`** | **必须** | **计提**基数口径**：**只按**服务收入**计提；**不得**按三轨金额计提**（**承 `CORE-001-176`**） |",
+   "text": "| **`GV-COUNCIL-050`** | ⭐ **必须** | **基金计提比例的**产生程序**：**必须**按本件 §二（**涉红线或铁律者按 §2.3 甲级程序**；**其余按 §2.1–§2.2、§2.4**）产生；**比例数值**必须**在托管方**年报**中公开**（**承 `CORE-001-176`；**本件**不写该数值 |",
    "refs": [],
    "_ext": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
    "type": "layer",
@@ -5181,13 +5169,13 @@
      "line": 85
     }
    ],
-   "clauseHash": "ba89727a8f8079b641859e7d17834bfcb2289c2f741e6f3c0ddb1a0667023d88"
+   "clauseHash": "a6710ffcc031bdbe6778c9210ae8b5775442cfa626b70ed0c4738f75955c05cd"
   },
   {
-   "id": "GV-COUNCIL-052",
+   "id": "GV-COUNCIL-051",
    "line": 86,
    "level": "layer",
-   "text": "| **`GV-COUNCIL-052`** | **必须** | **基金**形式**：**为\"**缴纳**\"，**不为\"**扣取**\"**（**承 `FIN-100-091`**）；**且**不得在四段分账之前被扣除**（**承 `FIN-100-045` 的 100% 闭合**）；**基金**不进任何分账口径**（**承 `FIN-100-092`／`093`**） |",
+   "text": "| **`GV-COUNCIL-051`** | **必须** | **计提**基数口径**：**只按**服务收入**计提；**不得**按三轨金额计提**（**承 `CORE-001-176`**） |",
    "refs": [],
    "_ext": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
    "type": "layer",
@@ -5197,13 +5185,13 @@
      "line": 86
     }
    ],
-   "clauseHash": "87eeba9280e4b55565d6e35eb3a2103ca9b9ce9df68c82afc302711b47fdd615"
+   "clauseHash": "ba89727a8f8079b641859e7d17834bfcb2289c2f741e6f3c0ddb1a0667023d88"
   },
   {
-   "id": "GV-COUNCIL-053",
+   "id": "GV-COUNCIL-052",
    "line": 87,
    "level": "layer",
-   "text": "| **`GV-COUNCIL-053`** | **必须** | **定时窗**：**比例**必须**在下列最早发生者**之前**定下**：**① 首笔营收起六个月内**；**② 任一轮融资完成前**；**③ 首次对外披露财务口径前**（**三项要件承 `CORE-001-176`；本件**不重写数字**） |",
+   "text": "| **`GV-COUNCIL-052`** | **必须** | **基金**形式**：**为\"**缴纳**\"，**不为\"**扣取**\"**（**承 `FIN-100-091`**）；**且**不得在四段分账之前被扣除**（**承 `FIN-100-045` 的 100% 闭合**）；**基金**不进任何分账口径**（**承 `FIN-100-092`／`093`**） |",
    "refs": [],
    "_ext": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
    "type": "layer",
@@ -5213,11 +5201,27 @@
      "line": 87
     }
    ],
-   "clauseHash": "3ef434c2868c031563947ee51d2ad16898044af21fd4a90fff96c5873ecf384d"
+   "clauseHash": "87eeba9280e4b55565d6e35eb3a2103ca9b9ce9df68c82afc302711b47fdd615"
+  },
+  {
+   "id": "GV-COUNCIL-053",
+   "line": 88,
+   "level": "layer",
+   "text": "| **`GV-COUNCIL-053`** | **必须** | **定时窗**：**比例**必须**在下列最早发生者**之前**定下**：**① 首笔营收起六个月内**；**② 规范生效后 12 个月内**；**③ 首次对外披露财务口径前**（**三项要件承 `CORE-001-176`；本件**不重写数字**） |",
+   "refs": [],
+   "_ext": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
+   "type": "layer",
+   "occurrences": [
+    {
+     "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
+     "line": 88
+    }
+   ],
+   "clauseHash": "73979eef9d913823c54135a3cc911fdf9d79966bd0771a50ee1b29dbb2977703"
   },
   {
    "id": "GV-COUNCIL-054",
-   "line": 88,
+   "line": 89,
    "level": "layer",
    "text": "| **`GV-COUNCIL-054`** | **禁止** | **本件**不得**被引为\"**比例已定**\"或\"**程序已完成**\"的依据**；**本件只提供程序，不产生任何数值结论** |",
    "refs": [],
@@ -5226,7 +5230,7 @@
    "occurrences": [
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 88
+     "line": 89
     }
    ],
    "clauseHash": "5f2be4bcbf3fe4d4b7eca035ece19437baf4328e31efcee233c19659197b13f6"
@@ -7426,7 +7430,7 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 98
+     "line": 99
     },
     {
      "file": "PHAROS-OPEN-100-开放条款总表-V1.0-20261006.md",
@@ -8901,7 +8905,7 @@
   },
   {
    "id": "OPEN-100-055",
-   "line": 99,
+   "line": 100,
    "level": "layer",
    "text": "| **`OPEN-100-055`–`062`** | **托管方的职责与禁止**；**本委员会不得越过 `OPEN-100-057`** |",
    "refs": [],
@@ -8910,7 +8914,7 @@
    "occurrences": [
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 99
+     "line": 100
     },
     {
      "file": "PHAROS-OPEN-100-开放条款总表-V1.0-20261006.md",
@@ -9034,7 +9038,7 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 99
+     "line": 100
     },
     {
      "file": "PHAROS-OPEN-100-开放条款总表-V1.0-20261006.md",
@@ -10022,7 +10026,7 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 100
+     "line": 101
     }
    ],
    "clauseHash": "daec2dec307707b69c047f71856f0a597c2272ebef24903f5dea6c1f90211a51"
@@ -11690,11 +11694,11 @@
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 101
+     "line": 102
     },
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 111
+     "line": 112
     },
     {
      "file": "PHAROS-PA-PG-巴布亚新几内亚附则-V1.1-20261006.md",
@@ -16567,7 +16571,7 @@
   },
   {
    "id": "VUL-100-052",
-   "line": 102,
+   "line": 103,
    "level": "layer",
    "text": "| **`VUL-100-052`** | **脆弱用户事项上的\"沉默即驳回\"**（**现行引 `GV-COUNCIL-030`**）；**本件 §2.2 `GV-COUNCIL-022` 与之同向** |",
    "refs": [],
@@ -16576,7 +16580,7 @@
    "occurrences": [
     {
      "file": "PHAROS-GV-COUNCIL-协议治理委员会章程-V1.0-20261012.md",
-     "line": 102
+     "line": 103
     },
     {
      "file": "PHAROS-VUL-100-脆弱用户与未成年人保护规范-V1.0-20261006.md",
