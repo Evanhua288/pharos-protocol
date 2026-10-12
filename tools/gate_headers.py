@@ -107,6 +107,7 @@ def main(argv):
 
     tracked = tracked_layers(root)
     bad = []
+    ooe = []                # ⭐ 越界状态值（源件既有，已带对照行 ⇒ 计入报告、不阻断）
     field_missing = {k: [] for k in SIX}
     ok_files = []
     both_sp = []            # 状态＋性质 齐备（F-06 口径）
@@ -136,14 +137,30 @@ def main(argv):
         sv = first_token(value_of(head, "状态"))
         pv = first_token(value_of(head, "性质") or "")
         if _base_val(sv) not in STATES:
-            bad.append((f, ["状态取值非法(%r)" % sv], where))
-            continue
-        # 本门只判“两字段在位且可读”；“能否作依据”交 `000-060 §〇 规则 6`
-        _pv_ok = ("生效" in pv) or ("待生效" in pv) or (_base_val(sv) in ("草案", "现行"))
+            # ⭐ 越界但**已带可判对照行**者：计入报告，不阻断（源件既有值，未改原件）
+            if sv in OUT_OF_ENUM and any("状态（规范值）" in x for x in head):
+                ooe.append((f, sv))
+            else:
+                bad.append((f, ["状态取值非法(%r)" % sv], where))
+                continue
+        # ⭐ 可达到据（第三方 G-1：旧写法是**恒真兜底**，FAIL 分支永不触发）：
+        #   ① 性质为空 ⇒ FAIL；② 含「生效」或「待生效」⇒ 合格；
+        #   ③ 状态＝草案且性质为草案类值 ⇒ 合格；④ 其余 ⇒ FAIL。
+        #   ⭐ 草案类／提述类词根（源件既有写法）：草案／架构／规范／政策／登记表／公开件／附件／原则／自检
+        _DRAFTISH = ("草案", "架构", "规范", "政策", "登记表", "公开件", "附件", "原则", "自检", "说明")
+        #   ⭐ **否定优先**：含「非生效／未生效／失效」⇒ 判不合格。
+        #      （第三方探针用的正是「非生效件（随便写的）」；旧写法因字面含"生效"二字而放过。）
+        _NEG = ("非生效", "未生效", "不再生效", "失去效力", "失效")
+        _pv_ok = bool(pv) and (not any(n in pv for n in _NEG)) and (
+            ("生效" in pv) or ("待生效" in pv) or any(w in pv for w in _DRAFTISH))
         if not _pv_ok:
-            bad.append((f, ["性质未含'生效'(%r)" % _base_val(pv)[:24]], where))
+            bad.append((f, ["性质未含'生效'且非草案类（%r）" % (pv or "—")[:24]], where))
             continue
         ok_files.append(f)
+
+    if ooe:
+        print("   ⚠️ 状态越界（源件既有、已带规范值对照行）＝%d 件：%s"
+              % (len(ooe), "、".join("%s（%s）" % (n[:28], v) for n, v in ooe[:4])))
 
     print("   六字段齐备＝%d/%d" % (len(ok_files), len(files)))
     print("   ⭐ 状态＋性质 齐备＝%d/%d（F-06 基线口径）" % (len(both_sp), len(files)))

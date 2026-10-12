@@ -140,8 +140,18 @@ def main(argv):
         for r in missing:
             print("      %-52s %s" % (r, "允许（包内自生成锚件）" if r in allow else "★ 不在允许清单 ⇒ FAIL"))
     head_only = [r for r in ht if r not in files]
-    print("   [INFO] HEAD 有、包内无＝%d 件%s" % (len(head_only),
-          ("（前 5：%s）" % "、".join(head_only[:5])) if head_only else ""))
+    # ⭐ 双向门（第三方 G-3）：**"HEAD 有、包内无"必须报 FAIL**。
+    #   为何：本门原先只查"包内件 ∈ HEAD"，反向仅打 [INFO] ⇒
+    #   **仓里新加的件没进包，门照样 PASS**。第三方复验正是据此外加实测：
+    #   删掉包副本内一件在 HEAD 树中的件，门仍 PASS。
+    #   后果不是洁癖：`POLICY-FINANCE-ANCHOR.md`（T5 移出内容的落点）
+    #   就这样**在仓、不在包**，而**收件方拿到的是包**。
+    if head_only:
+        print("   [FAIL] ⭐ HEAD 有、包内无＝%d 件（**白名单/打包器漏件**）：" % len(head_only))
+        for r in head_only[:12]:
+            print("      %s" % r)
+    else:
+        print("   [PASS] HEAD 有、包内无＝0 件")
     porcelain = git(repo, ["status", "--porcelain"]).strip()
     if porcelain:
         print("   [INFO] git status --porcelain 非空（%d 行）%s" % (len(porcelain.split("\n")),
@@ -152,16 +162,18 @@ def main(argv):
         print("   [PASS] git status --porcelain 为空")
 
     print("-" * 68)
-    ok = (not diff) and (not bad_missing)
+    ok = (not diff) and (not bad_missing) and (not head_only)
     if require_clean and porcelain:
         ok = False
         print("  [FAIL] --require-clean：工作树不干净")
+    for r in head_only:
+        print("  [FAIL] HEAD 有、包内无（**漏件**）：%s" % r)
     for r in bad_missing:
         print("  [FAIL] 缺失且不在允许清单：%s" % r)
     for r, a, b, why in diff[:10]:
         print("  [FAIL] 字节不同：%s（%s）" % (r, why))
-    print("  [RESULT] %s（缺失 %d／字节不同 %d）"
-          % ("PASS -- 包内件与 HEAD blob 逐字节一致" if ok else "FAIL -- 包与 HEAD 不一致", len(missing), len(diff)))
+    print("  [RESULT] %s（缺失 %d／漏件 %d／字节不同 %d）"
+          % ("PASS -- 双向一致" if ok else "FAIL -- 包与 HEAD 不一致", len(missing), len(head_only), len(diff)))
     return 0 if ok else 1
 
 
