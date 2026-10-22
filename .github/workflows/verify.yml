@@ -31,11 +31,23 @@ jobs:
       # 一键复现（含向量、Merkle、锚、冻结门）。
       - name: Reproduce all checks
         run: |
-          python tools/reproduce_all.py .
+          # 本工作流跑在**仓库**上，不是跑在**包**上。以下三类检查依赖
+          # 「包内自生成件」，仓库里没有，故不在此运行：
+          #   · reproduce_all.py 的第 1 步（要 SELF-CHECK.txt）
+          #                       第 11 步（要 SHA256SUMS.pub/.sig/SHA256SUMS）
+          #   · check_integrity.py （要 SHA256SUMS）
+          #   · check_manifest_math.py （要 MANIFEST.sha256）
+          # 这三类请在下载 Release 资产后、于包目录内运行；包内 SELF-CHECK.txt
+          # 记录了它们的 26 门结果。此处覆盖的是「仓库自身可自证」的 10 个门。
+          python tools/check_proof_ledger.py .
           python tools/check_merkle.py
+          python tools/check_dsse.py .
+          python tools/check_digest_set.py .
+          python tools/check_extension_cases.py .
+          python tools/check_pruning.py .
+          python tools/check_freeze_registry.py .
+          python tools/check_sync_converge.py .
           python tools/check_vectors.py
-          python tools/check_integrity.py .
-          python tools/check_manifest_math.py .
           python tools/gen_clauses.py spec/CORE-001-V1.2.md --check --no-write
 
       # “自检自污染”守卫：跑完不得在树里留下 `__pycache__` 等运行产物。
@@ -47,5 +59,17 @@ jobs:
           fi
 
       # 文件头与版本自洽（与 E1／E6 同口径）。
-      - name: Header and version coherence
-        run: python tools/audit_extra.py .
+      # 注：`audit_extra.py`（E1–E7）本身在包内运行；其中 **E6 需要 SHA256SUMS**，
+      # 而 SHA256SUMS 是包内自生成件，仓库里没有，故本工作流不运行 `audit_extra.py`。
+      # E1–E5、E7 在包内的结果见包内 `SELF-CHECK.txt`（第 3 门「额外审计 E1–E4」）。
+      # 本工作流只跑「仓库自身可自证」的 10 个门，见上一步。
+      # 如需完整审计：下载 Release 资产后，在包目录内运行
+      #   python tools/audit_extra.py <包目录>
+      - name: Repo-only verification notice
+        run: |
+          echo "This workflow verifies the repository, not a package."
+          echo "Package-only checks (SELF-CHECK.txt, SHA256SUMS, signature,"
+          echo "MANIFEST.sha256) are recorded in the package's SELF-CHECK.txt."
+          echo "Run them inside a downloaded package:"
+          echo "  python tools/reproduce_all.py <package-dir>"
+          echo "  python tools/audit_extra.py <package-dir>"
