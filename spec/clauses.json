@@ -7,7 +7,7 @@
  "clauseCount": 948,
  "clauseIds": 948,
  "prefixCount": 98,
- "occurrenceCount": 1413,
+ "occurrenceCount": 1390,
  "typeCounts": {
   "clause": 201,
   "prefix": 98,
@@ -3883,15 +3883,19 @@
     },
     {
      "file": "件名清单.md",
-     "line": 70
+     "line": 84
     },
     {
      "file": "件名清单.md",
-     "line": 74
+     "line": 94
     },
     {
      "file": "件名清单.md",
-     "line": 96
+     "line": 98
+    },
+    {
+     "file": "件名清单.md",
+     "line": 120
     }
    ],
    "clauseHash": "07127117d640c07b8e9279f2c02a6ed4ae9441d9d08a38534898548d020a4855"
@@ -4079,11 +4083,11 @@
     },
     {
      "file": "件名清单.md",
-     "line": 89
+     "line": 113
     },
     {
      "file": "件名清单.md",
-     "line": 90
+     "line": 114
     }
    ],
    "clauseHash": "bc0d68e912555828ba4bff9d77495d604831650073115f0bc2412910112d4547"
@@ -11546,6 +11550,10 @@
      "line": 13
     },
     {
+     "file": "PHAROS-JIAN-001-件计量标准-V1.0-20261022.md",
+     "line": 7
+    },
+    {
      "file": "PHAROS-MOD-100-世界与模块规范-V1.0-20261006.md",
      "line": 13
     },
@@ -11624,6 +11632,22 @@
     {
      "file": "PHAROS-VUL-100-脆弱用户与未成年人保护规范-V1.0-20261006.md",
      "line": 75
+    },
+    {
+     "file": "件名清单.md",
+     "line": 41
+    },
+    {
+     "file": "件名清单.md",
+     "line": 49
+    },
+    {
+     "file": "件名清单.md",
+     "line": 51
+    },
+    {
+     "file": "件名清单.md",
+     "line": 66
     }
    ],
    "clauseHash": "8bd5c645b41958659635784f27cd37e143160ddd92d0e9df5b546bc6523a6275"
@@ -11678,10 +11702,6 @@
     {
      "file": "PHAROS-000-080-登记级编号号形规范-V1.0-20261012.md",
      "line": 105
-    },
-    {
-     "file": "件名清单.md",
-     "line": 26
     }
    ],
    "clauseHash": "858de81f7fefa192c06a220fac434810f492132b2a8125eaa6c2442a0335662b"
@@ -11860,10 +11880,6 @@
     {
      "file": "PHAROS-PA-SG-新加坡附则-V1.0-20261012.md",
      "line": 106
-    },
-    {
-     "file": "件名清单.md",
-     "line": 27
     }
    ],
    "clauseHash": "a93bc5fe920608b56a7be301a4ab6017778165812b28f89ed180765242ce816c"
@@ -11896,10 +11912,6 @@
     {
      "file": "PHAROS-PA-SG-新加坡附则-V1.0-20261012.md",
      "line": 23
-    },
-    {
-     "file": "件名清单.md",
-     "line": 28
     }
    ],
    "clauseHash": "7f985dc7a8d70134732ef417ec66e7442d41bb3b57e5eee5db3a8315fcaa9c92"
@@ -12046,10 +12058,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 243
-    },
-    {
-     "file": "件名清单.md",
-     "line": 29
     }
    ],
    "clauseHash": "3f3afb945c2629c11c261881ae9ead1ead854d1eac01b15c2f8aa65597f34717"
@@ -12070,10 +12078,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 244
-    },
-    {
-     "file": "件名清单.md",
-     "line": 30
     }
    ],
    "clauseHash": "1a0a5676ea0dc312c9a05700f2c265b8d5e5bbd90eaba8ca1afe03178cd921a2"
@@ -12094,10 +12098,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 245
-    },
-    {
-     "file": "件名清单.md",
-     "line": 31
     }
    ],
    "clauseHash": "ff340105334ea957bb94df54be1bc1318cbe86ebc28b3fed13ed88ce250b8af6"
@@ -12162,10 +12162,6 @@
     {
      "file": "PHAROS-VAL-400-意义层红线规范-V1.0-20261006.md",
      "line": 239
-    },
-    {
-     "file": "件名清单.md",
-     "line": 34
     }
    ],
    "clauseHash": "09fab9784cf77d77923c919d9451a4ce99f0c826124a6beea7279e9e8ffd4f8d"
@@ -12234,10 +12230,6 @@
     {
      "file": "PHAROS-PA-MY-马来西亚附则-V1.0-20261006.md",
      "line": 143
-    },
-    {
-     "file": "件名清单.md",
-     "line": 32
     }
    ],
    "clauseHash": "2a32c9efb31fdbbfa47d0d5a0d67bf3a36917b0e132c7cb2bbb4586f15f4b264"
@@ -12262,10 +12254,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 80
-    },
-    {
-     "file": "件名清单.md",
-     "line": 35
     }
    ],
    "clauseHash": "04bbebed8f2b8426ff8a3f56e9ca7aa7c70b7422d705cfe965f59903d813f40f"
@@ -12378,10 +12366,6 @@
     {
      "file": "PHAROS-VAL-400-意义层红线规范-V1.0-20261006.md",
      "line": 247
-    },
-    {
-     "file": "件名清单.md",
-     "line": 36
     }
    ],
    "clauseHash": "a6fe9c57a9debc6ff8a350692afced3fca333232022bd3c19dcbd7a2025051eb"
@@ -12514,10 +12498,6 @@
     {
      "file": "PHAROS-VAL-400-意义层红线规范-V1.0-20261006.md",
      "line": 241
-    },
-    {
-     "file": "件名清单.md",
-     "line": 37
     }
    ],
    "clauseHash": "96f06f888a24c495f75e7e37436a845964d237fec05eafce23df864a809ab1af"
@@ -12694,10 +12674,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 76
-    },
-    {
-     "file": "件名清单.md",
-     "line": 38
     }
    ],
    "clauseHash": "376aea80b9a9b3b87693368506f8718e1d0d1847d2622166529266076e3a4b06"
@@ -12730,10 +12706,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 101
-    },
-    {
-     "file": "件名清单.md",
-     "line": 39
     }
    ],
    "clauseHash": "317808d098197089f8656cd4dca3c5d312fc1a7adf2d57cc5170e0f5e952f677"
@@ -12792,10 +12764,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 78
-    },
-    {
-     "file": "件名清单.md",
-     "line": 40
     }
    ],
    "clauseHash": "2ef20166c5c0a316cffe21003ff93715a3ca6351eabf6ae35ff52d48c7526ea1"
@@ -12888,10 +12856,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 75
-    },
-    {
-     "file": "件名清单.md",
-     "line": 41
     }
    ],
    "clauseHash": "83e1a8437f49a55cd888a2739db2cf8a946949f9ef7dfd94cbafe97becc12bf7"
@@ -12928,10 +12892,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 77
-    },
-    {
-     "file": "件名清单.md",
-     "line": 42
     }
    ],
    "clauseHash": "1f85708675ee822bc991143049ba6bbdffbe54a4a394b3c6949deaa01f074b09"
@@ -12948,10 +12908,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 110
-    },
-    {
-     "file": "件名清单.md",
-     "line": 43
     }
    ],
    "clauseHash": "dcff87c20768f5ef88b55b7c9d28da1ad40ee395182bf41e2d921813d8f9625e"
@@ -12968,10 +12924,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 111
-    },
-    {
-     "file": "件名清单.md",
-     "line": 44
     }
    ],
    "clauseHash": "7f4e6a199b7b365a403b4dd993ab8bbac2b075c0c2f56878d73b20f933dad2e0"
@@ -13023,7 +12975,15 @@
     },
     {
      "file": "件名清单.md",
-     "line": 45
+     "line": 51
+    },
+    {
+     "file": "件名清单.md",
+     "line": 52
+    },
+    {
+     "file": "件名清单.md",
+     "line": 53
     }
    ],
    "clauseHash": "83182a3909e9728df272d10befc929a68d12160c7b566f3819a01fbcc51c010a"
@@ -13060,10 +13020,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 231
-    },
-    {
-     "file": "件名清单.md",
-     "line": 46
     }
    ],
    "clauseHash": "2f524f9543d12b2f6cb3bf4d1ea97e30e13ca0e2b03e59fa5d51d2e88e90cbf2"
@@ -13084,10 +13040,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 233
-    },
-    {
-     "file": "件名清单.md",
-     "line": 47
     }
    ],
    "clauseHash": "3df0cfc46710024053229d8062b8fc34b2e34b95bebbd125748a96c310d9cc63"
@@ -13116,6 +13068,10 @@
     {
      "file": "PHAROS-OPEN-150-实现方登记册与投票人核验-V1.0-20261006.md",
      "line": 9
+    },
+    {
+     "file": "件名清单.md",
+     "line": 52
     }
    ],
    "inForce": false,
@@ -13160,10 +13116,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 236
-    },
-    {
-     "file": "件名清单.md",
-     "line": 48
     }
    ],
    "clauseHash": "8b15703c663a7c1bd3ef890a43aaef63d8ff35a06918931cf33eaff6b31cb5ae"
@@ -13188,10 +13140,6 @@
     {
      "file": "PHAROS-OPEN-100-开放条款总表-V1.0-20261006.md",
      "line": 529
-    },
-    {
-     "file": "件名清单.md",
-     "line": 49
     }
    ],
    "clauseHash": "3e33e999df6773702b137157fb08bf5e23c431134f40987eeae3e3acbb5830b9"
@@ -13208,10 +13156,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 126
-    },
-    {
-     "file": "件名清单.md",
-     "line": 50
     }
    ],
    "clauseHash": "68edd2c850126f42e488d1b7334c1e7a60e1000e5607b1d0076e225460324a30"
@@ -13236,10 +13180,6 @@
     {
      "file": "PHAROS-PA-PG-巴布亚新几内亚附则-V1.1-20261006.md",
      "line": 354
-    },
-    {
-     "file": "件名清单.md",
-     "line": 51
     }
    ],
    "clauseHash": "b78fe0f71a062b71c77c1dc6c39d2a15a11f5318e0b4eb85193461a6c1154519"
@@ -13288,10 +13228,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 74
-    },
-    {
-     "file": "件名清单.md",
-     "line": 52
     }
    ],
    "clauseHash": "99d0571a207fb0ff18182fe0a2685f670780253615fa05539135d4c094f96b79"
@@ -13324,10 +13260,6 @@
     {
      "file": "PHAROS-PRC-300-特权隔离可见性与传承-V1.0-20261006.md",
      "line": 10
-    },
-    {
-     "file": "件名清单.md",
-     "line": 53
     }
    ],
    "clauseHash": "c8cce1f33d983b69e2d0b8c84652d2d5741f9c1dfe9744c847c6326324bca44c"
@@ -13356,10 +13288,6 @@
     {
      "file": "PHAROS-VAL-400-意义层红线规范-V1.0-20261006.md",
      "line": 242
-    },
-    {
-     "file": "件名清单.md",
-     "line": 54
     }
    ],
    "clauseHash": "c8cce1f33d983b69e2d0b8c84652d2d5741f9c1dfe9744c847c6326324bca44c"
@@ -13480,10 +13408,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 85
-    },
-    {
-     "file": "件名清单.md",
-     "line": 55
     }
    ],
    "clauseHash": "c8cce1f33d983b69e2d0b8c84652d2d5741f9c1dfe9744c847c6326324bca44c"
@@ -13604,10 +13528,6 @@
     {
      "file": "PHAROS-VAL-400-意义层红线规范-V1.0-20261006.md",
      "line": 244
-    },
-    {
-     "file": "件名清单.md",
-     "line": 56
     }
    ],
    "clauseHash": "07ad39604f4b9dfc25b00dcc8d232fc16d90fb7f77a0ff302384595410e4a6fc"
@@ -13640,10 +13560,6 @@
     {
      "file": "PHAROS-VAL-400-意义层红线规范-V1.0-20261006.md",
      "line": 252
-    },
-    {
-     "file": "件名清单.md",
-     "line": 57
     }
    ],
    "clauseHash": "07ad39604f4b9dfc25b00dcc8d232fc16d90fb7f77a0ff302384595410e4a6fc"
@@ -13676,10 +13592,6 @@
     {
      "file": "PHAROS-VAL-400-意义层红线规范-V1.0-20261006.md",
      "line": 246
-    },
-    {
-     "file": "件名清单.md",
-     "line": 58
     }
    ],
    "clauseHash": "6fce8286c80b6df292f6e1f29c29fa13194356078aff07a2c9d11dbbd9a27029"
@@ -13820,10 +13732,6 @@
     {
      "file": "PHAROS-VAL-300-镜映规范-V1.0-20261006.md",
      "line": 10
-    },
-    {
-     "file": "件名清单.md",
-     "line": 59
     }
    ],
    "clauseHash": "07ad39604f4b9dfc25b00dcc8d232fc16d90fb7f77a0ff302384595410e4a6fc"
@@ -13840,10 +13748,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 242
-    },
-    {
-     "file": "件名清单.md",
-     "line": 60
     }
    ],
    "clauseHash": "6153d81c09881d82b955daa561161a1422ce8d5d2b25d989550e5ea94a9ff2d7"
@@ -13860,10 +13764,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 237
-    },
-    {
-     "file": "件名清单.md",
-     "line": 61
     }
    ],
    "clauseHash": "905fa100bac735c9f37b5a5b7f198fead6ef22f121acaf5002864d7bb3260ac7"
@@ -13880,10 +13780,6 @@
     {
      "file": "PHAROS-000-060-当前有效版本清单-V1.3-20261008.md",
      "line": 238
-    },
-    {
-     "file": "件名清单.md",
-     "line": 62
     }
    ],
    "clauseHash": "b75d884b5e75c8bf4b84df75678f1154ec4f9636ff6f1655f460016f7ca6ee41"
@@ -14888,6 +14784,10 @@
     {
      "file": "PHAROS-VAL-500-成长表达规范-六位-V1.0-20261006.md",
      "line": 8
+    },
+    {
+     "file": "件名清单.md",
+     "line": 66
     }
    ],
    "clauseHash": "b501877ad41d2f47ad8eafaa8a3128e41faac7485636e84df0159c5772b63c8b"
@@ -15980,6 +15880,14 @@
     {
      "file": "PHAROS-VUL-100-脆弱用户与未成年人保护规范-V1.0-20261006.md",
      "line": 8
+    },
+    {
+     "file": "件名清单.md",
+     "line": 41
+    },
+    {
+     "file": "件名清单.md",
+     "line": 66
     }
    ],
    "clauseHash": "69ed2f70db22f4e41e88b963863bfb61a8e45e180dd92b445f1aa2a1267cb0c9"
