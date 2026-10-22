@@ -4,7 +4,7 @@
 SPEC_VERSION=0.9.0
 
 # Package release identifier (date-based, YYYY.MM).
-PACKAGE_RELEASE=2026.10
+PACKAGE_RELEASE=2026.11
 
 # Internal working snapshot numbers are NOT listed here and MUST NOT be
 # cited in any external document.
