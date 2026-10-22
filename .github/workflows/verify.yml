@@ -14,6 +14,10 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    # 不写 .pyc：否则下面的「不得留下运行产物」守卫会与本步自己生成的
+    # __pycache__ 相冲突（第 1 步跑 Python → 生成 __pycache__ → 第 2 步断言失败）。
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - uses: actions/checkout@v4
 
