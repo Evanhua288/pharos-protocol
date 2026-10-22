@@ -1360,7 +1360,7 @@ score · grade · level · percentile · rank · composite · weight · points �
 |---|---|---|
 | **内核件** | `spec/CORE-001-V1.2.md` | **现行** |
 | **规范附属件** | `spec/PHAROS-PENDING-001-协议侧待裁册.md`／`spec/SPDX-NOTE.md`／`spec/SPEC-HISTORY.md`／`spec/SPEC-PROVENANCE.md` | **现行** |
-| **层级规范** | `spec/layers/`（**42 件**，逐件件名见 `spec/layers/件名清单.md`；**多为草案，判据与向量为准**） | **现行** |
+| **层级规范** | `spec/layers/`（**43 件** ＝ **42 件层级规范 ＋ 1 件《件名清单》**，逐件件名见 `spec/layers/件名清单.md`；**多为草案，判据与向量为准**） | **现行** |
 | **机读件** | `spec/clauses.json`／`spec/alias-map.json`／`spec/algorithm-registry.json`／`spec/anchor-set.json`／`spec/anchor-migration-4state.json`／`spec/anchor-exclusion-whitelist.json`／`spec/digest-set.json`／`spec/domain-tags.json`／`spec/extension-schema.json`／`spec/freeze-registry.json`／`spec/pending-five.json`／`spec/tree-head.json`／`spec/xref-confirmed.json` | **现行** |
 | **测试数据与向量** | `vectors/`（**53 件**：直接层 30／`jcs-official/` 13／`negative/` 8／`ledger-10/` 2）；**真值 `vectors/EXPECTED.md`** | **现行** |
 | **工具** | `tools/`（**71 件** = **69 个 `.py` 加 `char_inventory.txt`**）；检查器如 `check_integrity`／`check_vectors`／`check_linenos`／`check_fields`／`check_scenarios`／`check_outsider`／`check_anchor_whitelist`／`check_freeze_extension`／`audit_extra`／`error_resolve`／`pharos_verify`／`sign_sums` | **现行** |

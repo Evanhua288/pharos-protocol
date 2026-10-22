@@ -1,8 +1,8 @@
 {
  "_note": "机读条款索引（由 gen_clauses.py 从 spec 生成，不手写）。",
  "spec": "CORE-001-V1.2.md",
- "specSha256": "0df58b728e29b305a735327c2dc53987237086e7649aef99a381e2d5602f7541",
- "specBytes": 161959,
+ "specSha256": "1b171a0b3c427ed35d5d9d16c73c5c3b079785abe629980769feae6418a2d57c",
+ "specBytes": 162014,
  "clauses": 948,
  "clauseCount": 948,
  "clauseIds": 948,
