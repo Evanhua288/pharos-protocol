@@ -29,10 +29,23 @@
 
 ```bash
 python tools/check_vectors.py vectors/   # 期望 [PASS] 10/10 vectors
-python tools/tcore1.py .                 # 期望 [PASS] 0 hits（见下方覆盖面）
+python tools/tcore1.py .                 # 期望 [FAIL] 4 hits（规范文本引用，属预期，见 §三）
 python tools/tcore2.py routes.example.json  # 期望 [PASS] 0 hits
 python tools/tcore3.py <entries.json> <engine.py>  # 期望 [PASS] 或 [INCOMPLETE]
 ```
+
+> ### ⚠️ `tcore1.py .` 为什么**期望是 `[FAIL] 4 hits`，而不是 `0 hits`**
+>
+> 这 4 处命中全部来自**规范文件本身**（`spec/amount-layering.json` 第 64／73／80／87 行），
+> 命中的词是 **`value`** —— 它在那里表示**「阈值待裁」的取值位**（`"value": null`），
+> **不是**给人打分的字段。
+>
+> `FORBIDDEN` 词表的用途是「**挡住给人打分的字段名**」（`VAL-400 §4.1`）。
+> 规范文本**必须引用这份词表**才能定义「什么被禁」，因此**规范目录下的引用属预期命中**，
+> **不构成实现方违规**。这与 `README.md` 末尾「`T-CORE-1` 作用域」一段的口径一致。
+>
+> **判读方式**：命中位置若落在 `spec/` 或 `vectors/`，按「**规范文本引用**」申报；
+> 若落在实现代码（`tools/` 之外的业务代码），才按「**违规**」处理。
 
 ## 三、⚠️ 覆盖面如实申报（未扫 != 通过）
 

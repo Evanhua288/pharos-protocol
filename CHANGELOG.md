@@ -1,3 +1,103 @@
+## 2026.11 - unit of work (JIAN-001), CI environment pinning
+
+Specification text unchanged. **`specHash` did not move** (`1b171a0b…` before and
+after). Anchored content files 215 → 234 (+19, 0 removals) since 2026.10.
+
+### Added (protocol side)
+
+- `spec/layers/PHAROS-JIAN-001-件计量标准-V1.1-20261022.md` - **the unit of work**.
+  Defines what counts as "one piece" (一件), the three-signature instrument, the
+  four required fields, the DoR three questions, the price formula, the
+  backward-compatibility rule ("old records are always computed under the standard
+  in force when they were made"), and - the part that matters most - a
+  **stopping-point clause (§6)**.
+
+  §6 states that the standard does **not** require "complete compliance", and names
+  three places where verification stops: (1) the moment of acceptance, (2) the
+  boundary of old records, (3) the 20 standard cases. Without such a clause, any
+  open, verifiable, append-only spec drives its verifiers into an unbounded loop.
+
+- Four layer files dated 2026-10-12: `PHAROS-000-050` (protocol/commercial
+  boundary), `PHAROS-000-080` (registry-level number format), `PHAROS-GV-COUNCIL`
+  (governance council charter), `PHAROS-PA-SG` (Singapore annex).
+
+- `.github/workflows/verify.yml`, `POLICY-FINANCE-ANCHOR.md`, `requirements.txt`,
+  `spec/release-index.json`, and eight tooling scripts.
+
+### Changed
+
+- `spec/CORE-001-V1.2.md`: the layer-set declaration now reads **43 = 42 layer
+  specifications + 1 index** (previously understated).
+- `spec/layers/件名清单.md`: regenerated from the directory (37 → 42 entries).
+- `spec/clauses.json`: regenerated.
+
+### Retired (not deleted)
+
+`PHAROS-JIAN-001-V1.0` was renamed to `…-V1.0-20261022.md.retired`. Its content is
+unchanged and still present; it merely **stopped counting as one of the layer
+specifications**, so the layer count stays 42 and the anchor does not move.
+This is the first time the project executed its own subtraction rule in practice.
+
+### CI correction (why this release was re-cut several times)
+
+The 2026.11 assets were cut more than once. Every cut passed its own 26 gates; the
+re-cuts were driven by CI and scope, not by gate failures:
+
+1. `v527` - 26/26 gates, but repository CI was red: the workflow ran
+   `tools/reproduce_all.py` against the **repository**, and that script verifies a
+   **package** (its step 1 needs `SELF-CHECK.txt`, step 11 needs
+   `SHA256SUMS.pub/.sig/SHA256SUMS`). `check_integrity.py` and
+   `check_manifest_math.py` need `SHA256SUMS`/`MANIFEST.sha256` for the same reason.
+2. `v528` - CI fixed, but JIAN-001 not yet included.
+3. `v530` - JIAN-001 in, layer-count declaration corrected.
+4. `v531` - JIAN-001 V1.1 (three revisions from platform-side empirical feedback).
+5. `v532` - **this cut**: CI environment pinned so upstream moves cannot silently
+   turn a green gate red. Exactly one file changed
+   (`.github/workflows/verify.yml`); everything else differs only because the
+   anchor is recomputed over it.
+
+Pinning detail (`v532`):
+
+| Item | Was | Now |
+|---|---|---|
+| Runner | `ubuntu-latest` | `ubuntu-24.04` |
+| checkout | `actions/checkout@v4` | `actions/checkout@v7.0.1` |
+| setup-python | `actions/setup-python@v5` | `actions/setup-python@v7.1.0` |
+
+`ubuntu-latest` begins migrating to Ubuntu 26 from 2026-10-19; a floating label
+means the environment can change with no commit of ours. The previous actions
+versions still ran on Node.js 20 and had begun being force-run on Node.js 24,
+emitting deprecation annotations. A green run now carries **zero annotations**.
+
+### Documentation correction
+
+`SELFCHECK.md` previously listed `python tools/tcore1.py .` as expecting
+`[PASS] 0 hits`. That was wrong: the package legitimately produces **4 hits**, all
+in `spec/amount-layering.json`, where the forbidden word `value` appears as a
+"threshold pending decision" slot (`"value": null`) rather than as a scoring field.
+The document now says so and explains how to read it.
+
+### Key change since 2026.10 (read this before verifying)
+
+The Ed25519 signing key used from 2026.11 onward is **not** the key used for 2026.10:
+
+| Release | `SHA256SUMS.pub` fingerprint (sha256) |
+|---|---|
+| 2026.10 | `3d6dd96d93f39a5f17f17cc9e80f93c75f2535e27c669f29b5d1ff3abd3514ff` |
+| 2026.11 | `76e375caa6816585401d16f824fe519a25f6380a235db785b5b0a025a373c90e` |
+
+Verifying 2026.11 with the 2026.10 public key **will fail**. Always use the
+`SHA256SUMS.pub` attached to the release you are verifying.
+
+### A correction to the 2026.10 release notes
+
+The 2026.10 notes claimed the release "was independently reproduced by a second
+implementation before publication". **2026.11 does not carry that claim forward.**
+No named second implementation, published reproduction record, or counter-signature
+exists for it. The claim is withdrawn rather than repeated.
+
+---
+
 ## 2026.10 - admission table, amount bands, operational policies
 
 Specification text unchanged. One layer file changed. No judgement criteria changed.
