@@ -12,16 +12,23 @@ on:
 
 jobs:
   verify:
-    runs-on: ubuntu-latest
+    # ── 环境钉死（2026-10-24 由协议窗口钉定）──────────────────────────
+    # 为什么钉死 runs-on：`ubuntu-latest` 自 2026-10-19 起开始迁往 Ubuntu 26，
+    # 自动迁移会造成「昨天绿、今天红」而原因不在本仓库。显式钉 24.04。
+    runs-on: ubuntu-24.04
     timeout-minutes: 45
     # 不写 .pyc：否则下面的「不得留下运行产物」守卫会与本步自己生成的
     # __pycache__ 相冲突（第 1 步跑 Python → 生成 __pycache__ → 第 2 步断言失败）。
     env:
       PYTHONDONTWRITEBYTECODE: "1"
     steps:
-      - uses: actions/checkout@v4
+      # ── actions 版本钉到具体小版本 ────────────────────────────────
+      # 原用 checkout@v4／setup-python@v5，二者仍跑 Node 20，GitHub 已告警
+      # 「被强制跑在 Node 24」。只写大版本号（如 @v4）会随上游静默变运行时，
+      # 故钉到具体版本。升级时须一次性升两处并同步本注释。
+      - uses: actions/checkout@v7.0.1
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7.1.0
         with:
           python-version: "3.12"
 
